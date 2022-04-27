@@ -1,7 +1,7 @@
 stock ObjectsMap()
 {
 	new tmpobjid;
-	// Регистрация
+	// Р РµРіРёСЃС‚СЂР°С†РёСЏ
 	tmpobjid = CreateObject(19379, 209.480300, -279.731109, 3000.000000, 0.000000, 90.000000, 0.000000); 
 	SetObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "ferry_build14", 0x00000000);
 	tmpobjid = CreateDynamicObject(19464, 207.194473, -276.088073, 3002.625976, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
@@ -375,7 +375,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19550, 43.349887, -325.288940, 2957.162109, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(10948, -54.847415, -244.727310, 3006.313964, 0.000000, 0.000000, 180.000000, -1, -1, -1, 300.00, 300.00); 
 
-	// Парк ЛС
+	// РџР°СЂРє Р›РЎ
 	tmpobjid = CreateDynamicObject(19377, 1412.053833, -1648.734619, 7.230599, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 7650, "vgnusedcar", "lightyellow2_32", 0x00000000);
 	tmpobjid = CreateDynamicObject(19377, 1402.446777, -1648.734252, 7.226600, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
@@ -940,7 +940,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(3471, 1477.816894, -1683.650146, 14.269599, 0.000000, 0.000000, 270.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(2745, 1479.430541, -1683.876220, 14.269249, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 
-	// ЖДЛС
+	// Р–Р”Р›РЎ
 	tmpobjid = CreateDynamicObject(19377, 1767.978149, -1960.269165, 13.028300, 0.000000, 90.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 14714, "vghss1int2", "HS1_2Floor1", 0x00000000);
 	tmpobjid = CreateDynamicObject(19454, 1778.046752, -1957.201660, 13.028300, 0.000000, 90.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
@@ -1093,37 +1093,37 @@ stock ObjectsMap()
 	SetObjectMaterial(tmpobjid, 3, 14714, "vghss1int2", "HS1_2Floor1", 0xFFFFFFFF);
 	SetObjectMaterial(tmpobjid, 4, 14714, "vghss1int2", "HS1_2Floor1", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19481, 1751.233520, -1909.916381, 25.814577, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Московский вокзал", 90, "Ariel", 30, 0, 0xFFAFAFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРѕРІСЃРєРёР№ РІРѕРєР·Р°Р»", 90, "Ariel", 30, 0, 0xFFAFAFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1764.355957, -1960.746948, 12.564237, 0.000000, 0.000000, -180.0, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1764.319946, -1960.577148, 14.824240, 0.000000, 0.000000, 90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1764.280761, -1947.950805, 12.579551, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1764.284423, -1948.111694, 14.869555, 0.000000, 0.000000, -90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1709.394409, -1947.954711, 12.567179, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1709.394775, -1948.102416, 14.847185, 0.000000, 0.000000, -90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1709.490356, -1960.680541, 12.570228, 0.000000, 0.000000, -180.0, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1709.489135, -1960.532958, 14.810234, 0.000000, 0.000000, 90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1764.334472, -1960.702270, 12.567170, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1764.331542, -1960.849487, 14.837174, 0.000000, 0.000000, -90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, 1709.470703, -1960.621459, 12.587166, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 11150, "ab_acc_control", "ws_shipmetal5", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 1676, "wshxrefpump", "black64", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19477, 1709.481445, -1960.770263, 14.847177, 0.000000, 0.000000, -90.0, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Москва", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕСЃРєРІР°", 120, "Calibri", 100, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19420, 1778.896606, -1953.879272, 12.576874, 0.000000, 0.000000, 90.0, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 18065, "ab_sfammumain", "ab_wallpaper02", 0x00000000);
 	tmpobjid = CreateDynamicObject(19981, 1778.906494, -1951.751586, 13.109554, 0.000000, 0.000000, -90.0, -1, -1, -1, 300.00, 300.00); 
@@ -1426,7 +1426,7 @@ stock ObjectsMap()
 	CreateDynamicObject(970, 1689.20654, -1955.49744, 13.65600,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(970, 1693.38245, -1955.49744, 13.65600,   0.00000, 0.00000, 0.00000);
 
-	// ЖДЛВ
+	// Р–Р”Р›Р’
 	tmpobjid = CreateDynamicObject(970, 2868.569580, 1229.843383, 15.093235, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 1, 18646, "matcolours", "grey-95-percent", 0x00000000);
 	tmpobjid = CreateDynamicObject(19454, 2868.036621, 1234.261962, 10.286247, -0.000000, 90.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
@@ -1563,11 +1563,11 @@ stock ObjectsMap()
 	SetObjectMaterial(tmpobjid, 7, 8391, "ballys01", "ws_floortiles4", 0x00000000);
 	SetObjectMaterial(tmpobjid, 9, 10101, "2notherbuildsfe", "sl_vicbrikwall01", 0x00000000);
 	tmpobjid = CreateDynamicObject(19483, 2841.945312, 1296.501464, 11.807725, 0.000000, 0.000000, -179.999969, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вашингтон", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 0);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’Р°С€РёРЅРіС‚РѕРЅ", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 0);
 	tmpobjid = CreateDynamicObject(19483, 2855.857910, 1284.563354, 12.090600, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вашингтон", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’Р°С€РёРЅРіС‚РѕРЅ", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19481, 2838.797607, 1290.950561, 18.890001, 0.000000, 0.000000, 180.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вокзал Вашингтона", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’РѕРєР·Р°Р» Р’Р°С€РёРЅРіС‚РѕРЅР°", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19360, 2868.917724, 1231.317260, 14.503844, 0.000000, -90.099983, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 4830, "airport2", "sanairtex3", 0x00000000);
 	tmpobjid = CreateDynamicObject(19360, 2865.436523, 1231.317260, 14.487777, 0.000000, -90.099983, 0.000000, -1, -1, -1, 300.00, 300.00); 
@@ -1577,7 +1577,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(4641, 2797.334228, 1320.484741, 11.518439, 0.000000, 0.000000, 90.399986, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 2, 18873, "mobilephone9", "mobilephone9-1", 0x00000000);
 	tmpobjid = CreateDynamicObject(19483, 2871.122558, 1284.562377, 12.090600, 0.000000, 0.000000, 179.599945, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вашингтон", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’Р°С€РёРЅРіС‚РѕРЅ", 40, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19355, 2857.515625, 1336.987304, 10.276750, 0.000000, 90.300018, 178.499969, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 8391, "ballys01", "ws_floortiles4", 0x00000000);
 	tmpobjid = CreateDynamicObject(19355, 2858.997070, 1336.950317, 10.274513, 0.000000, 90.300018, 178.499969, -1, -1, -1, 300.00, 300.00); 
@@ -1779,7 +1779,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(970, 2832.763916, 1383.342163, 10.307624, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(970, 2836.647705, 1383.212036, 10.427627, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);  
 
-	// Северная станция ЖДЛВ
+	// РЎРµРІРµСЂРЅР°СЏ СЃС‚Р°РЅС†РёСЏ Р–Р”Р›Р’
 	tmpobjid = CreateDynamicObject(19377, 1391.172241, 2638.700195, 10.301699, 0.000000, 90.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 8391, "ballys01", "ballywall02_128", 0x00000000);
 	tmpobjid = CreateDynamicObject(19377, 1401.672241, 2638.700195, 10.301699, 0.000000, 90.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
@@ -1881,15 +1881,15 @@ stock ObjectsMap()
 	tmpobjid = CreateObject(7511, 1452.640014, 2667.449951, 17.195299, 0.000000, 0.000000, 0.000000); 
 	SetObjectMaterial(tmpobjid, 5, 8391, "ballys01", "ballywall02_128", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19481, 1433.248291, 2662.261718, 19.647520, 0.000000, 0.000000, 89.999977, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вокзал Северный Вашингтон", 130, "Ariel", 40, 1, 0xFF00FFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’РѕРєР·Р°Р» РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ", 130, "Ariel", 40, 1, 0xFF00FFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1415.410522, 2623.311279, 13.142599, 0.000000, 0.000000, 89.900009, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Северный Вашингтон", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1413.166992, 2645.249755, 13.272603, 0.000000, 0.000000, -90.200012, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Северный Вашингтон", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1461.267089, 2645.253662, 13.340658, 0.000000, 0.000000, -89.799995, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Северный Вашингтон", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1453.674072, 2623.319091, 13.290658, 0.000000, 0.000000, 89.900032, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Северный Вашингтон", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ", 120, "Ariel", 50, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19420, 1390.3767, 2632.2869, 9.8205, 0.000000, 0.000000, 90.0, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 18065, "ab_sfammumain", "ab_wallpaper02", 0x00000000);
 	tmpobjid = CreateDynamicObject(19981, 1390.4274, 2630.1387, 10.3906, 0.000000, 0.000000, 90.0, -1, -1, -1, 300.00, 300.00); 
@@ -1945,7 +1945,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(3460, 1420.921386, 2677.673095, 13.765600, 0.000000, 0.000000, 180.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(3460, 1411.762939, 2692.914550, 13.765600, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00);
 	
-	// Таможня ЛВ-ЛС
+	// РўР°РјРѕР¶РЅСЏ Р›Р’-Р›РЎ
 	tmpobjid = CreateDynamicObject(7033, 1776.600097, 682.512817, 20.055099, -3.700000, 0.000000, -10.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 3684, "lawnapartxref", "vnghse4_256", 0x00000000);
 	tmpobjid = CreateDynamicObject(19435, 1777.226440, 676.123474, 16.434600, -3.700000, 0.000000, -10.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2029,17 +2029,17 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19454, 1770.901245, 689.707397, 22.832700, 0.000000, 0.000000, 80.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 10765, "airportgnd_sfse", "white", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, 1753.368164, 522.145629, 34.192161, 0.000000, 0.000000, -108.500038, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Россия", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р РѕСЃСЃРёСЏ", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 1753.451660, 522.105468, 34.006744, -20.399978, 0.000000, -108.599967, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterialText(tmpobjid, 0, "/", 50, "Engravers MT", 100, 1, 0xFFFF0000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 1796.218627, 672.962951, 23.636045, 0.000000, 0.000000, -100.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "США", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРЁРђ", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 1770.985473, 689.789611, 22.832689, 0.000000, 0.000000, 80.000038, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "США", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРЁРђ", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 1770.839843, 689.819152, 22.943759, 0.000000, 0.000000, 79.699966, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterialText(tmpobjid, 0, "/", 50, "Engravers MT", 100, 1, 0xFFFF0000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, 1730.935424, 542.694763, 33.785438, 0.000000, 0.000000, 71.499946, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Россия", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р РѕСЃСЃРёСЏ", 50, "Ariel", 40, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(7033, 1748.761108, 530.173095, 30.840200, -3.299999, 0.000000, -18.500000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(7033, 1735.342895, 534.646789, 30.840200, -3.299999, 0.000000, -18.500000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(7033, 1790.398193, 680.080383, 20.041099, -3.700000, 0.000000, -10.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2260,7 +2260,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19983, 1729.5221, 496.7093, 29.1428, 0.000000, 0.000000, -18.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(19954, 1732.024902, 503.740753, 28.839290, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);
 
-	// Транспортный завод
+	// РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ
 	tmpobjid = CreateDynamicObject(19538, -1619.893188, 31.094999, -18.130399, 90.000000, 90.000000, -45.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 10101, "2notherbuildsfe", "Bow_Abpave_Gen", 0x00000000);
 	tmpobjid = CreateDynamicObject(19538, -1560.145141, 90.847396, -18.136400, 90.000000, 90.000000, -45.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2280,23 +2280,23 @@ stock ObjectsMap()
 	SetDynamicObjectMaterial(tmpobjid, 1, 10101, "2notherbuildsfe", "Bow_Abpave_Gen", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 2, 10101, "2notherbuildsfe", "Bow_Abpave_Gen", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, -1736.107543, -26.459899, 8.384687, 0.000000, 0.000000, -88.900016, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Транспортный завод", 120, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ", 120, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1740.550170, -21.624717, 8.454686, 0.000000, 0.000000, 179.800018, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Транспортный завод", 120, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ", 120, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1720.506225, 79.032249, 8.974689, 0.000000, 0.000000, -134.999984, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Мотоциклетный цех", 130, "Ariel", 64, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РњРѕС‚РѕС†РёРєР»РµС‚РЅС‹Р№ С†РµС…", 130, "Ariel", 64, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1696.847412, 22.898593, 9.484684, 0.000000, 0.000000, 45.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Автомобильный цех", 130, "Ariel", 64, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РђРІС‚РѕРјРѕР±РёР»СЊРЅС‹Р№ С†РµС…", 130, "Ariel", 64, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19480, -1603.410644, 101.773674, 7.114688, 0.000000, 0.000000, -135.000045, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Судомеханический цех", 130, "Ariel", 30, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎСѓРґРѕРјРµС…Р°РЅРёС‡РµСЃРєРёР№ С†РµС…", 130, "Ariel", 30, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19480, -1547.7671, 61.5734, 25.2026, 0.000000, 0.000000, 134.999984, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Вертолетный цех", 130, "Ariel", 70, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р’РµСЂС‚РѕР»РµС‚РЅС‹Р№ С†РµС…", 130, "Ariel", 70, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19480, -1512.9008, 96.4690, 25.2426, 0.000000, 0.000000, 134.999984, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Авиационный цех №2", 130, "Ariel", 57, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РђРІРёР°С†РёРѕРЅРЅС‹Р№ С†РµС… в„–2", 130, "Ariel", 57, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19480, -1636.4094, 2.1057, 17.5626, 0.000000, 0.000000, 135.000076, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Авиационный цех №1", 130, "Ariel", 57, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РђРІРёР°С†РёРѕРЅРЅС‹Р№ С†РµС… в„–1", 130, "Ariel", 57, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1741.700317, 37.517620, 5.744688, 0.000000, 0.000000, 179.999984, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Транспортный завод", 130, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ", 130, "Ariel", 50, 0, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(8240, -1590.9532, -1.6118, 26.6980, 0.000000, 0.000000, -135.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(19531, -1574.979858, -13.667889, 13.001700, 0.000000, 0.000000, -135.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(19552, -1575.702758, -13.097100, 13.118599, 0.000000, 0.000000, -135.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2516,7 +2516,7 @@ stock ObjectsMap()
 	CreateDynamicObject(1226, -1641.68457, -32.56003, 16.99010,   0.00000, 0.00000, -135.00000);
 	CreateDynamicObject(1226, -1616.53076, -57.75787, 16.99010,   0.00000, 0.00000, -135.00000);
 
-	// Интерьер Транспортного завода, Фермы и Оружейного завода
+	// РРЅС‚РµСЂСЊРµСЂ РўСЂР°РЅСЃРїРѕСЂС‚РЅРѕРіРѕ Р·Р°РІРѕРґР°, Р¤РµСЂРјС‹ Рё РћСЂСѓР¶РµР№РЅРѕРіРѕ Р·Р°РІРѕРґР°
 	tmpobjid = CreateObject(19377, 1272.650268, -733.799011, 1082.985595, 0.000000, 90.000000, 0.000000); 
 	SetObjectMaterial(tmpobjid, 0, 16640, "a51", "ws_stationfloor", 0x00000000);
 	tmpobjid = CreateDynamicObject(19377, 1262.150268, -733.799011, 1082.985595, 0.000000, 90.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2594,15 +2594,15 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19459, 1252.886230, -733.721801, 1088.581298, 180.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 14788, "ab_sfgymbits01", "ab_rollmat01", 0x00000000); 
 	tmpobjid = CreateDynamicObject(19477, 1267.500122, -733.793273, 1085.272216, 0.000000, 0.000000, 0.000000, 1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Транспортный завод", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1267.500122, -733.793273, 1085.272216, 0.000000, 0.000000, 0.000000, 3, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Ферма", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р¤РµСЂРјР°", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 1267.500122, -733.793273, 1085.272216, 0.000000, 0.000000, 0.000000, 5, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Оружейный завод", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РћСЂСѓР¶РµР№РЅС‹Р№ Р·Р°РІРѕРґ", 130, "Ariel", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19476, 1267.505126, -730.750610, 1085.731445, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Кабинет директора", 120, "Ariel", 64, 0, 0xFF000000, 0xFFFFFFFF, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РљР°Р±РёРЅРµС‚ РґРёСЂРµРєС‚РѕСЂР°", 120, "Ariel", 64, 0, 0xFF000000, 0xFFFFFFFF, 1);
 	tmpobjid = CreateDynamicObject(19476, 1267.498657, -736.806945, 1085.751220, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Раздевалка", 120, "Ariel", 64, 0, 0xFF000000, 0xFFFFFFFF, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р Р°Р·РґРµРІР°Р»РєР°", 120, "Ariel", 64, 0, 0xFF000000, 0xFFFFFFFF, 1);
 	tmpobjid = CreateDynamicObject(1536, 1277.755981, -732.208068, 1083.055419, 0.000000, 0.000000, -90.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(1536, 1277.792968, -735.226684, 1083.055419, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(2164, 1257.112915, -733.141906, 1083.072631, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
@@ -2642,7 +2642,7 @@ stock ObjectsMap()
 	CreateDynamicObject(1893, 1262.20837, -731.37323, 1087.08850,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(1893, 1261.79028, -736.05267, 1087.08850,   0.00000, 0.00000, 0.00000);
 
-	// Ферма
+	// Р¤РµСЂРјР°
 	tmpobjid = CreateDynamicObject(982, -12.441570, 154.138977, 2.108598, 0.000000, 0.000000, 60.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(982, 9.387298, 140.752700, 2.142600, 0.000000, 0.000000, 57.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(966, -24.786500, 161.655303, 1.427299, 0.000000, 0.000000, -30.000000, -1, -1, -1, 300.00, 300.00); 
@@ -3093,9 +3093,9 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19575, -168.048568, 124.786102, 4.831394, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(19575, -173.695495, 165.396301, 9.186582, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00);  
 
-	// ЖДСФ
+	// Р–Р”РЎР¤
 	tmpobjid = CreateDynamicObject(19482, -1940.261352, 103.215126, 26.919050, 0.000000, 0.000000, -179.699981, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(987, -1945.321289, 213.284835, 31.282783, 0.000000, 0.000000, -6.699997, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 19480, "signsurf", "sign", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 19480, "signsurf", "sign", 0x00000000);
@@ -3248,7 +3248,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(3335, -1950.708496, 103.214149, 24.717479, 0.000000, 0.000000, -89.599975, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 2, 18646, "matcolours", "grey-95-percent", 0x00000000);
 	tmpobjid = CreateDynamicObject(19481, -1980.277587, 137.842071, 36.539058, 0.000000, 0.000000, -179.999969, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлинский вокзал", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅСЃРєРёР№ РІРѕРєР·Р°Р»", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19458, -1984.937377, 151.987304, 26.607168, 0.000000, -90.099998, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 6866, "vgncnstrct1", "Circus_gls_05", 0x00000000);
 	tmpobjid = CreateDynamicObject(3335, -1938.969970, 163.661590, 24.717479, 0.000000, 0.000000, 89.000053, -1, -1, -1, 300.00, 300.00); 
@@ -3256,23 +3256,23 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19458, -1984.937377, 127.377372, 26.607168, 0.000000, -90.099998, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 6866, "vgncnstrct1", "Circus_gls_05", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, -1940.041015, 103.216293, 26.919050, 0.000000, 0.000000, 0.400041, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1939.063110, 163.682540, 26.919050, 0.000000, 0.000000, 179.099975, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1938.822387, 163.690872, 26.919050, 0.000000, 0.000000, -0.700037, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1950.851562, 103.159706, 26.919050, 0.000000, 0.000000, -179.699981, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1950.591186, 103.144363, 26.919050, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(3335, -1949.378906, 163.843109, 24.717479, 0.000000, 0.000000, 89.000053, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 2, 18646, "matcolours", "grey-95-percent", 0x00000000);
 	tmpobjid = CreateDynamicObject(3335, -1949.318237, 163.861831, 24.717479, 0.000000, 0.000000, -90.899993, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 2, 18646, "matcolours", "grey-95-percent", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, -1949.463256, 163.845825, 26.919050, 0.000000, 0.000000, 179.099975, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19482, -1949.233032, 163.842102, 26.919050, 0.000000, 0.000000, -1.200030, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Берлин", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р‘РµСЂР»РёРЅ", 80, "Ariel", 20, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19420, -1944.4850, 89.6276, 24.7118, 0.000000, 0.000000, 0.0, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 18065, "ab_sfammumain", "ab_wallpaper02", 0x00000000);
 	tmpobjid = CreateDynamicObject(19981, -1942.3486, 89.6521, 25.2833, 0.000000, 0.000000, 180.0, -1, -1, -1, 300.00, 300.00); 
@@ -3397,17 +3397,17 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(970, -1983.250732, 124.664245, 27.212680, 0.000000, 0.000000, -90.199989, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(3850, -1984.963500, 122.584800, 27.163230, 0.000000, 0.000000, -89.699989, -1, -1, -1, 300.00, 300.00); 
 
-	// Оружейный завод
+	// РћСЂСѓР¶РµР№РЅС‹Р№ Р·Р°РІРѕРґ
 	tmpobjid = CreateDynamicObject(3335, 2761.055664, 922.291259, 9.353960, 0.000000, 0.000000, -90.700027, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 2, 18646, "matcolours", "grey-95-percent", 0x00000000);
 	tmpobjid = CreateDynamicObject(19482, 2760.911865, 922.286071, 11.582551, 0.000000, 0.000000, 179.299957, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Оружейный завод", 120, "Ariel", 30, 1, 0xFFFFFFFF, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РћСЂСѓР¶РµР№РЅС‹Р№ Р·Р°РІРѕРґ", 120, "Ariel", 30, 1, 0xFFFFFFFF, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19481, 2842.289550, 890.831481, 17.928094, 0.399998, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Изготовительный цех", 90, "Ariel", 20, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РР·РіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Р№ С†РµС…", 90, "Ariel", 20, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19481, 2814.871582, 973.834716, 14.464362, 0.000000, 0.000000, -90.000022, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Сборочный цех", 120, "Ariel", 23, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎР±РѕСЂРѕС‡РЅС‹Р№ С†РµС…", 120, "Ariel", 23, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(19481, 2847.978027, 976.390563, 17.880001, 0.000000, 0.000000, 179.999954, -1, -1, -1, 300.00, 300.00); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Склад", 90, "Ariel", 20, 1, 0xFF000000, 0x00000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "РЎРєР»Р°Рґ", 90, "Ariel", 20, 1, 0xFF000000, 0x00000000, 1);
 	tmpobjid = CreateDynamicObject(8884, 2786.516601, 954.982055, 13.219038, 0.000000, 0.000000, 90.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(1231, 2843.354736, 891.381469, 12.351441, -0.041588, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(1231, 2830.354736, 891.380310, 12.331471, 0.458404, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
@@ -3447,7 +3447,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(1231, 2866.936279, 907.470947, 12.429059, 0.358386, 0.000000, -89.199966, -1, -1, -1, 300.00, 300.00); 
 	tmpobjid = CreateDynamicObject(1231, 2866.791503, 917.819946, 12.349059, 0.358386, 0.000000, -89.199966, -1, -1, -1, 300.00, 300.00); 
 
-	// Интерьер Изготовительного цеха на Оружейном заводе
+	// РРЅС‚РµСЂСЊРµСЂ РР·РіРѕС‚РѕРІРёС‚РµР»СЊРЅРѕРіРѕ С†РµС…Р° РЅР° РћСЂСѓР¶РµР№РЅРѕРј Р·Р°РІРѕРґРµ
 	tmpobjid = CreateDynamicObject(18762, 2846.810058, 900.151672, 1502.569824, 0.000000, 0.000000, 0.000000); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 16640, "a51", "concretemanky", 0x00000000);
 	tmpobjid = CreateDynamicObject(18762, 2857.205078, 918.336303, 1507.568847, 0.000000, 0.000000, 0.000000); 
@@ -3727,7 +3727,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(1893, 2839.356201, 914.964599, 1507.045288, 0.000000, 0.000000, 90.000000); 
 	tmpobjid = CreateDynamicObject(1893, 2839.356201, 906.796203, 1507.045288, 0.000000, 0.000000, 90.000000);
 
-	// Интерьер Сборочного цеха в Оружейном заводе
+	// РРЅС‚РµСЂСЊРµСЂ РЎР±РѕСЂРѕС‡РЅРѕРіРѕ С†РµС…Р° РІ РћСЂСѓР¶РµР№РЅРѕРј Р·Р°РІРѕРґРµ
 	tmpobjid = CreateDynamicObject(18762, 2857.205078, 959.331970, 1502.569824, 0.000000, 0.000000, 0.000000); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 18049, "ammu_twofloor", "concretebig4256128", 0x00000000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 915, "airconext", "cj_sheet2", 0x00000000);
@@ -4030,7 +4030,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(2358, 2843.161865, 954.172363, 1500.436279, 0.000000, 0.000000, 96.400047); 
 	tmpobjid = CreateDynamicObject(2358, 2843.191650, 953.710449, 1500.656494, 0.000000, 0.000000, 88.200004);
 
-	// Центральная Москва
+	// Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РњРѕСЃРєРІР°
 	tmpobjid = CreateDynamicObject(19377, 846.978393, -1405.609985, -1.662600, 0.000000, 0.000000, -44.000000, -1, -1, -1); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 10765, "airportgnd_sfse", "white", 0xFFFFFFFF);
 	tmpobjid = CreateDynamicObject(19377, 846.786499, -1398.969970, -1.662600, 0.000000, 0.000000, 47.000000, -1, -1, -1); 
@@ -4058,11 +4058,11 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(19377, 777.674682, -1335.742797, -1.662600, 0.000000, 0.000000, 48.000000, -1, -1, -1); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 10765, "airportgnd_sfse", "white", 0x00000000);
 	tmpobjid = CreateDynamicObject(19477, 841.384460, -1369.866943, 0.838538, 0.000000, 0.000000, -132.900039, -1, -1, -1); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Центральная Москва", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РњРѕСЃРєРІР°", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 806.570617, -1338.258544, 0.812187, 0.000000, 0.000000, -131.899993, -1, -1, -1); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Центральная Москва", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РњРѕСЃРєРІР°", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19477, 827.497375, -1346.074707, 14.968487, 0.000000, 0.000000, -179.900009, -1, -1, -1); 
-	SetDynamicObjectMaterialText(tmpobjid, 0, "Центральная Москва", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
+	SetDynamicObjectMaterialText(tmpobjid, 0, "Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РњРѕСЃРєРІР°", 120, "Arial", 55, 0, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(19420, 847.3277, -1396.5387, -2.5711, 0.000000, 0.000000, 46.0000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterial(tmpobjid, 0, 18065, "ab_sfammumain", "ab_wallpaper02", 0x00000000);
 	tmpobjid = CreateDynamicObject(19981, 848.8275, -1394.9740, -2.3106, 0.000000, 0.000000, 228.0000, -1, -1, -1, 300.00, 300.00);
@@ -4089,7 +4089,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(1568, 846.216369, -1379.045043, -1.511899, 0.000000, 0.000000, 180.000000, -1, -1, -1);
 	CreateDynamicObject(1257, 805.17242, -1352.23596, 13.80240,   0.00000, 0.00000, 0.00000);
 
-	// ЖД
+	// Р–Р”
 	tmpobjid = CreateDynamicObject(3336, 1367.126708, 2638.371826, 9.760311, 0.000000, 0.000000, 0.000000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterialText(tmpobjid, 3, "100 mph", 120, "Arial", 130, 1, 0xFFFFFFFF, 0xFF000000, 1);
 	tmpobjid = CreateDynamicObject(3336, -1016.5343, 944.1512, 33.5719, 0.000000, 0.000000, 35.0000, -1, -1, -1, 300.00, 300.00); 
@@ -4127,7 +4127,7 @@ stock ObjectsMap()
 	tmpobjid = CreateDynamicObject(3336, 1502.2241, 2638.3013, 9.8104, 0.000000, 0.000000,  0.0000, -1, -1, -1, 300.00, 300.00); 
 	SetDynamicObjectMaterialText(tmpobjid, 3, "30 mph", 120, "Arial", 130, 1, 0xFFFFFFFF, 0xFF000000, 1);
 
-	// Мосты
+	// РњРѕСЃС‚С‹
 	CreateDynamicObject(4514, -2689.34229, 1526.82275, 60.93630,   -3.00000, 0.00000, -185.00000);
 	CreateDynamicObject(4514, -2689.39087, 2050.41504, 57.36130,   -4.00000, 0.00000, 3.00000);
 	CreateDynamicObject(4514, -2673.58838, 1526.82275, 60.93630,   -3.00000, 0.00000, -175.00000);
@@ -4143,13 +4143,13 @@ stock ObjectsMap()
 	CreateDynamicObject(16437, -13.28820, -1333.05713, 11.86320,   0.00000, 0.00000, -55.00000);
 	CreateDynamicObject(16437, 10.38545, -1350.45471, 11.59820,   0.00000, 0.00000, 127.00000);
 
-	// Магазин одежды
+	// РњР°РіР°Р·РёРЅ РѕРґРµР¶РґС‹
 	tmpobjid = CreateDynamicObject(19893, 163.76866, -79.80880, 1001.81342,   0.00000, 0.00000, -90.00000);
 	SetDynamicObjectMaterial(tmpobjid, 1, 19893, "cj_zip_sign", "CJ_ZIP_4", 0x00000000);
 	CreateDynamicObject(1533, 180.65131, -86.09970, 1000.88220,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(1533, 182.18449, -89.99850, 1001.01819,   0.00000, 0.00000, 180.00000);
 
-	// Интерьер больницы
+	// РРЅС‚РµСЂСЊРµСЂ Р±РѕР»СЊРЅРёС†С‹
 	CreateDynamicObject(19459, 208.24803, 1771.18518, 2001.84839,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19459, 208.30083, 1780.24561, 2001.84839,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19459, 208.32341, 1789.22827, 2001.84839,   0.00000, 0.00000, 0.00000);
@@ -4842,17 +4842,17 @@ stock ObjectsMap()
 	CreateDynamicObject(19445, 593.76025, 1744.12598, 1002.02948,   0.00000, 0.00000, 90.00000);
 	CreateDynamicObject(16629, 608.24469, 1744.88599, 1002.28381,   360.04001, 90.00000, -91.00000);
 
-	// Автосалон ЛС
+	// РђРІС‚РѕСЃР°Р»РѕРЅ Р›РЎ
 	CreateDynamicObject(1557, 554.53967, -1294.39709, 16.24590,   0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(1557, 557.56873, -1294.39465, 16.24590,   0.00000, 0.00000, 180.00000);
 
-	// Автосалон СФ
+	// РђРІС‚РѕСЃР°Р»РѕРЅ РЎР¤
 	CreateDynamicObject(2008, -1958.12988, 305.56665, 34.46640,   0.00000, 0.00000, 180.00000);
 	CreateDynamicObject(1714, -1959.02100, 306.86685, 34.46789,   0.00000, 0.00000, 0.00000);
 }
 stock RemoveObjects(playerid)
 {
-	// Парк ЛС
+	// РџР°СЂРє Р›РЎ
 	RemoveBuildingForPlayer(playerid, 4031, 1460.054, -1725.992, 9.203, 0.250);
 	RemoveBuildingForPlayer(playerid, 4053, 1380.265, -1655.539, 10.804, 0.250);
 	RemoveBuildingForPlayer(playerid, 4054, 1402.500, -1682.023, 25.546, 0.250);
@@ -4908,7 +4908,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 673, 1498.960, -1684.609, 12.398, 0.250);
 	RemoveBuildingForPlayer(playerid, 712, 1508.445, -1668.742, 22.257, 0.250);
 
-	// ЖДЛС
+	// Р–Р”Р›РЎ
 	RemoveBuildingForPlayer(playerid, 1290, 1781.203, -2000.429, 18.828, 0.250);
 	RemoveBuildingForPlayer(playerid, 1290, 1698.179, -1992.039, 18.828, 0.250);
 	RemoveBuildingForPlayer(playerid, 1290, 1736.273, -1972.500, 18.828, 0.250);
@@ -4920,7 +4920,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 4817, 1739.300, -1951.949, 12.375, 0.250);
 	RemoveBuildingForPlayer(playerid, 4963, 1739.300, -1951.949, 12.375, 0.250);
 
-	// ЖДЛВ
+	// Р–Р”Р›Р’
 	RemoveBuildingForPlayer(playerid, 16093, 211.648, 1810.156, 20.734, 0.250);
 	RemoveBuildingForPlayer(playerid, 16638, 211.726, 1809.187, 18.984, 0.250);
 	RemoveBuildingForPlayer(playerid, 1411, 347.195, 1799.265, 18.757, 0.250);
@@ -4937,13 +4937,13 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 8578, 2798.629, 1246.660, 17.109, 0.250);
 	RemoveBuildingForPlayer(playerid, 8740, 2798.629, 1246.660, 17.109, 0.250);
 
-	// Вокзал Северный Вашингтон
+	// Р’РѕРєР·Р°Р» РЎРµРІРµСЂРЅС‹Р№ Р’Р°С€РёРЅРіС‚РѕРЅ
 	RemoveBuildingForPlayer(playerid, 7500, 1431.910, 2634.270, 10.101, 0.250);
 	RemoveBuildingForPlayer(playerid, 7845, 1431.910, 2634.270, 10.101, 0.250);
 	RemoveBuildingForPlayer(playerid, 7511, 1452.640, 2667.449, 17.195, 0.250);
 	RemoveBuildingForPlayer(playerid, 7857, 1452.640, 2667.449, 17.195, 0.250);
 
-	// Транспортный завод
+	// РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№ Р·Р°РІРѕРґ
 	RemoveBuildingForPlayer(playerid, 10793, -1604.039, 22.726, 35.570, 0.250);
 	RemoveBuildingForPlayer(playerid, 10794, -1550.828, 75.929, 7.000, 0.250);
 	RemoveBuildingForPlayer(playerid, 10795, -1552.437, 74.320, 17.046, 0.250);
@@ -4955,7 +4955,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 1278, -1653.226, -14.445, 16.617, 0.250);
 	RemoveBuildingForPlayer(playerid, 10773, -1711.023, 65.125, 5.515, 0.250);
 
-	// Ферма
+	// Р¤РµСЂРјР°
 	RemoveBuildingForPlayer(playerid, 3376, -96.085, 3.195, 6.695, 0.250);
 	RemoveBuildingForPlayer(playerid, 3376, -15.523, 68.453, 6.664, 0.250);
 	RemoveBuildingForPlayer(playerid, 3375, -96.085, 3.195, 6.695, 0.250);
@@ -4963,7 +4963,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 3375, -15.523, 68.453, 6.664, 0.250);
 	RemoveBuildingForPlayer(playerid, 12914, -75.1797, 12.1719, 3.7188, 0.25);
 
-	// ЖДСФ
+	// Р–Р”РЎР¤
 	RemoveBuildingForPlayer(playerid, 10932, -1941.459, 138.000, 32.640, 0.250);
 	RemoveBuildingForPlayer(playerid, 11217, -1941.459, 138.000, 32.640, 0.250);
 	RemoveBuildingForPlayer(playerid, 11305, -1968.560, 139.108, 31.867, 0.250);
@@ -4978,7 +4978,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 1264, -1980.910, 148.078, 27.039, 0.250);
 	RemoveBuildingForPlayer(playerid, 1264, -1981.439, 148.921, 27.039, 0.250);
 
-	// Оружейный завод
+	// РћСЂСѓР¶РµР№РЅС‹Р№ Р·Р°РІРѕРґ
 	RemoveBuildingForPlayer(playerid, 8960, 2787.000, 953.437, 13.250, 0.250);
 	RemoveBuildingForPlayer(playerid, 8961, 2797.625, 885.453, 13.250, 0.250);
 	RemoveBuildingForPlayer(playerid, 1219, 2800.945, 879.304, 9.975, 0.250);
@@ -4991,7 +4991,7 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 1219, 2846.468, 986.851, 9.975, 0.250);
 	RemoveBuildingForPlayer(playerid, 1219, 2846.468, 980.039, 9.975, 0.250);
 
-	// Мост Золотые ворота
+	// РњРѕСЃС‚ Р—РѕР»РѕС‚С‹Рµ РІРѕСЂРѕС‚Р°
 	RemoveBuildingForPlayer(playerid, 4505, 14.4609, -1347.3281, 11.6797, 0.25);
 	RemoveBuildingForPlayer(playerid, 4506, -18.2266, -1335.9844, 12.7266, 0.25);
 	RemoveBuildingForPlayer(playerid, 4508, -953.8828, -271.2031, 38.4219, 0.25);
@@ -5004,6 +5004,6 @@ stock RemoveObjects(playerid)
 	RemoveBuildingForPlayer(playerid, 4516, -141.3359, 468.6484, 12.9141, 0.25);
 	RemoveBuildingForPlayer(playerid, 4517, -193.8281, 269.5078, 12.8906, 0.25);
 
-	// Автосалон ЛС
+	// РђРІС‚РѕСЃР°Р»РѕРЅ Р›РЎ
 	RemoveBuildingForPlayer(playerid, 1211, 555.1563, -1251.9297, 16.6406, 0.25);
 }
