@@ -111,7 +111,7 @@ stock SetPlayerSpawn(playerid)
 	}
 	else if(Player[playerid][pKillTime])
 	{
-		HelpSCM(playerid, "Вы умерли. Вы можете только шептать и медленно ходить не покидая территорию кладбища");
+		HelpSCM(playerid, "Р’С‹ СѓРјРµСЂР»Рё. Р’С‹ РјРѕР¶РµС‚Рµ С‚РѕР»СЊРєРѕ С€РµРїС‚Р°С‚СЊ Рё РјРµРґР»РµРЅРЅРѕ С…РѕРґРёС‚СЊ РЅРµ РїРѕРєРёРґР°СЏ С‚РµСЂСЂРёС‚РѕСЂРёСЋ РєР»Р°РґР±РёС‰Р°");
 		SetPlayerPos(playerid, 816.3541,-1097.0269,25.7910);
 		SetPlayerFacingAngle(playerid, 180.0);
 		SetPlayerVirtualWorld(playerid, 2);
@@ -146,11 +146,11 @@ stock SetPlayerSpawn(playerid)
 		SetPlayerInterior(playerid, 0);
 		SetCameraBehindPlayer(playerid);
 		new string[500];
-		f(string, "{FFFFFF}После получения паспорта вы решили снять номер на сутки. У вас мало денег чтобы продлить номер, а в детдом вернуться не получиться,");
-		f(string, "%s\n{FFFFFF}так как вам уже есть 18 лет и вы уже можете сами работать и зарабатывать на жилье.", string);
-		f(string, "%s\n{FFFFFF}Вы уже переночевали в отеле, а на следующий день решили устроиться на работу. Удачи!", string);
-		f(string, "%s\n\n{FFFFFF}Подсказка: для поиска работы используйте (/gps > работы).", string);
-		SPD(playerid, dNull, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| История", string, "Играть", "");
+		f(string, "{FFFFFF}РџРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРёСЏ РїР°СЃРїРѕСЂС‚Р° РІС‹ СЂРµС€РёР»Рё СЃРЅСЏС‚СЊ РЅРѕРјРµСЂ РЅР° СЃСѓС‚РєРё. РЈ РІР°СЃ РјР°Р»Рѕ РґРµРЅРµРі С‡С‚РѕР±С‹ РїСЂРѕРґР»РёС‚СЊ РЅРѕРјРµСЂ, Р° РІ РґРµС‚РґРѕРј РІРµСЂРЅСѓС‚СЊСЃСЏ РЅРµ РїРѕР»СѓС‡РёС‚СЊСЃСЏ,");
+		f(string, "%s\n{FFFFFF}С‚Р°Рє РєР°Рє РІР°Рј СѓР¶Рµ РµСЃС‚СЊ 18 Р»РµС‚ Рё РІС‹ СѓР¶Рµ РјРѕР¶РµС‚Рµ СЃР°РјРё СЂР°Р±РѕС‚Р°С‚СЊ Рё Р·Р°СЂР°Р±Р°С‚С‹РІР°С‚СЊ РЅР° Р¶РёР»СЊРµ.", string);
+		f(string, "%s\n{FFFFFF}Р’С‹ СѓР¶Рµ РїРµСЂРµРЅРѕС‡РµРІР°Р»Рё РІ РѕС‚РµР»Рµ, Р° РЅР° СЃР»РµРґСѓСЋС‰РёР№ РґРµРЅСЊ СЂРµС€РёР»Рё СѓСЃС‚СЂРѕРёС‚СЊСЃСЏ РЅР° СЂР°Р±РѕС‚Сѓ. РЈРґР°С‡Рё!", string);
+		f(string, "%s\n\n{FFFFFF}РџРѕРґСЃРєР°Р·РєР°: РґР»СЏ РїРѕРёСЃРєР° СЂР°Р±РѕС‚С‹ РёСЃРїРѕР»СЊР·СѓР№С‚Рµ (/gps > СЂР°Р±РѕС‚С‹).", string);
+		SPD(playerid, dNull, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| РСЃС‚РѕСЂРёСЏ", string, "РРіСЂР°С‚СЊ", "");
 	}
 	else
 	{
@@ -811,31 +811,31 @@ stock Picups()
 stock LabelText()
 {
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, 1260.0325,-730.2536,1084.0715, 2.0);
-	CreateDynamic3DTextLabel("Панель заказчиков", 0xFFFFFFFF, 1271.1227,-733.7674,1084.0715, 5.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 1);
+	CreateDynamic3DTextLabel("РџР°РЅРµР»СЊ Р·Р°РєР°Р·С‡РёРєРѕРІ", 0xFFFFFFFF, 1271.1227,-733.7674,1084.0715, 5.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 1);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1630.8959,44.6143,3.5495, 3.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1625.0001,50.5225,3.5495, 3.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1619.1055,56.3981,3.5495, 3.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1613.2251,62.2793,3.5495, 3.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1607.3871,68.1284,3.5495, 3.0);
-	CreateDynamic3DTextLabel("Помощь рабочим", 0xFFFFFFFF, 1258.2667,-735.2650,1084.0715, 5.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1715.3849,79.9900,3.5496, 20.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1710.1772,25.2606,3.5547, 20.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1579.6267,121.9562,3.5495, 20.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1556.6342,40.9790,14.1186, 20.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1625.8723,-10.4651,17.4714, 20.0);
-	CreateDynamic3DTextLabel("Кладовка ящиков\n{FFFFFF}ALT", 0xFFFF00FF, -1521.9474,75.3035,14.1106, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1711.6464,82.0346,3.5547, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1695.5950,6.6798,3.5547, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1544.8091,26.5332,14.1186, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1591.9928,107.7053,3.5495, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1634.3949,-3.5792,17.4714, 20.0);
-	CreateDynamic3DTextLabel("Компьютер\n{FFFFFF}ALT", 0xFFFF00FF, -1510.0834,61.3583,14.1106, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1708.7626,84.9116,3.5547, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1721.1670,10.6172,3.6063, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1534.8651,16.7242,14.1186, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1599.2471,100.7723,3.5495, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1500.2106,51.6508,14.1106, 20.0);
-	CreateDynamic3DTextLabel("Кладовка компонентов\n{FFFFFF}ALT", 0xFFFF00FF, -1615.1025,-12.2854,17.4731, 20.0);
+	CreateDynamic3DTextLabel("РџРѕРјРѕС‰СЊ СЂР°Р±РѕС‡РёРј", 0xFFFFFFFF, 1258.2667,-735.2650,1084.0715, 5.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1715.3849,79.9900,3.5496, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1710.1772,25.2606,3.5547, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1579.6267,121.9562,3.5495, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1556.6342,40.9790,14.1186, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1625.8723,-10.4651,17.4714, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° СЏС‰РёРєРѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1521.9474,75.3035,14.1106, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1711.6464,82.0346,3.5547, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1695.5950,6.6798,3.5547, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1544.8091,26.5332,14.1186, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1591.9928,107.7053,3.5495, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1634.3949,-3.5792,17.4714, 20.0);
+	CreateDynamic3DTextLabel("РљРѕРјРїСЊСЋС‚РµСЂ\n{FFFFFF}ALT", 0xFFFF00FF, -1510.0834,61.3583,14.1106, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1708.7626,84.9116,3.5547, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1721.1670,10.6172,3.6063, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1534.8651,16.7242,14.1186, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1599.2471,100.7723,3.5495, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1500.2106,51.6508,14.1106, 20.0);
+	CreateDynamic3DTextLabel("РљР»Р°РґРѕРІРєР° РєРѕРјРїРѕРЅРµРЅС‚РѕРІ\n{FFFFFF}ALT", 0xFFFF00FF, -1615.1025,-12.2854,17.4731, 20.0);
 	CreateDynamic3DTextLabel("ALT", 0xFF0000FF, 16.2418,32.1288,3.1172, 20.0);
 	CreateDynamic3DTextLabel("ALT", 0xFF0000FF, 20.5847,45.9341,3.1172, 20.0);
 	CreateDynamic3DTextLabel("ALT", 0xFF0000FF, 25.3062,58.6405,3.1172, 20.0);
@@ -878,15 +878,15 @@ stock LabelText()
 	CreateDynamic3DTextLabel("H", 0xFF0000FF, -120.5507, -146.7323, 2.3136, 20.0);
 	CreateDynamic3DTextLabel("H", 0xFF0000FF, 2777.1575, 913.3489, 9.9031, 20.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, 163.1110,-79.8105,1001.8047, 2.0);
-	CreateDynamic3DTextLabel("Покупка одежды", 0x44AD00FF, 161.6652,-83.2609,1001.8047, 10.0);
+	CreateDynamic3DTextLabel("РџРѕРєСѓРїРєР° РѕРґРµР¶РґС‹", 0x44AD00FF, 161.6652,-83.2609,1001.8047, 10.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -2034.8195,-117.0201,1035.1719, 2.0);
 	CreateDynamic3DTextLabel("ALT", 0xFFFF00FF, -1959.0366,306.0738,35.4688, 2.0);
-	CreateDynamic3DTextLabel("Покупка транспорта", 0x44AD00FF, -2033.4347,-117.8679,1035.1719, 10.0);
-	CreateDynamic3DTextLabel("Покупка транспорта", 0x44AD00FF, -1958.2313,304.6991,35.4688, 10.0);
+	CreateDynamic3DTextLabel("РџРѕРєСѓРїРєР° С‚СЂР°РЅСЃРїРѕСЂС‚Р°", 0x44AD00FF, -2033.4347,-117.8679,1035.1719, 10.0);
+	CreateDynamic3DTextLabel("РџРѕРєСѓРїРєР° С‚СЂР°РЅСЃРїРѕСЂС‚Р°", 0x44AD00FF, -1958.2313,304.6991,35.4688, 10.0);
 }
 stock ErrorSCM(playerid, const text[], color = COLOR_RED)
 {
-	new string[200] = "[Ошибка]{FFFFFF}: ";
+	new string[200] = "[РћС€РёР±РєР°]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -906,7 +906,7 @@ stock ErrorSCM(playerid, const text[], color = COLOR_RED)
 }
 stock HelpSCM(playerid, const text[], color = COLOR_YELLOW)
 {
-	new string[300] = "[Подсказка]{FFFFFF}: ";
+	new string[300] = "[РџРѕРґСЃРєР°Р·РєР°]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -926,7 +926,7 @@ stock HelpSCM(playerid, const text[], color = COLOR_YELLOW)
 }
 stock YesSCM(playerid, const text[], color = COLOR_GREEN)
 {
-	new string[300] = "[Успешно]{FFFFFF}: ";
+	new string[300] = "[РЈСЃРїРµС€РЅРѕ]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -946,7 +946,7 @@ stock YesSCM(playerid, const text[], color = COLOR_GREEN)
 }
 stock MindSCM(playerid, const text[], color = COLOR_GREY)
 {
-	new string[300] = "[Мысли]{FFFFFF}: ";
+	new string[300] = "[РњС‹СЃР»Рё]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -966,7 +966,7 @@ stock MindSCM(playerid, const text[], color = COLOR_GREY)
 }
 stock ItemSCM(playerid, const text[], color = COLOR_ITEM)
 {
-	new string[300] = "[Уведомление]{FFFFFF}: ";
+	new string[300] = "[РЈРІРµРґРѕРјР»РµРЅРёРµ]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -986,7 +986,7 @@ stock ItemSCM(playerid, const text[], color = COLOR_ITEM)
 }
 stock PhoneSCM(playerid, const text[], color = COLOR_PHONE)
 {
-	new string[300] = "[Телефон]{FFFFFF}: ";
+	new string[300] = "[РўРµР»РµС„РѕРЅ]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -1006,7 +1006,7 @@ stock PhoneSCM(playerid, const text[], color = COLOR_PHONE)
 }
 stock WorkSCM(playerid, const text[], color = COLOR_GREY)
 {
-	new string[300] = "[Работа]{FFFFFF}: ";
+	new string[300] = "[Р Р°Р±РѕС‚Р°]{FFFFFF}: ";
 	strcat(string, text);
 	switch(string[strlen(string)-1])
 	{
@@ -1052,7 +1052,7 @@ stock isRusChar(const text[])
 	{
 		switch(text[i])
 		{
-			case 'А'..'Я','а'..'я': return true;
+			case 'Рђ'..'РЇ','Р°'..'СЏ': return true;
 		}
 	}
 	return false;
@@ -1133,8 +1133,8 @@ stock PlayersMenu(playerid, gplayerid)
 {
 	new string[300], str[50];
 	f(str, "%s", GN(gplayerid));
-	f(string, "Предложить пожать руку");
-	SPD(playerid, dMenuVzaimo, DSL, str, string, "Далее", "Выход");
+	f(string, "РџСЂРµРґР»РѕР¶РёС‚СЊ РїРѕР¶Р°С‚СЊ СЂСѓРєСѓ");
+	SPD(playerid, dMenuVzaimo, DSL, str, string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 	return true;
 }
 stock GetPlayerID(const name[])
@@ -1433,39 +1433,39 @@ stock FixText(const string[])
 	{
 		switch(string[i]) 
 		{ 
-			case 'а', 'А': result[i] = 'A'; 
-			case 'б', 'Б': result[i] = 'Ђ'; 
-			case 'в', 'В': result[i] = 'B'; 
-			case 'г', 'Г': result[i] = '‚'; 
-			case 'д', 'Д': result[i] = 'ѓ'; 
-			case 'е', 'Е': result[i] = 'E'; 
-			case 'ё', 'Ё': result[i] = 'E'; 
-			case 'ж', 'Ж': result[i] = '„'; 
-			case 'з', 'З': result[i] = '3'; 
-			case 'и', 'И': result[i] = '…'; 
-			case 'й', 'Й': result[i] = '†'; 
-			case 'к', 'К': result[i] = 'K'; 
-			case 'л', 'Л': result[i] = '‡'; 
-			case 'м', 'М': result[i] = 'M'; 
-			case 'н', 'Н': result[i] = 'H'; 
-			case 'о', 'О': result[i] = 'O'; 
-			case 'п', 'П': result[i] = 'Њ'; 
-			case 'р', 'Р': result[i] = 'P'; 
-			case 'с', 'С': result[i] = 'C'; 
-			case 'т', 'Т': result[i] = 'T'; 
-			case 'у', 'У': result[i] = 'Y'; 
-			case 'ф', 'Ф': result[i] = 'Ѓ'; 
-			case 'х', 'Х': result[i] = 'X'; 
-			case 'ц', 'Ц': result[i] = '‰'; 
-			case 'ч', 'Ч': result[i] = 'Ќ'; 
-			case 'ш', 'Ш': result[i] = 'Ћ'; 
-			case 'щ', 'Щ': result[i] = 'Љ'; 
-			case 'ъ', 'Ъ': result[i] = 'ђ'; 
-			case 'ы', 'Ы': result[i] = '‘'; 
-			case 'ь', 'Ь': result[i] = '’'; 
-			case 'э', 'Э': result[i] = '“'; 
-			case 'ю', 'Ю': result[i] = '”'; 
-			case 'я', 'Я': result[i] = '•'; 
+			case 'Р°', 'Рђ': result[i] = 'A'; 
+			case 'Р±', 'Р‘': result[i] = 'Р‚'; 
+			case 'РІ', 'Р’': result[i] = 'B'; 
+			case 'Рі', 'Р“': result[i] = 'вЂљ'; 
+			case 'Рґ', 'Р”': result[i] = 'С“'; 
+			case 'Рµ', 'Р•': result[i] = 'E'; 
+			case 'С‘', 'РЃ': result[i] = 'E'; 
+			case 'Р¶', 'Р–': result[i] = 'вЂћ'; 
+			case 'Р·', 'Р—': result[i] = '3'; 
+			case 'Рё', 'Р': result[i] = 'вЂ¦'; 
+			case 'Р№', 'Р™': result[i] = 'вЂ '; 
+			case 'Рє', 'Рљ': result[i] = 'K'; 
+			case 'Р»', 'Р›': result[i] = 'вЂЎ'; 
+			case 'Рј', 'Рњ': result[i] = 'M'; 
+			case 'РЅ', 'Рќ': result[i] = 'H'; 
+			case 'Рѕ', 'Рћ': result[i] = 'O'; 
+			case 'Рї', 'Рџ': result[i] = 'РЉ'; 
+			case 'СЂ', 'Р ': result[i] = 'P'; 
+			case 'СЃ', 'РЎ': result[i] = 'C'; 
+			case 'С‚', 'Рў': result[i] = 'T'; 
+			case 'Сѓ', 'РЈ': result[i] = 'Y'; 
+			case 'С„', 'Р¤': result[i] = 'Рѓ'; 
+			case 'С…', 'РҐ': result[i] = 'X'; 
+			case 'С†', 'Р¦': result[i] = 'вЂ°'; 
+			case 'С‡', 'Р§': result[i] = 'РЊ'; 
+			case 'С€', 'РЁ': result[i] = 'Р‹'; 
+			case 'С‰', 'Р©': result[i] = 'Р‰'; 
+			case 'СЉ', 'РЄ': result[i] = 'С’'; 
+			case 'С‹', 'Р«': result[i] = 'вЂ'; 
+			case 'СЊ', 'Р¬': result[i] = 'вЂ™'; 
+			case 'СЌ', 'Р­': result[i] = 'вЂњ'; 
+			case 'СЋ', 'Р®': result[i] = 'вЂќ'; 
+			case 'СЏ', 'РЇ': result[i] = 'вЂў'; 
 			default: result[i] = string[i]; 
 		}
 	}
@@ -1475,7 +1475,7 @@ stock LoadSpawnPlayer(playerid)
 {
 	new string[300];
 	Login[playerid] = true;
-	SCM(playerid, COLOR_YELLOW, "Добро пожаловать на сервер Pangora Role Play.");
+	SCM(playerid, COLOR_YELLOW, "Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° СЃРµСЂРІРµСЂ Pangora Role Play.");
 	if(Player[playerid][pPosVW] == 2) SetPlayerVirtualWorld(playerid, 0);
 	else SetPlayerVirtualWorld(playerid, Player[playerid][pPosVW]);
 	f(string, "SELECT * FROM "SQL_ADMINS" WHERE "SQL_ADMINS_ID" = %d", Player[playerid][pID]), SqlAsync(string, "LoadAdmin", "d", playerid);
@@ -1558,7 +1558,7 @@ stock ConvertNumToStringFrac(num)
 	new string[25];
 	switch(num)
 	{
-		case 0: string = "Нет";
+		case 0: string = "РќРµС‚";
 		default: strmid(string, Member[num], 0, 25, 25);
 	}
 	return string;
@@ -1568,10 +1568,10 @@ stock ConvertNumToStringFracFol(num)
 	new string[25];
 	switch(num)
 	{
-		case 0: string = "Нет";
-		case 1: string = "Россией";
-		case 2: string = "США";
-		case 3: string = "Германией";
+		case 0: string = "РќРµС‚";
+		case 1: string = "Р РѕСЃСЃРёРµР№";
+		case 2: string = "РЎРЁРђ";
+		case 3: string = "Р“РµСЂРјР°РЅРёРµР№";
 	}
 	return string;
 }
@@ -1580,14 +1580,14 @@ stock ListFolower(frac)
 	new str[300], string[2048];
 	f(str, "SELECT "SQL_ACC_NAME","SQL_ADMINS"."SQL_ADMINS_LEVEL" FROM "SQL_ADMINS" INNER JOIN "SQL_ACC" ON "SQL_ACC"."SQL_ACC_ID" = "SQL_ADMINS"."SQL_ADMINS_ID" WHERE "SQL_ADMINS_FRAC" = %d AND "SQL_ADMINS_LVLFRAC" = 3", frac);
 	new Cache: res = Sql(str), name[MAX_PLAYER_NAME], level;
-	f(string, "Должность следящего - Ник - Должность администратора");
+	f(string, "Р”РѕР»Р¶РЅРѕСЃС‚СЊ СЃР»РµРґСЏС‰РµРіРѕ - РќРёРє - Р”РѕР»Р¶РЅРѕСЃС‚СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
 	if(cache_num_rows()) 
 	{
 		sql_get_int(0, SQL_ADMINS_LEVEL, level);
 		sql_get_string(0, SQL_ACC_NAME, name);
-		f(string, "%s\n{FFFFFF}Гл.Следящий {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
+		f(string, "%s\n{FFFFFF}Р“Р».РЎР»РµРґСЏС‰РёР№ {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
 	}
-	else f(string, "%s\n{FFFFFF}Гл.Следящий {FFFF00}- {FF0000}Нет", string);
+	else f(string, "%s\n{FFFFFF}Р“Р».РЎР»РµРґСЏС‰РёР№ {FFFF00}- {FF0000}РќРµС‚", string);
 	if(cache_is_valid(res)) cache_delete(res);
 	f(str, "SELECT "SQL_ACC_NAME","SQL_ADMINS"."SQL_ADMINS_LEVEL" FROM "SQL_ADMINS" INNER JOIN "SQL_ACC" ON "SQL_ACC"."SQL_ACC_ID" = "SQL_ADMINS"."SQL_ADMINS_ID" WHERE "SQL_ADMINS_FRAC" = %d AND "SQL_ADMINS_LVLFRAC" = 2", frac);
 	res = Sql(str);
@@ -1595,9 +1595,9 @@ stock ListFolower(frac)
 	{
 		sql_get_int(0, SQL_ADMINS_LEVEL, level);
 		sql_get_string(0, SQL_ACC_NAME, name);
-		f(string, "%s\n{FFFFFF}Зам.Гл.Следящего {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
+		f(string, "%s\n{FFFFFF}Р—Р°Рј.Р“Р».РЎР»РµРґСЏС‰РµРіРѕ {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
 	}
-	else f(string, "%s\n{FFFFFF}Зам.Гл.Следящего {FFFF00}- {FF0000}Нет", string);
+	else f(string, "%s\n{FFFFFF}Р—Р°Рј.Р“Р».РЎР»РµРґСЏС‰РµРіРѕ {FFFF00}- {FF0000}РќРµС‚", string);
 	if(cache_is_valid(res)) cache_delete(res);
 	f(str, "SELECT "SQL_ACC_NAME","SQL_ADMINS"."SQL_ADMINS_LEVEL" FROM "SQL_ADMINS" INNER JOIN "SQL_ACC" ON "SQL_ACC"."SQL_ACC_ID" = "SQL_ADMINS"."SQL_ADMINS_ID" WHERE "SQL_ADMINS_FRAC" = %d AND "SQL_ADMINS_LVLFRAC" = 1", frac);
 	res = Sql(str);
@@ -1605,7 +1605,7 @@ stock ListFolower(frac)
 	{
 		sql_get_int(0, SQL_ADMINS_LEVEL, level);
 		sql_get_string(0, SQL_ACC_NAME, name);
-		f(string, "%s\n{FFFFFF}Следящий {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
+		f(string, "%s\n{FFFFFF}РЎР»РµРґСЏС‰РёР№ {FFFF00}- {FFFFFF}%s {FFFF00}- {FFFFFF}%s", string, name, NameLevelAdm[level]);
 	}
 	if(cache_is_valid(res)) cache_delete(res);
 	return string;
@@ -2113,39 +2113,39 @@ stock ToLower(const text[])
 	{
 		switch(string[i])
 		{
-			case 'А': string[i] = 'а';
-			case 'Б': string[i] = 'б';
-			case 'В': string[i] = 'в';
-			case 'Г': string[i] = 'г';
-			case 'Д': string[i] = 'д';
-			case 'Е': string[i] = 'е';
-			case 'Ё': string[i] = 'ё';
-			case 'Ж': string[i] = 'ж';
-			case 'З': string[i] = 'з';
-			case 'И': string[i] = 'и';
-			case 'Й': string[i] = 'й';
-			case 'К': string[i] = 'к';
-			case 'Л': string[i] = 'л';
-			case 'М': string[i] = 'м';
-			case 'Н': string[i] = 'н';
-			case 'О': string[i] = 'о';
-			case 'П': string[i] = 'п';
-			case 'Р': string[i] = 'р';
-			case 'С': string[i] = 'с';
-			case 'Т': string[i] = 'т';
-			case 'У': string[i] = 'у';
-			case 'Ф': string[i] = 'ф';
-			case 'Х': string[i] = 'х';
-			case 'Ц': string[i] = 'ц';
-			case 'Ч': string[i] = 'ч';
-			case 'Ш': string[i] = 'ш';
-			case 'Щ': string[i] = 'щ';
-			case 'Ъ': string[i] = 'ъ';
-			case 'Ы': string[i] = 'ы';
-			case 'Ь': string[i] = 'ь';
-			case 'Э': string[i] = 'э';
-			case 'Ю': string[i] = 'ю';
-			case 'Я': string[i] = 'я';
+			case 'Рђ': string[i] = 'Р°';
+			case 'Р‘': string[i] = 'Р±';
+			case 'Р’': string[i] = 'РІ';
+			case 'Р“': string[i] = 'Рі';
+			case 'Р”': string[i] = 'Рґ';
+			case 'Р•': string[i] = 'Рµ';
+			case 'РЃ': string[i] = 'С‘';
+			case 'Р–': string[i] = 'Р¶';
+			case 'Р—': string[i] = 'Р·';
+			case 'Р': string[i] = 'Рё';
+			case 'Р™': string[i] = 'Р№';
+			case 'Рљ': string[i] = 'Рє';
+			case 'Р›': string[i] = 'Р»';
+			case 'Рњ': string[i] = 'Рј';
+			case 'Рќ': string[i] = 'РЅ';
+			case 'Рћ': string[i] = 'Рѕ';
+			case 'Рџ': string[i] = 'Рї';
+			case 'Р ': string[i] = 'СЂ';
+			case 'РЎ': string[i] = 'СЃ';
+			case 'Рў': string[i] = 'С‚';
+			case 'РЈ': string[i] = 'Сѓ';
+			case 'Р¤': string[i] = 'С„';
+			case 'РҐ': string[i] = 'С…';
+			case 'Р¦': string[i] = 'С†';
+			case 'Р§': string[i] = 'С‡';
+			case 'РЁ': string[i] = 'С€';
+			case 'Р©': string[i] = 'С‰';
+			case 'РЄ': string[i] = 'СЉ';
+			case 'Р«': string[i] = 'С‹';
+			case 'Р¬': string[i] = 'СЊ';
+			case 'Р­': string[i] = 'СЌ';
+			case 'Р®': string[i] = 'СЋ';
+			case 'РЇ': string[i] = 'СЏ';
 			case 'A': string[i] = 'a';
 			case 'B': string[i] = 'b';
 			case 'C': string[i] = 'c';
@@ -2184,39 +2184,39 @@ stock ToUpper(const text[])
 	{
 		switch(string[i])
 		{
-			case 'а': string[i] = 'А';
-			case 'б': string[i] = 'Б';
-			case 'в': string[i] = 'В';
-			case 'г': string[i] = 'Г';
-			case 'д': string[i] = 'Д';
-			case 'е': string[i] = 'Е';
-			case 'ё': string[i] = 'Ё';
-			case 'ж': string[i] = 'Ж';
-			case 'з': string[i] = 'З';
-			case 'и': string[i] = 'И';
-			case 'й': string[i] = 'Й';
-			case 'к': string[i] = 'К';
-			case 'л': string[i] = 'Л';
-			case 'м': string[i] = 'М';
-			case 'н': string[i] = 'Н';
-			case 'о': string[i] = 'О';
-			case 'п': string[i] = 'П';
-			case 'р': string[i] = 'Р';
-			case 'с': string[i] = 'С';
-			case 'т': string[i] = 'Т';
-			case 'у': string[i] = 'У';
-			case 'ф': string[i] = 'Ф';
-			case 'х': string[i] = 'Х';
-			case 'ц': string[i] = 'Ц';
-			case 'ч': string[i] = 'Ч';
-			case 'ш': string[i] = 'Ш';
-			case 'щ': string[i] = 'Щ';
-			case 'ъ': string[i] = 'Ъ';
-			case 'ы': string[i] = 'Ы';
-			case 'ь': string[i] = 'Ь';
-			case 'э': string[i] = 'Э';
-			case 'ю': string[i] = 'Ю';
-			case 'я': string[i] = 'Я';
+			case 'Р°': string[i] = 'Рђ';
+			case 'Р±': string[i] = 'Р‘';
+			case 'РІ': string[i] = 'Р’';
+			case 'Рі': string[i] = 'Р“';
+			case 'Рґ': string[i] = 'Р”';
+			case 'Рµ': string[i] = 'Р•';
+			case 'С‘': string[i] = 'РЃ';
+			case 'Р¶': string[i] = 'Р–';
+			case 'Р·': string[i] = 'Р—';
+			case 'Рё': string[i] = 'Р';
+			case 'Р№': string[i] = 'Р™';
+			case 'Рє': string[i] = 'Рљ';
+			case 'Р»': string[i] = 'Р›';
+			case 'Рј': string[i] = 'Рњ';
+			case 'РЅ': string[i] = 'Рќ';
+			case 'Рѕ': string[i] = 'Рћ';
+			case 'Рї': string[i] = 'Рџ';
+			case 'СЂ': string[i] = 'Р ';
+			case 'СЃ': string[i] = 'РЎ';
+			case 'С‚': string[i] = 'Рў';
+			case 'Сѓ': string[i] = 'РЈ';
+			case 'С„': string[i] = 'Р¤';
+			case 'С…': string[i] = 'РҐ';
+			case 'С†': string[i] = 'Р¦';
+			case 'С‡': string[i] = 'Р§';
+			case 'С€': string[i] = 'РЁ';
+			case 'С‰': string[i] = 'Р©';
+			case 'СЉ': string[i] = 'РЄ';
+			case 'С‹': string[i] = 'Р«';
+			case 'СЊ': string[i] = 'Р¬';
+			case 'СЌ': string[i] = 'Р­';
+			case 'СЋ': string[i] = 'Р®';
+			case 'СЏ': string[i] = 'РЇ';
 			case 'a': string[i] = 'A';
 			case 'b': string[i] = 'B';
 			case 'c': string[i] = 'C';
@@ -2253,7 +2253,7 @@ stock EditTextOrfogram(const text[])
 	strmid(string, text, 0, sizeof(string));
 	switch(string[0])
 	{
-		case 'a'..'z','а'..'я': string[0] = string[0]-32;
+		case 'a'..'z','Р°'..'СЏ': string[0] = string[0]-32;
 	}
 	switch(string[strlen(string)-1])
 	{
@@ -2276,7 +2276,7 @@ stock isCapsString(const text[])
 			{
 				switch(Words[i][j])
 				{
-					case 'A'..'Z', 'А'..'Я': local++;
+					case 'A'..'Z', 'Рђ'..'РЇ': local++;
 				}
 			}
 			if(strlen(Words[i]) == local)
@@ -2742,7 +2742,7 @@ stock RegAccount(playerid)
 stock KickASIS(playerid, cause[])
 {
 	new string[200];
-	f(string, "Система кикнула игрока %s. Причина: %s",GN(playerid), cause), SCMTA(COLOR_LIGHTRED, string);
+	f(string, "РЎРёСЃС‚РµРјР° РєРёРєРЅСѓР»Р° РёРіСЂРѕРєР° %s. РџСЂРёС‡РёРЅР°: %s",GN(playerid), cause), SCMTA(COLOR_LIGHTRED, string);
 	return Tkick(playerid);
 }
 stock MuteASIS(playerid, minute, cause[])
@@ -2752,15 +2752,15 @@ stock MuteASIS(playerid, minute, cause[])
 	{
 		if(!Player[playerid][pMute]) return true;
 		Player[playerid][pMute] = 0;
-		MindSCM(playerid, "Система сняла вам бан чата");
-		f(string, "Система сняла бан чата у %s. Причина: %s", GN(playerid), cause), SCMTA(COLOR_LIGHTRED, string);
+		MindSCM(playerid, "РЎРёСЃС‚РµРјР° СЃРЅСЏР»Р° РІР°Рј Р±Р°РЅ С‡Р°С‚Р°");
+		f(string, "РЎРёСЃС‚РµРјР° СЃРЅСЏР»Р° Р±Р°РЅ С‡Р°С‚Р° Сѓ %s. РџСЂРёС‡РёРЅР°: %s", GN(playerid), cause), SCMTA(COLOR_LIGHTRED, string);
 	}
 	else
 	{
 		if(Player[playerid][pMute]) return true;
 		Player[playerid][pMute] = minute*60;
-		f(string, "Вы получили бан чата от системы на %d минут. Причина: %s", minute, cause), MindSCM(playerid, string);
-		f(string, "Игрок %s получил бан чата на %d минут от системы. Причина: %s", GN(playerid), minute, cause), SCMTA(COLOR_LIGHTRED, string);
+		f(string, "Р’С‹ РїРѕР»СѓС‡РёР»Рё Р±Р°РЅ С‡Р°С‚Р° РѕС‚ СЃРёСЃС‚РµРјС‹ РЅР° %d РјРёРЅСѓС‚. РџСЂРёС‡РёРЅР°: %s", minute, cause), MindSCM(playerid, string);
+		f(string, "РРіСЂРѕРє %s РїРѕР»СѓС‡РёР» Р±Р°РЅ С‡Р°С‚Р° РЅР° %d РјРёРЅСѓС‚ РѕС‚ СЃРёСЃС‚РµРјС‹. РџСЂРёС‡РёРЅР°: %s", GN(playerid), minute, cause), SCMTA(COLOR_LIGHTRED, string);
 	}
 	return true;
 }
@@ -2773,176 +2773,176 @@ stock WarnASIS(playerid, cause[])
 		f(string, "DELETE FROM "SQL_WARNTIME" WHERE "SQL_WARNTIME_ID" = %d", Player[playerid][pID]), SqlAsync(string);
 		Player[playerid][pWarn] = 0;
 		BanASIS(playerid, 10, cause);
-		f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_NUMBER","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Бан',10,'%s','%s','%s','System')", Player[playerid][pID], cause, GetDate(), GetTime()), SqlAsync(string);
+		f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_NUMBER","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Р‘Р°РЅ',10,'%s','%s','%s','System')", Player[playerid][pID], cause, GetDate(), GetTime()), SqlAsync(string);
 		return true;
 	}
 	if(Player[playerid][pWarn] == 1) f(string, "INSERT INTO "SQL_WARNTIME" ("SQL_WARNTIME_ID","SQL_WARNTIME_DATE") VALUES (%d,'%s')", Player[playerid][pID], AddNewDate(7)), SqlAsync(string);
-	f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Варн','%s','%s','%s','System')", Player[playerid][pID], cause, GetDate(), GetTime()), SqlAsync(string);
+	f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Р’Р°СЂРЅ','%s','%s','%s','System')", Player[playerid][pID], cause, GetDate(), GetTime()), SqlAsync(string);
 	return true;
 }
 stock BanASIS(playerid, days, cause[])
 {
 	new string[300];
-	f(string, "Система забанила игрока %s на %d дней. Причина: %s", GN(playerid), days, cause), SCMTA(COLOR_LIGHTRED, string);
+	f(string, "РЎРёСЃС‚РµРјР° Р·Р°Р±Р°РЅРёР»Р° РёРіСЂРѕРєР° %s РЅР° %d РґРЅРµР№. РџСЂРёС‡РёРЅР°: %s", GN(playerid), days, cause), SCMTA(COLOR_LIGHTRED, string);
 	f(string, "INSERT INTO "SQL_BAN" ("SQL_BAN_ID","SQL_BAN_DATE","SQL_BAN_NICKNAME","SQL_BAN_CAUSE") VALUES (%d,'%s','System','%s')", Player[playerid][pID], AddNewDate(days), cause), SqlAsync(string);
-	f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_NUMBER","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Бан',%d,'%s','%s','%s','System')", Player[playerid][pID], days, cause, GetDate(), GetTime()), SqlAsync(string);
-	f(string, "{FF0000}Вы забанены!\n\n{FF0000}Вас забанил: {FFFFFF}System\n{FF0000}На {FFFFFF}%d дней(дня)\n{FF0000}Причина: {FFFFFF}%s\n\n{FFFFFF}Сделайте скриншот экрана что бы в дальнейшем при ошибке администратора вас разбанили", days, cause);
-	SPD(playerid, dNull, DSM, "Бан", string, "Ок", "");
+	f(string, "INSERT INTO "SQL_NAKPLAYER" ("SQL_NAKPLAYER_ID","SQL_NAKPLAYER_NAK","SQL_NAKPLAYER_NUMBER","SQL_NAKPLAYER_CAUSE","SQL_NAKPLAYER_DATE","SQL_NAKPLAYER_TIME","SQL_NAKPLAYER_ADMIN") VALUES (%d,'Р‘Р°РЅ',%d,'%s','%s','%s','System')", Player[playerid][pID], days, cause, GetDate(), GetTime()), SqlAsync(string);
+	f(string, "{FF0000}Р’С‹ Р·Р°Р±Р°РЅРµРЅС‹!\n\n{FF0000}Р’Р°СЃ Р·Р°Р±Р°РЅРёР»: {FFFFFF}System\n{FF0000}РќР° {FFFFFF}%d РґРЅРµР№(РґРЅСЏ)\n{FF0000}РџСЂРёС‡РёРЅР°: {FFFFFF}%s\n\n{FFFFFF}РЎРґРµР»Р°Р№С‚Рµ СЃРєСЂРёРЅС€РѕС‚ СЌРєСЂР°РЅР° С‡С‚Рѕ Р±С‹ РІ РґР°Р»СЊРЅРµР№С€РµРј РїСЂРё РѕС€РёР±РєРµ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° РІР°СЃ СЂР°Р·Р±Р°РЅРёР»Рё", days, cause);
+	SPD(playerid, dNull, DSM, "Р‘Р°РЅ", string, "РћРє", "");
 	return Tkick(playerid);
 }
 stock Dialog_RegInfo(playerid)
 {
 	new string[1500];
-	f(string, "{FFFFFF}Приветствуем Вас на проекте Pangora Role Play, у нас вы найдёте уникальные системы, которые вы точно не найдете на других серверах, даем вам слово!");
-	f(string, "%s\n{FFFFFF}Также у нас максимально приближенная к реальности ситуация, максимальная правдоподобность, мы стремимся сделать действительно РП проект.", string);
-	f(string, "%s\n{FFFFFF}Мы будем рады, если вы присоединитесь к нам!", string);
-	f(string, "%s\n\n{FFFFFF}Детальнее узнать о нас вы можете по следующим ресурсам:", string);
-	f(string, "%s\n\n{FFFFFF}Сайт: https://pangora.ru", string);
-	f(string, "%s\n{FFFFFF}Форум: https://pangora-forum.ru", string);
-	f(string, "%s\n{FFFFFF}Группа в ВК: https://vk.com/pangoraroleplay", string);
-	return SPD(playerid, dReg_RegInfo, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| Основная информация", string, "Далее", "Выход");
+	f(string, "{FFFFFF}РџСЂРёРІРµС‚СЃС‚РІСѓРµРј Р’Р°СЃ РЅР° РїСЂРѕРµРєС‚Рµ Pangora Role Play, Сѓ РЅР°СЃ РІС‹ РЅР°Р№РґС‘С‚Рµ СѓРЅРёРєР°Р»СЊРЅС‹Рµ СЃРёСЃС‚РµРјС‹, РєРѕС‚РѕСЂС‹Рµ РІС‹ С‚РѕС‡РЅРѕ РЅРµ РЅР°Р№РґРµС‚Рµ РЅР° РґСЂСѓРіРёС… СЃРµСЂРІРµСЂР°С…, РґР°РµРј РІР°Рј СЃР»РѕРІРѕ!");
+	f(string, "%s\n{FFFFFF}РўР°РєР¶Рµ Сѓ РЅР°СЃ РјР°РєСЃРёРјР°Р»СЊРЅРѕ РїСЂРёР±Р»РёР¶РµРЅРЅР°СЏ Рє СЂРµР°Р»СЊРЅРѕСЃС‚Рё СЃРёС‚СѓР°С†РёСЏ, РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ РїСЂР°РІРґРѕРїРѕРґРѕР±РЅРѕСЃС‚СЊ, РјС‹ СЃС‚СЂРµРјРёРјСЃСЏ СЃРґРµР»Р°С‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р Рџ РїСЂРѕРµРєС‚.", string);
+	f(string, "%s\n{FFFFFF}РњС‹ Р±СѓРґРµРј СЂР°РґС‹, РµСЃР»Рё РІС‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚РµСЃСЊ Рє РЅР°Рј!", string);
+	f(string, "%s\n\n{FFFFFF}Р”РµС‚Р°Р»СЊРЅРµРµ СѓР·РЅР°С‚СЊ Рѕ РЅР°СЃ РІС‹ РјРѕР¶РµС‚Рµ РїРѕ СЃР»РµРґСѓСЋС‰РёРј СЂРµСЃСѓСЂСЃР°Рј:", string);
+	f(string, "%s\n\n{FFFFFF}РЎР°Р№С‚: https://pangora.ru", string);
+	f(string, "%s\n{FFFFFF}Р¤РѕСЂСѓРј: https://pangora-forum.ru", string);
+	f(string, "%s\n{FFFFFF}Р“СЂСѓРїРїР° РІ Р’Рљ: https://vk.com/pangoraroleplay", string);
+	return SPD(playerid, dReg_RegInfo, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| РћСЃРЅРѕРІРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RegRules(playerid)
 {
 	new string[2500];
-	f(string, "{FFFFFF}Если вы заинтересовались нашим сервером, то предлагаем вашему вниманию краткие правила игры на нашем проекте.");
-	f(string, "%s\n{FFFFFF}- Вам запрещено разводить политические, национальные и межличностные розни. Исключение: РП ситуация, имея РП причину и РП доказательства.", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещено ДМить людей просто потому, что Вам так захотелось.", string);
-	f(string, "%s\n{FFFFFF}  Исключение: вы отыгрываете психически неуравновешенного человека, но в этом случае вы должны вести себя соответственно.", string);
-	f(string, "%s\n{FFFFFF}- Вы должны знать основные РП термины, а именно (ДМ, ДБ, СК, ПГ, ТК, ЗЗ). Перед началом игры ознакомитесь с терминами на наших ресурсах.", string);
-	f(string, "%s\n{FFFFFF}  За незнание РП терминов или их нарушение – вы будете наказаны!", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещено использовать сторонние программы, которые дают вам системные преимущества над другими игрокам.", string);
-	f(string, "%s\n{FFFFFF}  Например: автонаводка, смотреть сквозь стены. За нарушение этого пункта - ваш аккаунт будет заблокирован.", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещено использовать баги GTA, SAMP клиента, либо другие баги, связанные с игрой или сервером!", string);
-	f(string, "%s\n{FFFFFF}  О любых багах необходимо сообщить администрации за вознаграждение.", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещено использовать \"Выход из игры\" и кнопку Esc (выход в АФК) в личных целях, для ухода от РП, ареста, либо наказания Администрации.", string);
-	f(string, "%s\n{FFFFFF}  За это вы будете очень серьезно наказаны!", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещено рекламировать сторонние ресурсы. Например: \"заходите на мой сервер, IP\". Исключение: разрешено упоминать известные ресурсы (Google, Yandex, VK, Youtube).", string);
-	f(string, "%s\n{FFFFFF}  За нарушение данного пункта ваш аккаунт может быть заблокирован.", string);
-	f(string, "%s\n{FFFFFF}- Вам запрещена покупка чужого аккаунта или продажа своего. На вашем аккаунте имеете играть право только вы!", string);
-	f(string, "%s\n{FFFFFF}- Если вы увидели нарушение, то вы должны сообщить о нём Администрации (в том числе, если нарушение было от Администрации), это можно сделать на форуме (https://pangora-forum.ru).", string);
-	f(string, "%s\n\n{FFFFFF}Более подробную информацию Вы сможете получить на форуме. И помните - незнание правил не освобождает вас от ответственности.", string);
-	return SPD(playerid, dReg_Rules, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| {FFBEB4}Правила сервера", string, "Принять", "Выход");
+	f(string, "{FFFFFF}Р•СЃР»Рё РІС‹ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°Р»РёСЃСЊ РЅР°С€РёРј СЃРµСЂРІРµСЂРѕРј, С‚Рѕ РїСЂРµРґР»Р°РіР°РµРј РІР°С€РµРјСѓ РІРЅРёРјР°РЅРёСЋ РєСЂР°С‚РєРёРµ РїСЂР°РІРёР»Р° РёРіСЂС‹ РЅР° РЅР°С€РµРј РїСЂРѕРµРєС‚Рµ.");
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ СЂР°Р·РІРѕРґРёС‚СЊ РїРѕР»РёС‚РёС‡РµСЃРєРёРµ, РЅР°С†РёРѕРЅР°Р»СЊРЅС‹Рµ Рё РјРµР¶Р»РёС‡РЅРѕСЃС‚РЅС‹Рµ СЂРѕР·РЅРё. РСЃРєР»СЋС‡РµРЅРёРµ: Р Рџ СЃРёС‚СѓР°С†РёСЏ, РёРјРµСЏ Р Рџ РїСЂРёС‡РёРЅСѓ Рё Р Рџ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°.", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ Р”РњРёС‚СЊ Р»СЋРґРµР№ РїСЂРѕСЃС‚Рѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ Р’Р°Рј С‚Р°Рє Р·Р°С…РѕС‚РµР»РѕСЃСЊ.", string);
+	f(string, "%s\n{FFFFFF}  РСЃРєР»СЋС‡РµРЅРёРµ: РІС‹ РѕС‚С‹РіСЂС‹РІР°РµС‚Рµ РїСЃРёС…РёС‡РµСЃРєРё РЅРµСѓСЂР°РІРЅРѕРІРµС€РµРЅРЅРѕРіРѕ С‡РµР»РѕРІРµРєР°, РЅРѕ РІ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РІС‹ РґРѕР»Р¶РЅС‹ РІРµСЃС‚Рё СЃРµР±СЏ СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ.", string);
+	f(string, "%s\n{FFFFFF}- Р’С‹ РґРѕР»Р¶РЅС‹ Р·РЅР°С‚СЊ РѕСЃРЅРѕРІРЅС‹Рµ Р Рџ С‚РµСЂРјРёРЅС‹, Р° РёРјРµРЅРЅРѕ (Р”Рњ, Р”Р‘, РЎРљ, РџР“, РўРљ, Р—Р—). РџРµСЂРµРґ РЅР°С‡Р°Р»РѕРј РёРіСЂС‹ РѕР·РЅР°РєРѕРјРёС‚РµСЃСЊ СЃ С‚РµСЂРјРёРЅР°РјРё РЅР° РЅР°С€РёС… СЂРµСЃСѓСЂСЃР°С….", string);
+	f(string, "%s\n{FFFFFF}  Р—Р° РЅРµР·РЅР°РЅРёРµ Р Рџ С‚РµСЂРјРёРЅРѕРІ РёР»Рё РёС… РЅР°СЂСѓС€РµРЅРёРµ вЂ“ РІС‹ Р±СѓРґРµС‚Рµ РЅР°РєР°Р·Р°РЅС‹!", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃС‚РѕСЂРѕРЅРЅРёРµ РїСЂРѕРіСЂР°РјРјС‹, РєРѕС‚РѕСЂС‹Рµ РґР°СЋС‚ РІР°Рј СЃРёСЃС‚РµРјРЅС‹Рµ РїСЂРµРёРјСѓС‰РµСЃС‚РІР° РЅР°Рґ РґСЂСѓРіРёРјРё РёРіСЂРѕРєР°Рј.", string);
+	f(string, "%s\n{FFFFFF}  РќР°РїСЂРёРјРµСЂ: Р°РІС‚РѕРЅР°РІРѕРґРєР°, СЃРјРѕС‚СЂРµС‚СЊ СЃРєРІРѕР·СЊ СЃС‚РµРЅС‹. Р—Р° РЅР°СЂСѓС€РµРЅРёРµ СЌС‚РѕРіРѕ РїСѓРЅРєС‚Р° - РІР°С€ Р°РєРєР°СѓРЅС‚ Р±СѓРґРµС‚ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ.", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р±Р°РіРё GTA, SAMP РєР»РёРµРЅС‚Р°, Р»РёР±Рѕ РґСЂСѓРіРёРµ Р±Р°РіРё, СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ РёРіСЂРѕР№ РёР»Рё СЃРµСЂРІРµСЂРѕРј!", string);
+	f(string, "%s\n{FFFFFF}  Рћ Р»СЋР±С‹С… Р±Р°РіР°С… РЅРµРѕР±С…РѕРґРёРјРѕ СЃРѕРѕР±С‰РёС‚СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё Р·Р° РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ.", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ \"Р’С‹С…РѕРґ РёР· РёРіСЂС‹\" Рё РєРЅРѕРїРєСѓ Esc (РІС‹С…РѕРґ РІ РђР¤Рљ) РІ Р»РёС‡РЅС‹С… С†РµР»СЏС…, РґР»СЏ СѓС…РѕРґР° РѕС‚ Р Рџ, Р°СЂРµСЃС‚Р°, Р»РёР±Рѕ РЅР°РєР°Р·Р°РЅРёСЏ РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё.", string);
+	f(string, "%s\n{FFFFFF}  Р—Р° СЌС‚Рѕ РІС‹ Р±СѓРґРµС‚Рµ РѕС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅРѕ РЅР°РєР°Р·Р°РЅС‹!", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅРѕ СЂРµРєР»Р°РјРёСЂРѕРІР°С‚СЊ СЃС‚РѕСЂРѕРЅРЅРёРµ СЂРµСЃСѓСЂСЃС‹. РќР°РїСЂРёРјРµСЂ: \"Р·Р°С…РѕРґРёС‚Рµ РЅР° РјРѕР№ СЃРµСЂРІРµСЂ, IP\". РСЃРєР»СЋС‡РµРЅРёРµ: СЂР°Р·СЂРµС€РµРЅРѕ СѓРїРѕРјРёРЅР°С‚СЊ РёР·РІРµСЃС‚РЅС‹Рµ СЂРµСЃСѓСЂСЃС‹ (Google, Yandex, VK, Youtube).", string);
+	f(string, "%s\n{FFFFFF}  Р—Р° РЅР°СЂСѓС€РµРЅРёРµ РґР°РЅРЅРѕРіРѕ РїСѓРЅРєС‚Р° РІР°С€ Р°РєРєР°СѓРЅС‚ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ.", string);
+	f(string, "%s\n{FFFFFF}- Р’Р°Рј Р·Р°РїСЂРµС‰РµРЅР° РїРѕРєСѓРїРєР° С‡СѓР¶РѕРіРѕ Р°РєРєР°СѓРЅС‚Р° РёР»Рё РїСЂРѕРґР°Р¶Р° СЃРІРѕРµРіРѕ. РќР° РІР°С€РµРј Р°РєРєР°СѓРЅС‚Рµ РёРјРµРµС‚Рµ РёРіСЂР°С‚СЊ РїСЂР°РІРѕ С‚РѕР»СЊРєРѕ РІС‹!", string);
+	f(string, "%s\n{FFFFFF}- Р•СЃР»Рё РІС‹ СѓРІРёРґРµР»Рё РЅР°СЂСѓС€РµРЅРёРµ, С‚Рѕ РІС‹ РґРѕР»Р¶РЅС‹ СЃРѕРѕР±С‰РёС‚СЊ Рѕ РЅС‘Рј РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё (РІ С‚РѕРј С‡РёСЃР»Рµ, РµСЃР»Рё РЅР°СЂСѓС€РµРЅРёРµ Р±С‹Р»Рѕ РѕС‚ РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё), СЌС‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РЅР° С„РѕСЂСѓРјРµ (https://pangora-forum.ru).", string);
+	f(string, "%s\n\n{FFFFFF}Р‘РѕР»РµРµ РїРѕРґСЂРѕР±РЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ Р’С‹ СЃРјРѕР¶РµС‚Рµ РїРѕР»СѓС‡РёС‚СЊ РЅР° С„РѕСЂСѓРјРµ. Р РїРѕРјРЅРёС‚Рµ - РЅРµР·РЅР°РЅРёРµ РїСЂР°РІРёР» РЅРµ РѕСЃРІРѕР±РѕР¶РґР°РµС‚ РІР°СЃ РѕС‚ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚Рё.", string);
+	return SPD(playerid, dReg_Rules, DSM, "{BFFFAF}Pangora Role Play {FFFFFF}| {FFBEB4}РџСЂР°РІРёР»Р° СЃРµСЂРІРµСЂР°", string, "РџСЂРёРЅСЏС‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RegisterPass(playerid)
 {
 	new string[500];
-	f(string, "{FFFFFF}Придумайте и введите пароль, который будете вводить при каждом входе на сервер:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Пароль должен состоять только из: латинских символов, цифр и спец.символов - \'_\', \'-\'.", string);
-	f(string, "%s\n{F19E18}- Пароль должен быть длиной не меньше 6 и не больше 32 символов.", string);
-	f(string, "%s\n{F19E18}- Пароль чувствителен к CapsLock.", string);
-	return SPD(playerid, dReg_Pass, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Пароль", string, "Далее", "Выход");
+	f(string, "{FFFFFF}РџСЂРёРґСѓРјР°Р№С‚Рµ Рё РІРІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ РїСЂРё РєР°Р¶РґРѕРј РІС…РѕРґРµ РЅР° СЃРµСЂРІРµСЂ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ СЃРѕСЃС‚РѕСЏС‚СЊ С‚РѕР»СЊРєРѕ РёР·: Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ, С†РёС„СЂ Рё СЃРїРµС†.СЃРёРјРІРѕР»РѕРІ - \'_\', \'-\'.", string);
+	f(string, "%s\n{F19E18}- РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РґР»РёРЅРѕР№ РЅРµ РјРµРЅСЊС€Рµ 6 Рё РЅРµ Р±РѕР»СЊС€Рµ 32 СЃРёРјРІРѕР»РѕРІ.", string);
+	f(string, "%s\n{F19E18}- РџР°СЂРѕР»СЊ С‡СѓРІСЃС‚РІРёС‚РµР»РµРЅ Рє CapsLock.", string);
+	return SPD(playerid, dReg_Pass, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РџР°СЂРѕР»СЊ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_RegisterPassRepeat(playerid)
 {
-	return SPD(playerid, dReg_PassRep, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Пароль", "{FFFFFF}Введите повторно пароль, который только что вводили:", "Далее", "Назад");
+	return SPD(playerid, dReg_PassRep, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РџР°СЂРѕР»СЊ", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїРѕРІС‚РѕСЂРЅРѕ РїР°СЂРѕР»СЊ, РєРѕС‚РѕСЂС‹Р№ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РІРІРѕРґРёР»Рё:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterEmail(playerid)
 {
 	new string[500];
-	f(string, "{FFFFFF}Введите вашу электронную почту:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Почта понадобится для восстановление пароля.", string);
-	f(string, "%s\n{F19E18}- Вводите действующую почту.", string);
-	f(string, "%s\n{F19E18}- Как вы введете почту, вам придет на почту код, который вы должны ввести в следующем шаге.", string);
-	return SPD(playerid, dReg_Email, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Почта", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РІР°С€Сѓ СЌР»РµРєС‚СЂРѕРЅРЅСѓСЋ РїРѕС‡С‚Сѓ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РџРѕС‡С‚Р° РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РґР»СЏ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РїР°СЂРѕР»СЏ.", string);
+	f(string, "%s\n{F19E18}- Р’РІРѕРґРёС‚Рµ РґРµР№СЃС‚РІСѓСЋС‰СѓСЋ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n{F19E18}- РљР°Рє РІС‹ РІРІРµРґРµС‚Рµ РїРѕС‡С‚Сѓ, РІР°Рј РїСЂРёРґРµС‚ РЅР° РїРѕС‡С‚Сѓ РєРѕРґ, РєРѕС‚РѕСЂС‹Р№ РІС‹ РґРѕР»Р¶РЅС‹ РІРІРµСЃС‚Рё РІ СЃР»РµРґСѓСЋС‰РµРј С€Р°РіРµ.", string);
+	return SPD(playerid, dReg_Email, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РџРѕС‡С‚Р°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterEmailRepeat(playerid)
 {
-	return SPD(playerid, dReg_EmailRep, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Почта", "{FFFFFF}Введите повторно почту, который только что вводили:", "Далее", "Назад");
+	return SPD(playerid, dReg_EmailRep, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РџРѕС‡С‚Р°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїРѕРІС‚РѕСЂРЅРѕ РїРѕС‡С‚Сѓ, РєРѕС‚РѕСЂС‹Р№ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РІРІРѕРґРёР»Рё:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterEmailConfirm(playerid)
 {
-	return SPD(playerid, dReg_EmailConfirm, DSP, "{BFFFAF}Pangora Role Play {FFFFFF}| Почта", "{FFFFFF}Введите код, который был выслан на вашу почту:", "Далее", "Назад");
+	return SPD(playerid, dReg_EmailConfirm, DSP, "{BFFFAF}Pangora Role Play {FFFFFF}| РџРѕС‡С‚Р°", "{FFFFFF}Р’РІРµРґРёС‚Рµ РєРѕРґ, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» РІС‹СЃР»Р°РЅ РЅР° РІР°С€Сѓ РїРѕС‡С‚Сѓ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterAge(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите игровой возраст:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Игровой возраст может быть только от 18 до 70.", string);
-	return SPD(playerid, dReg_Age, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Возраст", string, "Выбрать", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РёРіСЂРѕРІРѕР№ РІРѕР·СЂР°СЃС‚:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РРіСЂРѕРІРѕР№ РІРѕР·СЂР°СЃС‚ РјРѕР¶РµС‚ Р±С‹С‚СЊ С‚РѕР»СЊРєРѕ РѕС‚ 18 РґРѕ 70.", string);
+	return SPD(playerid, dReg_Age, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Р’РѕР·СЂР°СЃС‚", string, "Р’С‹Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterAdvertising(playerid)
 {
-	return SPD(playerid, dReg_Advertising, DSL, "Как вы узнали о сервере?", 
-	"Друзья\n\
-	Ютуберы\n\
-	Социальные сети\n\
-	Интернет\n\
-	Клиент SA-MP", "Далее", "");
+	return SPD(playerid, dReg_Advertising, DSL, "РљР°Рє РІС‹ СѓР·РЅР°Р»Рё Рѕ СЃРµСЂРІРµСЂРµ?", 
+	"Р”СЂСѓР·СЊСЏ\n\
+	Р®С‚СѓР±РµСЂС‹\n\
+	РЎРѕС†РёР°Р»СЊРЅС‹Рµ СЃРµС‚Рё\n\
+	РРЅС‚РµСЂРЅРµС‚\n\
+	РљР»РёРµРЅС‚ SA-MP", "Р”Р°Р»РµРµ", "");
 }
 stock Dialog_RegisterFriend(playerid)
 {
 	set_int(playerid, "RegAdvertising", 0);
-	return SPD(playerid, dReg_Friend, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Друг", "{FFFFFF}Введите ник игрока, который пригласил Вас на сервер:", "Далее", "Назад");
+	return SPD(playerid, dReg_Friend, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Р”СЂСѓРі", "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРёРє РёРіСЂРѕРєР°, РєРѕС‚РѕСЂС‹Р№ РїСЂРёРіР»Р°СЃРёР» Р’Р°СЃ РЅР° СЃРµСЂРІРµСЂ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterYT(playerid)
 {
-	return SPD(playerid, dReg_YT, DSL, "{BFFFAF}Pangora Role Play {FFFFFF}| Ютуберы", "Промокод\nНазвание канала", "Далее", "Назад");
+	return SPD(playerid, dReg_YT, DSL, "{BFFFAF}Pangora Role Play {FFFFFF}| Р®С‚СѓР±РµСЂС‹", "РџСЂРѕРјРѕРєРѕРґ\nРќР°Р·РІР°РЅРёРµ РєР°РЅР°Р»Р°", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterYT_Promo(playerid)
 {
 	set_int(playerid, "RegAdvertising", 10);
-	return SPD(playerid, dReg_YT_Promo, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Ютуберы", "{FFFFFF}Введите промокод:", "Далее", "Назад");
+	return SPD(playerid, dReg_YT_Promo, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Р®С‚СѓР±РµСЂС‹", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРѕРјРѕРєРѕРґ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterYT_Name(playerid)
 {
 	new string[300];
 	set_int(playerid, "RegAdvertising", 11);
-	f(string, "{FFFFFF}Введите название канала ютубера:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Кол-во символов не должно превышать 50-ти.", string);
-	return SPD(playerid, dReg_YT_Name, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Ютуберы", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєР°РЅР°Р»Р° СЋС‚СѓР±РµСЂР°:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ СЃРёРјРІРѕР»РѕРІ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 50-С‚Рё.", string);
+	return SPD(playerid, dReg_YT_Name, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Р®С‚СѓР±РµСЂС‹", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterSN(playerid)
 {
-	return SPD(playerid, dReg_SN, DSL, "{BFFFAF}Pangora Role Play {FFFFFF}| Соц. Сети", "Промокод\nНазвание группы", "Далее", "Назад");
+	return SPD(playerid, dReg_SN, DSL, "{BFFFAF}Pangora Role Play {FFFFFF}| РЎРѕС†. РЎРµС‚Рё", "РџСЂРѕРјРѕРєРѕРґ\nРќР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterSN_Promo(playerid)
 {
 	set_int(playerid, "RegAdvertising", 20);
-	return SPD(playerid, dReg_SN_Promo, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Соц. Сети", "{FFFFFF}Введите промокод:", "Далее", "Назад");
+	return SPD(playerid, dReg_SN_Promo, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РЎРѕС†. РЎРµС‚Рё", "{FFFFFF}Р’РІРµРґРёС‚Рµ РїСЂРѕРјРѕРєРѕРґ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterSN_Name(playerid)
 {
 	new string[300];
 	set_int(playerid, "RegAdvertising", 21);
-	f(string, "{FFFFFF}Введите название группы:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Кол-во символов не должно превышать 50-ти.", string);
-	return SPD(playerid, dReg_SN_Name, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Соц. Сети", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РіСЂСѓРїРїС‹:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ СЃРёРјРІРѕР»РѕРІ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 50-С‚Рё.", string);
+	return SPD(playerid, dReg_SN_Name, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РЎРѕС†. РЎРµС‚Рё", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_RegisterNetwork(playerid)
 {
 	new string[300];
 	set_int(playerid, "RegAdvertising", 3);
-	f(string, "{FFFFFF}Введите название сайта:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Кол-во символов не должно превышать 50-ти.", string);
-	return SPD(playerid, dReg_Network, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Интернет", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ СЃР°Р№С‚Р°:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ СЃРёРјРІРѕР»РѕРІ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 50-С‚Рё.", string);
+	return SPD(playerid, dReg_Network, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РРЅС‚РµСЂРЅРµС‚", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_LoginPass(playerid)
 {
 	new string[500];
-	f(string, "{FFFFFF}Добрый день, {FFBE82}%s{FFFFFF}, с возвращением на сервер {FFFF00}Pangora Role Play{FFFFFF}!", GN(playerid));
-	f(string, "%s\n{FFFFFF}Этот аккаунт {B4FF9B}зарегистрирован{FFFFFF}!", string);
-	f(string, "%s\n\n{FFFFFF}Введите пароль, который указывали при регистрации:", string);
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- У вас есть 30 секунд чтобы ввести пароль.", string);
-	f(string, "%s\n{F19E18}- У вас есть 3 попытки.", string);
-	return SPD(playerid, dLogin_Pass, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| Пароль", string, "Далее", "Выход");
+	f(string, "{FFFFFF}Р”РѕР±СЂС‹Р№ РґРµРЅСЊ, {FFBE82}%s{FFFFFF}, СЃ РІРѕР·РІСЂР°С‰РµРЅРёРµРј РЅР° СЃРµСЂРІРµСЂ {FFFF00}Pangora Role Play{FFFFFF}!", GN(playerid));
+	f(string, "%s\n{FFFFFF}Р­С‚РѕС‚ Р°РєРєР°СѓРЅС‚ {B4FF9B}Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ{FFFFFF}!", string);
+	f(string, "%s\n\n{FFFFFF}Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ, РєРѕС‚РѕСЂС‹Р№ СѓРєР°Р·С‹РІР°Р»Рё РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё:", string);
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РЈ РІР°СЃ РµСЃС‚СЊ 30 СЃРµРєСѓРЅРґ С‡С‚РѕР±С‹ РІРІРµСЃС‚Рё РїР°СЂРѕР»СЊ.", string);
+	f(string, "%s\n{F19E18}- РЈ РІР°СЃ РµСЃС‚СЊ 3 РїРѕРїС‹С‚РєРё.", string);
+	return SPD(playerid, dLogin_Pass, DSI, "{BFFFAF}Pangora Role Play {FFFFFF}| РџР°СЂРѕР»СЊ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PAdmin(playerid)
 {
 	new string[200];
-	f(string, "Назначить нового администратора");
-	f(string, "%s\nСписок администраторов", string);
-	f(string, "%s\nСледящие", string);
+	f(string, "РќР°Р·РЅР°С‡РёС‚СЊ РЅРѕРІРѕРіРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
+	f(string, "%s\nРЎРїРёСЃРѕРє Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРІ", string);
+	f(string, "%s\nРЎР»РµРґСЏС‰РёРµ", string);
 	f(string, "%s\nASIS", string);
-	f(string, "%s\nСистема Анти-Мата", string);
-	return SPD(playerid, dPAdmin, DSL, "Админ-панель", string, "Далее", "Выход");
+	f(string, "%s\nРЎРёСЃС‚РµРјР° РђРЅС‚Рё-РњР°С‚Р°", string);
+	return SPD(playerid, dPAdmin, DSL, "РђРґРјРёРЅ-РїР°РЅРµР»СЊ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PAdmin_ListAdmin(playerid)
 {
@@ -2950,22 +2950,22 @@ stock Dialog_PAdmin_ListAdmin(playerid)
 }
 stock Dialog_PAdmin_ListAdmin_Find(playerid)
 {
-	return SPD(playerid, dPAdmin_ListAdm_Find, DSI, "Поиск", "{FFFFFF}Введите никнейм или часть никнейма:", "Найти", "Назад");
+	return SPD(playerid, dPAdmin_ListAdm_Find, DSI, "РџРѕРёСЃРє", "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРёРєРЅРµР№Рј РёР»Рё С‡Р°СЃС‚СЊ РЅРёРєРЅРµР№РјР°:", "РќР°Р№С‚Рё", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_Folower(playerid)
 {
 	new string[200];
-	f(string, "Следящие за Россией");
-	f(string, "%s\nСледящие за США", string);
-	f(string, "%s\nСледящие за Германией", string);
-	return SPD(playerid, dPAdmin_Fol, DSL, "Следящие", string, "Далее", "Назад");
+	f(string, "РЎР»РµРґСЏС‰РёРµ Р·Р° Р РѕСЃСЃРёРµР№");
+	f(string, "%s\nРЎР»РµРґСЏС‰РёРµ Р·Р° РЎРЁРђ", string);
+	f(string, "%s\nРЎР»РµРґСЏС‰РёРµ Р·Р° Р“РµСЂРјР°РЅРёРµР№", string);
+	return SPD(playerid, dPAdmin_Fol, DSL, "РЎР»РµРґСЏС‰РёРµ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_Folower1(playerid, text[])
 {
 	new string[200];
-	f(string, "Назачить/Уволить Главного следящего");
-	f(string, "%s\nСписок следящих", string);
-	return SPD(playerid, dPAdmin_Fol1, DSL, text, string, "Далее", "Назад");
+	f(string, "РќР°Р·Р°С‡РёС‚СЊ/РЈРІРѕР»РёС‚СЊ Р“Р»Р°РІРЅРѕРіРѕ СЃР»РµРґСЏС‰РµРіРѕ");
+	f(string, "%s\nРЎРїРёСЃРѕРє СЃР»РµРґСЏС‰РёС…", string);
+	return SPD(playerid, dPAdmin_Fol1, DSL, text, string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_Fol_Add(playerid, frac)
 {
@@ -2976,27 +2976,27 @@ stock Dialog_PAdmin_Fol_Add(playerid, frac)
 	{
 		sql_get_string(0, SQL_ACC_NAME, name);
 		set_string(playerid, "FolowerName", name);
-		f(string, "{FFFFFF}Вы хотите снять %s с поста Главного следящего?", name);
-		SPD(playerid, dPAdmin_Fol1_D, DSM, "Увольнение", string, "Уволить", "Назад");
+		f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ СЃРЅСЏС‚СЊ %s СЃ РїРѕСЃС‚Р° Р“Р»Р°РІРЅРѕРіРѕ СЃР»РµРґСЏС‰РµРіРѕ?", name);
+		SPD(playerid, dPAdmin_Fol1_D, DSM, "РЈРІРѕР»СЊРЅРµРЅРёРµ", string, "РЈРІРѕР»РёС‚СЊ", "РќР°Р·Р°Рґ");
 	}
-	else SPD(playerid, dPAdmin_Fol1_A, DSI, "Назначение", "{FFFFFF}Напишите ID или Никнейм администратора, что бы назначить на пост Главного следящего:", "Назначить", "Назад");
+	else SPD(playerid, dPAdmin_Fol1_A, DSI, "РќР°Р·РЅР°С‡РµРЅРёРµ", "{FFFFFF}РќР°РїРёС€РёС‚Рµ ID РёР»Рё РќРёРєРЅРµР№Рј Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°, С‡С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ РЅР° РїРѕСЃС‚ Р“Р»Р°РІРЅРѕРіРѕ СЃР»РµРґСЏС‰РµРіРѕ:", "РќР°Р·РЅР°С‡РёС‚СЊ", "РќР°Р·Р°Рґ");
 	if(cache_is_valid(res)) cache_delete(res);
 }
 stock Dialog_PAdmin_Fol_List(playerid, frac)
 {
-	return SPD(playerid, dPAdmin_Fol2, DSM, ConvertNumToStringFracFol(frac), ListFolower(frac), "Назад", "Выход");
+	return SPD(playerid, dPAdmin_Fol2, DSM, ConvertNumToStringFracFol(frac), ListFolower(frac), "РќР°Р·Р°Рґ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PAdmin_ListAdmin_Param(playerid, name[])
 {
 	new string[500];
 	set_string(playerid, "SelectListAdmin", name);
-	f(string, "{FFFF00}Статистика");
-	f(string, "%s\n{2DE019}Повысить{FFFFFF}/{FF4530}Понизить {FFFFFF}администратора", string);
-	f(string, "%s\n{FFFFFF}Посещаемость", string);
-	f(string, "%s\n{FF4530}Выдать выговор", string);
-	f(string, "%s\n{2DE019}Снять выговор", string);
-	f(string, "%s\n{FF4530}Уволить", string);
-	return SPD(playerid, dPAdmin_ListAdm_Panel, DSL, name, string, "Выбрать", "Назад");
+	f(string, "{FFFF00}РЎС‚Р°С‚РёСЃС‚РёРєР°");
+	f(string, "%s\n{2DE019}РџРѕРІС‹СЃРёС‚СЊ{FFFFFF}/{FF4530}РџРѕРЅРёР·РёС‚СЊ {FFFFFF}Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°", string);
+	f(string, "%s\n{FFFFFF}РџРѕСЃРµС‰Р°РµРјРѕСЃС‚СЊ", string);
+	f(string, "%s\n{FF4530}Р’С‹РґР°С‚СЊ РІС‹РіРѕРІРѕСЂ", string);
+	f(string, "%s\n{2DE019}РЎРЅСЏС‚СЊ РІС‹РіРѕРІРѕСЂ", string);
+	f(string, "%s\n{FF4530}РЈРІРѕР»РёС‚СЊ", string);
+	return SPD(playerid, dPAdmin_ListAdm_Panel, DSL, name, string, "Р’С‹Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdm_ListAdm_Param_St(playerid)
 {
@@ -3036,7 +3036,7 @@ stock Dialog_PAdm_ListAdm_Param_Level(playerid)
 	if(cache_is_valid(res)) cache_delete(res);
 	if(level >= ConvertAdmToNum(Admin[playerid][aLevel]) && strcmp(GN(playerid), "Aleksandr_Dovgiy"))
 	{
-		ErrorSCM(playerid, "Вы не можете изменять этому администратору админ-уровень");
+		ErrorSCM(playerid, "Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ РёР·РјРµРЅСЏС‚СЊ СЌС‚РѕРјСѓ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСѓ Р°РґРјРёРЅ-СѓСЂРѕРІРµРЅСЊ");
 		return Dialog_PAdmin_ListAdmin_Param(playerid, name);
 	}
 	set_int(playerid, "LevelListAdmin", level);
@@ -3072,15 +3072,15 @@ stock Dialog_PAdm_ListAdm_Param_Level(playerid)
 			}
 		}
 	}
-	return SPD(playerid, dPAdmin_ListAdm_Panel_Level, DSL, name, string, "Принять", "Назад");
+	return SPD(playerid, dPAdmin_ListAdm_Panel_Level, DSL, name, string, "РџСЂРёРЅСЏС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AddAdmin(playerid)
 {
-	return SPD(playerid, dPAdmin_AddAdm, DSI, "Назначение", "{FFFFFF}Введите ID либо Никнейм игрока которого хотите назначить:", "Назначить", "Назад");
+	return SPD(playerid, dPAdmin_AddAdm, DSI, "РќР°Р·РЅР°С‡РµРЅРёРµ", "{FFFFFF}Р’РІРµРґРёС‚Рµ ID Р»РёР±Рѕ РќРёРєРЅРµР№Рј РёРіСЂРѕРєР° РєРѕС‚РѕСЂРѕРіРѕ С…РѕС‚РёС‚Рµ РЅР°Р·РЅР°С‡РёС‚СЊ:", "РќР°Р·РЅР°С‡РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_AdminPass(playerid)
 {
-	return SPD(playerid, dAdminPass, DSP, "Админ авторизация", "{FFFFFF}Для админ авторизации, пожалуйста введите админ-пароль:", "Ок", "Выход");
+	return SPD(playerid, dAdminPass, DSP, "РђРґРјРёРЅ Р°РІС‚РѕСЂРёР·Р°С†РёСЏ", "{FFFFFF}Р”Р»СЏ Р°РґРјРёРЅ Р°РІС‚РѕСЂРёР·Р°С†РёРё, РїРѕР¶Р°Р»СѓР№СЃС‚Р° РІРІРµРґРёС‚Рµ Р°РґРјРёРЅ-РїР°СЂРѕР»СЊ:", "РћРє", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PAdm_ListAdm_Param_Leave(playerid)
 {
@@ -3092,11 +3092,11 @@ stock Dialog_PAdm_ListAdm_Param_Leave(playerid)
 	if(cache_is_valid(res)) cache_delete(res);
 	if(level >= ConvertAdmToNum(Admin[playerid][aLevel]) && strcmp(GN(playerid), "Aleksandr_Dovgiy"))
 	{
-		ErrorSCM(playerid, "Вы не можете уволить этого администратора");
+		ErrorSCM(playerid, "Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СѓРІРѕР»РёС‚СЊ СЌС‚РѕРіРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°");
 		return Dialog_PAdmin_ListAdmin_Param(playerid, name);
 	}
-	f(string, "{FFFFFF}Вы действительно хотите уволить администратора {FFFF00}%s{FFFFFF}?", name);
-	return SPD(playerid, dPAdmin_ListAdm_Panel_Leave, DSM, "Подтверждение", string, "Уволить", "Назад");
+	f(string, "{FFFFFF}Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРІРѕР»РёС‚СЊ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° {FFFF00}%s{FFFFFF}?", name);
+	return SPD(playerid, dPAdmin_ListAdm_Panel_Leave, DSM, "РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ", string, "РЈРІРѕР»РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock LeaveAdm(playerid, name[], text[])
 {
@@ -3106,48 +3106,48 @@ stock LeaveAdm(playerid, name[], text[])
 		new id = GetPlayerID(name);
 		if(DostupeAdm[id]) DostupeAdm[id] = false;
 		Admin[id][aLevel] = aNull;
-		f(string, "Администратор %s уволил вас из администраторской команды", GN(playerid)), MindSCM(id, string);
+		f(string, "РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ %s СѓРІРѕР»РёР» РІР°СЃ РёР· Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСЃРєРѕР№ РєРѕРјР°РЅРґС‹", GN(playerid)), MindSCM(id, string);
 		SetPlayerColor(id, COLOR_WHITE);
 	}
 	f(string, "INSERT INTO "SQL_ALEVEL" ("SQL_ASTATS_ID","SQL_ASTATS_DATE","SQL_ASTATS_TIME","SQL_ASTATS_CAUSE","SQL_ASTATS_ID_ADM")VALUES(%d,'%s','%s','%s',%d)", OffGetPlayerId(name), GetDate(), GetTime(), text, Player[playerid][pID]), SqlAsync(string);
 	f(string, "DELETE FROM "SQL_ADMINS" WHERE "SQL_ADMINS_ID" = %d", OffGetPlayerId(name)), SqlAsync(string);
-	f(string, "[A] {FFFF00}Администратор %s уволил администратора %s", GN(playerid), name), AdmChat(string);
+	f(string, "[A] {FFFF00}РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ %s СѓРІРѕР»РёР» Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР° %s", GN(playerid), name), AdmChat(string);
 }
 stock ErrorAdmPanel(playerid)
 {
-	ErrorSCM(playerid, "Произошла ошибка, повторите снова");
+	ErrorSCM(playerid, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°, РїРѕРІС‚РѕСЂРёС‚Рµ СЃРЅРѕРІР°");
 	return Dialog_PAdmin(playerid);
 }
 stock Dialog_PAdmin_ASIS(playerid)
 {
 	new string[1000], text[30], text1[20];
-	f(string, "Список причин наказаний\tСостояние");
+	f(string, "РЎРїРёСЃРѕРє РїСЂРёС‡РёРЅ РЅР°РєР°Р·Р°РЅРёР№\tРЎРѕСЃС‚РѕСЏРЅРёРµ");
 	switch(ASIS[eCaps][0])
 	{
 		case 0: 
 		{
-			text = "{FF0000}Отключен";
+			text = "{FF0000}РћС‚РєР»СЋС‡РµРЅ";
 			text1 = "";
 		}
 		case 1: 
 		{
-			text = "{2DE019}Кик";
+			text = "{2DE019}РљРёРє";
 			text1 = "";
 		}
 		case 2: 
 		{
-			text = "{2DE019}Мут";
-			f(text1, " %d минут", ASIS[eCaps][1]);
+			text = "{2DE019}РњСѓС‚";
+			f(text1, " %d РјРёРЅСѓС‚", ASIS[eCaps][1]);
 		}
 		case 3: 
 		{
-			text = "{2DE019}Варн";
+			text = "{2DE019}Р’Р°СЂРЅ";
 			text1 = "";
 		}
 		case 4: 
 		{
-			text = "{2DE019}Бан";
-			f(text1, " %d дней", ASIS[eCaps][1]);
+			text = "{2DE019}Р‘Р°РЅ";
+			f(text1, " %d РґРЅРµР№", ASIS[eCaps][1]);
 		}
 	}
 	f(string, "%s\nCaps\t[%s%s{FFFFFF}]", string, text, text1);
@@ -3155,150 +3155,150 @@ stock Dialog_PAdmin_ASIS(playerid)
 	{
 		case 0: 
 		{
-			text = "{FF0000}Отключен";
+			text = "{FF0000}РћС‚РєР»СЋС‡РµРЅ";
 			text1 = "";
 		}
 		case 1: 
 		{
-			text = "{2DE019}Кик";
+			text = "{2DE019}РљРёРє";
 			text1 = "";
 		}
 		case 2: 
 		{
-			text = "{2DE019}Мут";
-			f(text1, " %d минут", ASIS[eOW][1]);
+			text = "{2DE019}РњСѓС‚";
+			f(text1, " %d РјРёРЅСѓС‚", ASIS[eOW][1]);
 		}
 		case 3: 
 		{
-			text = "{2DE019}Варн";
+			text = "{2DE019}Р’Р°СЂРЅ";
 			text1 = "";
 		}
 		case 4: 
 		{
-			text = "{2DE019}Бан";
-			f(text1, " %d дней", ASIS[eOW][1]);
+			text = "{2DE019}Р‘Р°РЅ";
+			f(text1, " %d РґРЅРµР№", ASIS[eOW][1]);
 		}
 	}
-	f(string, "%s\nНецензурные слова\t[%s%s{FFFFFF}]", string, text, text1);
+	f(string, "%s\nРќРµС†РµРЅР·СѓСЂРЅС‹Рµ СЃР»РѕРІР°\t[%s%s{FFFFFF}]", string, text, text1);
 	switch(ASIS[eOsk][0])
 	{
 		case 0: 
 		{
-			text = "{FF0000}Отключен";
+			text = "{FF0000}РћС‚РєР»СЋС‡РµРЅ";
 			text1 = "";
 		}
 		case 1: 
 		{
-			text = "{2DE019}Кик";
+			text = "{2DE019}РљРёРє";
 			text1 = "";
 		}
 		case 2: 
 		{
-			text = "{2DE019}Мут";
-			f(text1, " %d минут", ASIS[eOsk][1]);
+			text = "{2DE019}РњСѓС‚";
+			f(text1, " %d РјРёРЅСѓС‚", ASIS[eOsk][1]);
 		}
 		case 3: 
 		{
-			text = "{2DE019}Варн";
+			text = "{2DE019}Р’Р°СЂРЅ";
 			text1 = "";
 		}
 		case 4: 
 		{
-			text = "{2DE019}Бан";
-			f(text1, " %d дней", ASIS[eOsk][1]);
+			text = "{2DE019}Р‘Р°РЅ";
+			f(text1, " %d РґРЅРµР№", ASIS[eOsk][1]);
 		}
 	}
-	f(string, "%s\nОскорбление\t[%s%s{FFFFFF}]", string, text, text1);
+	f(string, "%s\nРћСЃРєРѕСЂР±Р»РµРЅРёРµ\t[%s%s{FFFFFF}]", string, text, text1);
 	switch(ASIS[eOskRod][0])
 	{
 		case 0: 
 		{
-			text = "{FF0000}Отключен";
+			text = "{FF0000}РћС‚РєР»СЋС‡РµРЅ";
 			text1 = "";
 		}
 		case 1: 
 		{
-			text = "{2DE019}Кик";
+			text = "{2DE019}РљРёРє";
 			text1 = "";
 		}
 		case 2: 
 		{
-			text = "{2DE019}Мут";
-			f(text1, " %d минут", ASIS[eOskRod][1]);
+			text = "{2DE019}РњСѓС‚";
+			f(text1, " %d РјРёРЅСѓС‚", ASIS[eOskRod][1]);
 		}
 		case 3: 
 		{
-			text = "{2DE019}Варн";
+			text = "{2DE019}Р’Р°СЂРЅ";
 			text1 = "";
 		}
 		case 4: 
 		{
-			text = "{2DE019}Бан";
-			f(text1, " %d дней", ASIS[eOskRod][1]);
+			text = "{2DE019}Р‘Р°РЅ";
+			f(text1, " %d РґРЅРµР№", ASIS[eOskRod][1]);
 		}
 	}
-	f(string, "%s\nОскорбление родных\t[%s%s{FFFFFF}]", string, text, text1);
+	f(string, "%s\nРћСЃРєРѕСЂР±Р»РµРЅРёРµ СЂРѕРґРЅС‹С…\t[%s%s{FFFFFF}]", string, text, text1);
 	switch(ASIS[eReklama][0])
 	{
 		case 0: 
 		{
-			text = "{FF0000}Отключен";
+			text = "{FF0000}РћС‚РєР»СЋС‡РµРЅ";
 			text1 = "";
 		}
 		case 1: 
 		{
-			text = "{2DE019}Кик";
+			text = "{2DE019}РљРёРє";
 			text1 = "";
 		}
 		case 2: 
 		{
-			text = "{2DE019}Мут";
-			f(text1, " %d минут", ASIS[eReklama][1]);
+			text = "{2DE019}РњСѓС‚";
+			f(text1, " %d РјРёРЅСѓС‚", ASIS[eReklama][1]);
 		}
 		case 3: 
 		{
-			text = "{2DE019}Варн";
+			text = "{2DE019}Р’Р°СЂРЅ";
 			text1 = "";
 		}
 		case 4: 
 		{
-			text = "{2DE019}Бан";
-			f(text1, " %d дней", ASIS[eReklama][1]);
+			text = "{2DE019}Р‘Р°РЅ";
+			f(text1, " %d РґРЅРµР№", ASIS[eReklama][1]);
 		}
 	}
-	f(string, "%s\nРеклама\t[%s%s{FFFFFF}]", string, text, text1);
-	return SPD(playerid, dPAdmin_ASIS, DSTH, "Настройка ASIS", string, "Далее", "Назад");
+	f(string, "%s\nР РµРєР»Р°РјР°\t[%s%s{FFFFFF}]", string, text, text1);
+	return SPD(playerid, dPAdmin_ASIS, DSTH, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P(playerid, eASIS: num)
 {
 	new string[200], asis = num;
 	set_int(playerid, "ASISList", asis+1);
-	f(string, "%s", (ASIS[num][0]) ? "{FF0000}Отключить" : "{2DE019}Включить");
+	f(string, "%s", (ASIS[num][0]) ? "{FF0000}РћС‚РєР»СЋС‡РёС‚СЊ" : "{2DE019}Р’РєР»СЋС‡РёС‚СЊ");
 	if(num == eCaps)
 	{
-		f(string, "%s\nСписок слов исключений", string);
-		f(string, "%s\nДобавить слово в исключение", string);
-		f(string, "%s\nУбрать слово из исключения", string);
+		f(string, "%s\nРЎРїРёСЃРѕРє СЃР»РѕРІ РёСЃРєР»СЋС‡РµРЅРёР№", string);
+		f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ СЃР»РѕРІРѕ РІ РёСЃРєР»СЋС‡РµРЅРёРµ", string);
+		f(string, "%s\nРЈР±СЂР°С‚СЊ СЃР»РѕРІРѕ РёР· РёСЃРєР»СЋС‡РµРЅРёСЏ", string);
 	}
 	else if(num == eOW)
 	{
-		f(string, "%s\nСписок нецензурных фраз", string);
-		f(string, "%s\nДобавить нецензурную фразу в список", string);
-		f(string, "%s\nУбрать нецензурную фразу из списка", string);
+		f(string, "%s\nРЎРїРёСЃРѕРє РЅРµС†РµРЅР·СѓСЂРЅС‹С… С„СЂР°Р·", string);
+		f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ РЅРµС†РµРЅР·СѓСЂРЅСѓСЋ С„СЂР°Р·Сѓ РІ СЃРїРёСЃРѕРє", string);
+		f(string, "%s\nРЈР±СЂР°С‚СЊ РЅРµС†РµРЅР·СѓСЂРЅСѓСЋ С„СЂР°Р·Сѓ РёР· СЃРїРёСЃРєР°", string);
 	}
 	else if(num == eOsk)
 	{
-		f(string, "%s\nСписок оскорбительных фраз", string);
-		f(string, "%s\nДобавить оскорбительную фразу в список", string);
-		f(string, "%s\nУбрать оскорбительную фразу из списка", string);
+		f(string, "%s\nРЎРїРёСЃРѕРє РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅС‹С… С„СЂР°Р·", string);
+		f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ РІ СЃРїРёСЃРѕРє", string);
+		f(string, "%s\nРЈР±СЂР°С‚СЊ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ РёР· СЃРїРёСЃРєР°", string);
 	}
 	else if(num == eOskRod)
 	{
-		f(string, "%s\nСписок оскорбительных фраз", string);
-		f(string, "%s\nДобавить оскорбительную фразу в список", string);
-		f(string, "%s\nУбрать оскорбительную фразу из списка", string);
+		f(string, "%s\nРЎРїРёСЃРѕРє РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅС‹С… С„СЂР°Р·", string);
+		f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ РІ СЃРїРёСЃРѕРє", string);
+		f(string, "%s\nРЈР±СЂР°С‚СЊ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ РёР· СЃРїРёСЃРєР°", string);
 	}
-	return SPD(playerid, dPAdmin_ASIS_P, DSL, "Настройка ASIS", string, "Далее", "Назад");
+	return SPD(playerid, dPAdmin_ASIS_P, DSL, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P_L(playerid, eASIS: num)
 {
@@ -3367,7 +3367,7 @@ stock Dialog_PAdmin_ASIS_P_L(playerid, eASIS: num)
 			}
 		}
 	}
-	return SPD(playerid, dPAdmin_ASIS_P_L, DSL, "Настройка ASIS", string, "Выход", "Назад");
+	return SPD(playerid, dPAdmin_ASIS_P_L, DSL, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P_L_Add(playerid, eASIS: num)
 {
@@ -3376,25 +3376,25 @@ stock Dialog_PAdmin_ASIS_P_L_Add(playerid, eASIS: num)
 	{
 		case eCaps:
 		{
-			f(string, "{FFFFFF}Введите слово, которое вы хотите добавить в исключение:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- Пишите слово полностью с CapsLock.", string);
-			f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ РёСЃРєР»СЋС‡РµРЅРёРµ:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- РџРёС€РёС‚Рµ СЃР»РѕРІРѕ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃ CapsLock.", string);
+			f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
 		}
 		case eOW:
 		{
-			f(string, "{FFFFFF}Введите нецензурную фразу, которое вы хотите добавить в список:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- В фразе должно быть не менее 2-х символов и не более 50-ти.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅСѓСЋ С„СЂР°Р·Сѓ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ СЃРїРёСЃРѕРє:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- Р’ С„СЂР°Р·Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 50-С‚Рё.", string);
 		}
 		case eOsk, eOskRod:
 		{
-			f(string, "{FFFFFF}Введите оскорбительную фразу, которое вы хотите добавить в список:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- В фразе должно быть не менее 2-х символов и не более 50-ти.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ СЃРїРёСЃРѕРє:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- Р’ С„СЂР°Р·Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 50-С‚Рё.", string);
 		}
 	}
-	return SPD(playerid, dPAdmin_ASIS_P_L_Add, DSI, "Настройка ASIS", string, "Создать", "Назад");
+	return SPD(playerid, dPAdmin_ASIS_P_L_Add, DSI, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "РЎРѕР·РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P_L_Del(playerid, eASIS: num)
 {
@@ -3403,49 +3403,49 @@ stock Dialog_PAdmin_ASIS_P_L_Del(playerid, eASIS: num)
 	{
 		case eCaps:
 		{
-			f(string, "{FFFFFF}Введите слово, которое вы хотите удалить из исключения:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- Пишите слово полностью с CapsLock.", string);
-			f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёР· РёСЃРєР»СЋС‡РµРЅРёСЏ:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- РџРёС€РёС‚Рµ СЃР»РѕРІРѕ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃ CapsLock.", string);
+			f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
 		}
 		case eOW:
 		{
-			f(string, "{FFFFFF}Введите нецензурную фразу, которое вы хотите удалить из списка:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- В фразе должно быть не менее 2-х символов и не более 50-ти.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅСѓСЋ С„СЂР°Р·Сѓ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёР· СЃРїРёСЃРєР°:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- Р’ С„СЂР°Р·Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 50-С‚Рё.", string);
 		}
 		case eOsk, eOskRod:
 		{
-			f(string, "{FFFFFF}Введите оскорбительную фразу, которое вы хотите удалить из списка:");
-			f(string, "%s\n\n{F19E18}Примечание:", string);
-			f(string, "%s\n{F19E18}- В фразе должно быть не менее 2-х символов и не более 50-ти.", string);
+			f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РѕСЃРєРѕСЂР±РёС‚РµР»СЊРЅСѓСЋ С„СЂР°Р·Сѓ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёР· СЃРїРёСЃРєР°:");
+			f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+			f(string, "%s\n{F19E18}- Р’ С„СЂР°Р·Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 50-С‚Рё.", string);
 		}
 	}
-	return SPD(playerid, dPAdmin_ASIS_P_L_Del, DSI, "Настройка ASIS", string, "Удалить", "Назад");
+	return SPD(playerid, dPAdmin_ASIS_P_L_Del, DSI, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "РЈРґР°Р»РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P_En(playerid)
 {
 	new string[200];
-	f(string, "Кик");
-	f(string, "%s\nМут", string);
-	f(string, "%s\nВарн", string);
-	f(string, "%s\nБан", string);
-	return SPD(playerid, dPAdmin_ASIS_P_En, DSL, "Настройка ASIS", string, "Далее", "Назад");
+	f(string, "РљРёРє");
+	f(string, "%s\nРњСѓС‚", string);
+	f(string, "%s\nР’Р°СЂРЅ", string);
+	f(string, "%s\nР‘Р°РЅ", string);
+	return SPD(playerid, dPAdmin_ASIS_P_En, DSL, "РќР°СЃС‚СЂРѕР№РєР° ASIS", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_ASIS_P_En1(playerid, bool: isBan)
 {
 	set_int(playerid, "ASISisBan", isBan);
-	if(isBan) SPD(playerid, dPAdmin_ASIS_P_En1, DSI, "Настройка ASIS", "Введите цифру, на сколько дней будет банить система за это нарушение:", "Далее", "Назад");
-	else SPD(playerid, dPAdmin_ASIS_P_En1, DSI, "Настройка ASIS", "Введите цифру, на сколько минут система будет выдавать бан чата за это нарушение:", "Далее", "Назад");
+	if(isBan) SPD(playerid, dPAdmin_ASIS_P_En1, DSI, "РќР°СЃС‚СЂРѕР№РєР° ASIS", "Р’РІРµРґРёС‚Рµ С†РёС„СЂСѓ, РЅР° СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Р±СѓРґРµС‚ Р±Р°РЅРёС‚СЊ СЃРёСЃС‚РµРјР° Р·Р° СЌС‚Рѕ РЅР°СЂСѓС€РµРЅРёРµ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
+	else SPD(playerid, dPAdmin_ASIS_P_En1, DSI, "РќР°СЃС‚СЂРѕР№РєР° ASIS", "Р’РІРµРґРёС‚Рµ С†РёС„СЂСѓ, РЅР° СЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚ СЃРёСЃС‚РµРјР° Р±СѓРґРµС‚ РІС‹РґР°РІР°С‚СЊ Р±Р°РЅ С‡Р°С‚Р° Р·Р° СЌС‚Рѕ РЅР°СЂСѓС€РµРЅРёРµ:", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 	return true;
 }
 stock Dialog_PAdmin_AntiMat(playerid)
 {
 	new string[200];
-	f(string, "Список нецензурных слов");
-	f(string, "%s\nДобавить нецензурное слово в список", string);
-	f(string, "%s\nУбрать нецензурное слово из списка", string);
-	return SPD(playerid, dPAdmin_AntiMat, DSL, "Настроки Анти-Мата", string, "Далее", "Назад");
+	f(string, "РЎРїРёСЃРѕРє РЅРµС†РµРЅР·СѓСЂРЅС‹С… СЃР»РѕРІ");
+	f(string, "%s\nР”РѕР±Р°РІРёС‚СЊ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ РІ СЃРїРёСЃРѕРє", string);
+	f(string, "%s\nРЈР±СЂР°С‚СЊ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ РёР· СЃРїРёСЃРєР°", string);
+	return SPD(playerid, dPAdmin_AntiMat, DSL, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_L(playerid)
 {
@@ -3463,23 +3463,23 @@ stock Dialog_PAdmin_AntiMat_L(playerid)
 			else f(string, "%s\n%s", string, AntiMatWords[i]);
 		}
 	}
-	return SPD(playerid, dPAdmin_AntiMat_L, DSL, "Настроки Анти-Мата", string, "Выход", "Назад");
+	return SPD(playerid, dPAdmin_AntiMat_L, DSL, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_Add(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите нецензурное слово, которое вы хотите добавить в список:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
-	return SPD(playerid, dPAdmin_AntiMat_Add, DSI, "Настроки Анти-Мата", string, "Добавить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ СЃРїРёСЃРѕРє:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
+	return SPD(playerid, dPAdmin_AntiMat_Add, DSI, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "Р”РѕР±Р°РІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PAdmin_AntiMat_Del(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите нецензурное слово, которое вы хотите удалить из списка:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- В слове должно быть не менее 2-х символов и не более 32-х.", string);
-	return SPD(playerid, dPAdmin_AntiMat_Del, DSI, "Настроки Анти-Мата", string, "Удалить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅРµС†РµРЅР·СѓСЂРЅРѕРµ СЃР»РѕРІРѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РёР· СЃРїРёСЃРєР°:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’ СЃР»РѕРІРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ РјРµРЅРµРµ 2-С… СЃРёРјРІРѕР»РѕРІ Рё РЅРµ Р±РѕР»РµРµ 32-С….", string);
+	return SPD(playerid, dPAdmin_AntiMat_Del, DSI, "РќР°СЃС‚СЂРѕРєРё РђРЅС‚Рё-РњР°С‚Р°", string, "РЈРґР°Р»РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_StatsAdm_Level(playerid)
 {
@@ -3506,153 +3506,153 @@ stock Dialog_StatsAdm_Pm(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_APM" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "Кол-во отвеченных");
+	f(string, "SELECT * FROM "SQL_APM" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "РљРѕР»-РІРѕ РѕС‚РІРµС‡РµРЅРЅС‹С…");
 	return true;
 }
 stock Dialog_StatsAdm_Sp(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_ASP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "Кол-во слежек");
+	f(string, "SELECT * FROM "SQL_ASP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "РљРѕР»-РІРѕ СЃР»РµР¶РµРє");
 	return true;
 }
 stock Dialog_StatsAdm_Kick(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AKICK" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "Кол-во киков");
+	f(string, "SELECT * FROM "SQL_AKICK" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "РљРѕР»-РІРѕ РєРёРєРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Skick(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_ASKICK" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats1", "ds", playerid, "Кол-во тихих киков");
+	f(string, "SELECT * FROM "SQL_ASKICK" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats1", "ds", playerid, "РљРѕР»-РІРѕ С‚РёС…РёС… РєРёРєРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Mute(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AMUTE" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "Кол-во мутов");
+	f(string, "SELECT * FROM "SQL_AMUTE" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats", "ds", playerid, "РљРѕР»-РІРѕ РјСѓС‚РѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Warn(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AWARN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats2", "ds", playerid, "Кол-во варнов");
+	f(string, "SELECT * FROM "SQL_AWARN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats2", "ds", playerid, "РљРѕР»-РІРѕ РІР°СЂРЅРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Unwarn(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AUNWARN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats2", "ds", playerid, "Кол-во снятых варнов");
+	f(string, "SELECT * FROM "SQL_AUNWARN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats2", "ds", playerid, "РљРѕР»-РІРѕ СЃРЅСЏС‚С‹С… РІР°СЂРЅРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Ban(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_ABAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats3", "ds", playerid, "Кол-во банов");
+	f(string, "SELECT * FROM "SQL_ABAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats3", "ds", playerid, "РљРѕР»-РІРѕ Р±Р°РЅРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Sban(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_ASBAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats3", "ds", playerid, "Кол-во тихих банов");
+	f(string, "SELECT * FROM "SQL_ASBAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats3", "ds", playerid, "РљРѕР»-РІРѕ С‚РёС…РёС… Р±Р°РЅРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_Unban(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AUNBAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats1", "ds", playerid, "Кол-во снятых банов");
+	f(string, "SELECT * FROM "SQL_AUNBAN" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats1", "ds", playerid, "РљРѕР»-РІРѕ СЃРЅСЏС‚С‹С… Р±Р°РЅРѕРІ");
 	return true;
 }
 stock Dialog_StatsAdm_BanIp(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_ABANIP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats4", "ds", playerid, "Кол-во банов по IP");
+	f(string, "SELECT * FROM "SQL_ABANIP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats4", "ds", playerid, "РљРѕР»-РІРѕ Р±Р°РЅРѕРІ РїРѕ IP");
 	return true;
 }
 stock Dialog_StatsAdm_UnbanIp(playerid)
 {
 	new name[MAX_PLAYER_NAME], string[250];
 	get_string(playerid, "SelectListAdmin", name, MAX_PLAYER_NAME);
-	f(string, "SELECT * FROM "SQL_AUNBANIP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats4", "ds", playerid, "Кол-во снятых банов по IP");
+	f(string, "SELECT * FROM "SQL_AUNBANIP" WHERE "SQL_ASTATS_ID" = (SELECT "SQL_ACC_ID" FROM "SQL_ACC" WHERE "SQL_ACC_NAME" = '%s')", name), SqlAsync(string, "LoadAdmListStats4", "ds", playerid, "РљРѕР»-РІРѕ СЃРЅСЏС‚С‹С… Р±Р°РЅРѕРІ РїРѕ IP");
 	return true;
 }
 stock Dialog_SP_Nak(playerid)
 {
 	new string[200];
-	f(string, "Кикнуть\nВыдать/Снять мут\nЗаморозить/Разморозить");
-	if(Admin[playerid][aLevel] >= aAdm_2) f(string, "%s\nВыдать варн", string);
-	if(Admin[playerid][aLevel] >= aAdm_3) f(string, "%s\nЗабанить\nТихо забанить\nТихо кикнуть", string);
-	if(Admin[playerid][aLevel] >= aAdm_4) f(string, "%s\nЗабанить по IP", string);
-	return SPD(playerid, dSP_Set, DSL, "Выдать", string, "Выдать", "Выход");
+	f(string, "РљРёРєРЅСѓС‚СЊ\nР’С‹РґР°С‚СЊ/РЎРЅСЏС‚СЊ РјСѓС‚\nР—Р°РјРѕСЂРѕР·РёС‚СЊ/Р Р°Р·РјРѕСЂРѕР·РёС‚СЊ");
+	if(Admin[playerid][aLevel] >= aAdm_2) f(string, "%s\nР’С‹РґР°С‚СЊ РІР°СЂРЅ", string);
+	if(Admin[playerid][aLevel] >= aAdm_3) f(string, "%s\nР—Р°Р±Р°РЅРёС‚СЊ\nРўРёС…Рѕ Р·Р°Р±Р°РЅРёС‚СЊ\nРўРёС…Рѕ РєРёРєРЅСѓС‚СЊ", string);
+	if(Admin[playerid][aLevel] >= aAdm_4) f(string, "%s\nР—Р°Р±Р°РЅРёС‚СЊ РїРѕ IP", string);
+	return SPD(playerid, dSP_Set, DSL, "Р’С‹РґР°С‚СЊ", string, "Р’С‹РґР°С‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_SP_Check(playerid)
 {
 	new string[200];
-	f(string, "Подкинуть игрока\nПесочница\nИстория наказаний");
-	return SPD(playerid, dSP_Check, DSL, "Проверка", string, "Выбрать", "Выход");
+	f(string, "РџРѕРґРєРёРЅСѓС‚СЊ РёРіСЂРѕРєР°\nРџРµСЃРѕС‡РЅРёС†Р°\nРСЃС‚РѕСЂРёСЏ РЅР°РєР°Р·Р°РЅРёР№");
+	return SPD(playerid, dSP_Check, DSL, "РџСЂРѕРІРµСЂРєР°", string, "Р’С‹Р±СЂР°С‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_MN_Command(playerid)
 {
-	return SPD(playerid, dMN_Com, DSL, "Команды", "Основные\nЧат\nТраспорт", "Далее", "Назад");
+	return SPD(playerid, dMN_Com, DSL, "РљРѕРјР°РЅРґС‹", "РћСЃРЅРѕРІРЅС‹Рµ\nР§Р°С‚\nРўСЂР°СЃРїРѕСЂС‚", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_MN_SettSec(playerid)
 {
 	new string[300];
-	f(string, "Пин-код\t[%s{FFFFFF}]", (!Player[playerid][pPinPass]) ? "{FF0000}Выкл" : "{2DE019}Вкл");
-	f(string, "%s\nПривязка по IP\t[%s{FFFFFF}]", string, (isnull(Player[playerid][pIPPass])) ? "{FF0000}Выкл" : "{2DE019}Вкл");
-	f(string, "%s\nСкрыть ники\t[%s{FFFFFF}]", string, (!ViewNickNo[playerid]) ? "{FF0000}Выкл" : "{2DE019}Вкл");
-	f(string, "%s\nАвтоисправление текста\t[%s{FFFFFF}]", string, (!Player[playerid][pPoint]) ? "{FF0000}Выкл" : "{2DE019}Вкл");
-	f(string, "%s\nАнти-мат(IC чат)\t[%s{FFFFFF}]", string, (Player[playerid][pAntiMat]) ? "{FF0000}Выкл" : "{2DE019}Вкл");
-	return SPD(playerid, dMN_SettSec, DST, "Настройки и Безопасность", string, "Далее", "Назад");
+	f(string, "РџРёРЅ-РєРѕРґ\t[%s{FFFFFF}]", (!Player[playerid][pPinPass]) ? "{FF0000}Р’С‹РєР»" : "{2DE019}Р’РєР»");
+	f(string, "%s\nРџСЂРёРІСЏР·РєР° РїРѕ IP\t[%s{FFFFFF}]", string, (isnull(Player[playerid][pIPPass])) ? "{FF0000}Р’С‹РєР»" : "{2DE019}Р’РєР»");
+	f(string, "%s\nРЎРєСЂС‹С‚СЊ РЅРёРєРё\t[%s{FFFFFF}]", string, (!ViewNickNo[playerid]) ? "{FF0000}Р’С‹РєР»" : "{2DE019}Р’РєР»");
+	f(string, "%s\nРђРІС‚РѕРёСЃРїСЂР°РІР»РµРЅРёРµ С‚РµРєСЃС‚Р°\t[%s{FFFFFF}]", string, (!Player[playerid][pPoint]) ? "{FF0000}Р’С‹РєР»" : "{2DE019}Р’РєР»");
+	f(string, "%s\nРђРЅС‚Рё-РјР°С‚(IC С‡Р°С‚)\t[%s{FFFFFF}]", string, (Player[playerid][pAntiMat]) ? "{FF0000}Р’С‹РєР»" : "{2DE019}Р’РєР»");
+	return SPD(playerid, dMN_SettSec, DST, "РќР°СЃС‚СЂРѕР№РєРё Рё Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_AFrac(playerid)
 {
 	new string[200];
-	f(string, "Команды следящего");
-	f(string, "%s\nСписок следящих", string);
-	f(string, "%s\nНазначить/Снять лидера", string);
-	f(string, "%s\nВыдать/Снять наказание лидеру", string);
-	return SPD(playerid, dAFrac, DSL, "Панель следящих", string, "Далее", "Выход");
+	f(string, "РљРѕРјР°РЅРґС‹ СЃР»РµРґСЏС‰РµРіРѕ");
+	f(string, "%s\nРЎРїРёСЃРѕРє СЃР»РµРґСЏС‰РёС…", string);
+	f(string, "%s\nРќР°Р·РЅР°С‡РёС‚СЊ/РЎРЅСЏС‚СЊ Р»РёРґРµСЂР°", string);
+	f(string, "%s\nР’С‹РґР°С‚СЊ/РЎРЅСЏС‚СЊ РЅР°РєР°Р·Р°РЅРёРµ Р»РёРґРµСЂСѓ", string);
+	return SPD(playerid, dAFrac, DSL, "РџР°РЅРµР»СЊ СЃР»РµРґСЏС‰РёС…", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock LoadParCar(playerid)
 {
 	new string[400], Float: h, str[50];
 	GetVehicleHealth(GetPlayerVehicleID(playerid), h);
-	f(string, "Информация о автомобиле\t");
-	f(string, "%s\nДвигатель\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vEngine]) ? "{2DE019}Вкл" : "{FF0000}Выкл");
-	f(string, "%s\nФары\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vLight]) ? "{2DE019}Вкл" : "{FF0000}Выкл");
-	f(string, "%s\nЗамок\t[%s{FFFFFF}]", string, (!VehicleInfo[GetPlayerVehicleID(playerid)][vLock]) ? "{2DE019}Открыт" : "{FF0000}Закрыт");
-	if(!VehicleInfo[GetPlayerVehicleID(playerid)][vLimit]) f(str, "{2DE019}Отключен");
+	f(string, "РРЅС„РѕСЂРјР°С†РёСЏ Рѕ Р°РІС‚РѕРјРѕР±РёР»Рµ\t");
+	f(string, "%s\nР”РІРёРіР°С‚РµР»СЊ\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vEngine]) ? "{2DE019}Р’РєР»" : "{FF0000}Р’С‹РєР»");
+	f(string, "%s\nР¤Р°СЂС‹\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vLight]) ? "{2DE019}Р’РєР»" : "{FF0000}Р’С‹РєР»");
+	f(string, "%s\nР—Р°РјРѕРє\t[%s{FFFFFF}]", string, (!VehicleInfo[GetPlayerVehicleID(playerid)][vLock]) ? "{2DE019}РћС‚РєСЂС‹С‚" : "{FF0000}Р—Р°РєСЂС‹С‚");
+	if(!VehicleInfo[GetPlayerVehicleID(playerid)][vLimit]) f(str, "{2DE019}РћС‚РєР»СЋС‡РµРЅ");
 	else f(str, "{FFFF00}%d", VehicleInfo[GetPlayerVehicleID(playerid)][vLimit]);
-	f(string, "%s\nЛимит\t[%s{FFFFFF}]", string, str);
-	f(string, "%s\nОкно водителя\t[%s{FFFFFF}]", string, (!VehicleInfo[GetPlayerVehicleID(playerid)][vWindL]) ? "{2DE019}Открыт" : "{FF0000}Закрыт");
-	if(ParamsCar[GetVehicleModel(GetPlayerVehicleID(playerid))-400][vCapotYes]) f(string, "%s\nКапот\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vCapot]) ? "{2DE019}Открыт" : "{FF0000}Закрыт");
-	if(ParamsCar[GetVehicleModel(GetPlayerVehicleID(playerid))-400][vBagazYes]) f(string, "%s\nБагажник\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vBagaz]) ? "{2DE019}Открыт" : "{FF0000}Закрыт");
-	return SPD(playerid, dCarPar, DST, "Панель транспорта", string, "Сменить", "Выход");
+	f(string, "%s\nР›РёРјРёС‚\t[%s{FFFFFF}]", string, str);
+	f(string, "%s\nРћРєРЅРѕ РІРѕРґРёС‚РµР»СЏ\t[%s{FFFFFF}]", string, (!VehicleInfo[GetPlayerVehicleID(playerid)][vWindL]) ? "{2DE019}РћС‚РєСЂС‹С‚" : "{FF0000}Р—Р°РєСЂС‹С‚");
+	if(ParamsCar[GetVehicleModel(GetPlayerVehicleID(playerid))-400][vCapotYes]) f(string, "%s\nРљР°РїРѕС‚\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vCapot]) ? "{2DE019}РћС‚РєСЂС‹С‚" : "{FF0000}Р—Р°РєСЂС‹С‚");
+	if(ParamsCar[GetVehicleModel(GetPlayerVehicleID(playerid))-400][vBagazYes]) f(string, "%s\nР‘Р°РіР°Р¶РЅРёРє\t[%s{FFFFFF}]", string, (VehicleInfo[GetPlayerVehicleID(playerid)][vBagaz]) ? "{2DE019}РћС‚РєСЂС‹С‚" : "{FF0000}Р—Р°РєСЂС‹С‚");
+	return SPD(playerid, dCarPar, DST, "РџР°РЅРµР»СЊ С‚СЂР°РЅСЃРїРѕСЂС‚Р°", string, "РЎРјРµРЅРёС‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_MN_NRN(playerid)
 {
 	new string[500];
-	f(string, "{FFFFFF}Напишите на какой никнейм хотите сменить:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Никнейм введеный в это окно должен быть РП ником.", string);
-	f(string, "%s\n{F19E18}- Администраторы вправе отклонить вашу заявку на смену ника, если им что-то не понравится.", string);
-	f(string, "%s\n{F19E18}- Вы можете использовать только 1 раз бесплатным сменом ника.", string);
-	return SPD(playerid, dMN_NRN, DSI, "Смена НонРп ника", string, "Сменить", "Назад");
+	f(string, "{FFFFFF}РќР°РїРёС€РёС‚Рµ РЅР° РєР°РєРѕР№ РЅРёРєРЅРµР№Рј С…РѕС‚РёС‚Рµ СЃРјРµРЅРёС‚СЊ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РќРёРєРЅРµР№Рј РІРІРµРґРµРЅС‹Р№ РІ СЌС‚Рѕ РѕРєРЅРѕ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р Рџ РЅРёРєРѕРј.", string);
+	f(string, "%s\n{F19E18}- РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂС‹ РІРїСЂР°РІРµ РѕС‚РєР»РѕРЅРёС‚СЊ РІР°С€Сѓ Р·Р°СЏРІРєСѓ РЅР° СЃРјРµРЅСѓ РЅРёРєР°, РµСЃР»Рё РёРј С‡С‚Рѕ-С‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ.", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ 1 СЂР°Р· Р±РµСЃРїР»Р°С‚РЅС‹Рј СЃРјРµРЅРѕРј РЅРёРєР°.", string);
+	return SPD(playerid, dMN_NRN, DSI, "РЎРјРµРЅР° РќРѕРЅР Рї РЅРёРєР°", string, "РЎРјРµРЅРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_LimitCar(playerid)
 {
-	return SPD(playerid, dSetLimitCar, DSI, "Установка лимита", "{FFFFFF}Введите цифру от 10 до 200:", "Установить", "Назад");
+	return SPD(playerid, dSetLimitCar, DSI, "РЈСЃС‚Р°РЅРѕРІРєР° Р»РёРјРёС‚Р°", "{FFFFFF}Р’РІРµРґРёС‚Рµ С†РёС„СЂСѓ РѕС‚ 10 РґРѕ 200:", "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_GG(playerid, gplayerid)
 {
@@ -3663,29 +3663,29 @@ stock Dialog_GG(playerid, gplayerid)
 		else f(string, "%s\n%s", string, ItemsInvInfo[i][eName]);
 	}
 	set_string(playerid, "PlayerGun", GN(gplayerid));
-	return SPD(playerid, dGivegun, DSL, GN(gplayerid), string, "Далее", "Выход");
+	return SPD(playerid, dGivegun, DSL, GN(gplayerid), string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Givegun(playerid, Name[])
 {
 	new string[400];
-	f(string, "{FFFFFF}Сколько патронов хотите выдать игроку?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Максимум можно выдать 1000 патронов", string);
-	return SPD(playerid, dGivegun_Patr, DSI, Name, string, "Выдать", "Назад");
+	f(string, "{FFFFFF}РЎРєРѕР»СЊРєРѕ РїР°С‚СЂРѕРЅРѕРІ С…РѕС‚РёС‚Рµ РІС‹РґР°С‚СЊ РёРіСЂРѕРєСѓ?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РњР°РєСЃРёРјСѓРј РјРѕР¶РЅРѕ РІС‹РґР°С‚СЊ 1000 РїР°С‚СЂРѕРЅРѕРІ", string);
+	return SPD(playerid, dGivegun_Patr, DSI, Name, string, "Р’С‹РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_HLeaders_L(playerid, frac)
 {
 	new string[5000];
 	f(string, "SELECT * FROM "SQL_ALEADER" WHERE "SQL_ASTATS_FRAC" = %d", frac);
 	new Cache: res = Sql(string), name[MAX_PLAYER_NAME], Name[MAX_PLAYER_NAME], l, str[3], date_[11], time_[9], cause[24];
-	f(string, "Никнейм\tДата назначения\tДата снятия");
+	f(string, "РќРёРєРЅРµР№Рј\tР”Р°С‚Р° РЅР°Р·РЅР°С‡РµРЅРёСЏ\tР”Р°С‚Р° СЃРЅСЏС‚РёСЏ");
 	for(new i; i != cache_num_rows(); i++)
 	{
 		sql_get_string(i, SQL_ASTATS_NAME, Name);
 		if(!strcmp(name, Name) && !isnull(name))
 		{
 			sql_get_string(i, SQL_ASTATS_CAUSE, cause);
-			if(strfind(cause, "Снял") != -1)
+			if(strfind(cause, "РЎРЅСЏР»") != -1)
 			{
 				sql_get_string(i, SQL_ASTATS_DATE, date_);
 				sql_get_string(i, SQL_ASTATS_TIME, time_);
@@ -3700,24 +3700,24 @@ stock Dialog_HLeaders_L(playerid, frac)
 		f(string, "%s\n{FFFFFF}%s\t{18B818}%s (%s)", string, Name, date_, time_);
 		f(str, "%d", l), strcat(label, str), set_string(playerid, label, Name);
 		l++;
-		if(i == cache_num_rows()-1) f(string, "%s\t{FFFF00}Действующий лидер", string);
+		if(i == cache_num_rows()-1) f(string, "%s\t{FFFF00}Р”РµР№СЃС‚РІСѓСЋС‰РёР№ Р»РёРґРµСЂ", string);
 	}
 	if(cache_is_valid(res)) cache_delete(res);
-	return SPD(playerid, dhLeaders_N, DSTH, Member[frac], string, "Далее", "Назад");
+	return SPD(playerid, dhLeaders_N, DSTH, Member[frac], string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_AFrac_Inv(playerid, rang[])
 {
 	new string[200];
 	set_string(playerid, "RangLeader", rang);
-	f(string, "{FFFFFF}Введите ID/Никнейм игрока которого хотите назначить на должность {FFFF00}%s{FFFFFF}:", rang);
-	return SPD(playerid, dAFrac_Inv, DSI, "Назначение", string, "Назначить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ ID/РќРёРєРЅРµР№Рј РёРіСЂРѕРєР° РєРѕС‚РѕСЂРѕРіРѕ С…РѕС‚РёС‚Рµ РЅР°Р·РЅР°С‡РёС‚СЊ РЅР° РґРѕР»Р¶РЅРѕСЃС‚СЊ {FFFF00}%s{FFFFFF}:", rang);
+	return SPD(playerid, dAFrac_Inv, DSI, "РќР°Р·РЅР°С‡РµРЅРёРµ", string, "РќР°Р·РЅР°С‡РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_AFrac_Del(playerid, id, rang[])
 {
 	new string[200];
 	set_int(playerid, "IDLeader", id);
-	f(string, "{FFFFFF}Вы действительно хотите снять %s {FFFF00}%s{FFFFFF}?", rang, OffGetPlayerName(id));
-	return SPD(playerid, dAFrac_Del, DSM, "Снятие", string, "Снять", "Назад");
+	f(string, "{FFFFFF}Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СЃРЅСЏС‚СЊ %s {FFFF00}%s{FFFFFF}?", rang, OffGetPlayerName(id));
+	return SPD(playerid, dAFrac_Del, DSM, "РЎРЅСЏС‚РёРµ", string, "РЎРЅСЏС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PayInvList(playerid)
 {
@@ -3733,38 +3733,38 @@ stock Dialog_PayInvList(playerid)
 			else f(string, "%s\n%s", string, GN(i));
 		}
 	}
-	if(!l) MindSCM(playerid, "Рядом со мной никто не стоит");
+	if(!l) MindSCM(playerid, "Р СЏРґРѕРј СЃРѕ РјРЅРѕР№ РЅРёРєС‚Рѕ РЅРµ СЃС‚РѕРёС‚");
 	else 
 	{
 		DeletePVar(playerid, "OnEscTD");
 		CancelSelectTextDraw(playerid);
-		SPD(playerid, dInvPay, DSL, "Передача предмета", string, "Передать", "Выход");
+		SPD(playerid, dInvPay, DSL, "РџРµСЂРµРґР°С‡Р° РїСЂРµРґРјРµС‚Р°", string, "РџРµСЂРµРґР°С‚СЊ", "Р’С‹С…РѕРґ");
 	}
 }
 stock Dialog_PayInv(playerid, Name[], select)
 {
 	new string[400];
 	set_string(playerid, "NamePayInv", Name);
-	f(string, "{FFFFFF}Сколько шт. вы хотите передать {FFFF00}%s{FFFFFF}?", ItemsInvInfo[ItemsInv[playerid][select][0]][eName]);
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n\n{F19E18}- Передавать можете от 1 до %d", string, ItemsInv[playerid][select][1]);
-	return SPD(playerid, dInvPay1, DSI, Name, string, "Передать", "Назад");
+	f(string, "{FFFFFF}РЎРєРѕР»СЊРєРѕ С€С‚. РІС‹ С…РѕС‚РёС‚Рµ РїРµСЂРµРґР°С‚СЊ {FFFF00}%s{FFFFFF}?", ItemsInvInfo[ItemsInv[playerid][select][0]][eName]);
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n\n{F19E18}- РџРµСЂРµРґР°РІР°С‚СЊ РјРѕР¶РµС‚Рµ РѕС‚ 1 РґРѕ %d", string, ItemsInv[playerid][select][1]);
+	return SPD(playerid, dInvPay1, DSI, Name, string, "РџРµСЂРµРґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PayInvToBagaz(playerid, select)
 {
 	new string[400];
-	f(string, "{FFFFFF}Сколько шт. вы хотите положить в багажник?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n\n{F19E18}- Положить можете от 1 до %d", string, ItemsInv[playerid][select][1]);
-	return SPD(playerid, dInvPayToBagaz, DSI, "Положить", string, "Положить", "Назад");
+	f(string, "{FFFFFF}РЎРєРѕР»СЊРєРѕ С€С‚. РІС‹ С…РѕС‚РёС‚Рµ РїРѕР»РѕР¶РёС‚СЊ РІ Р±Р°РіР°Р¶РЅРёРє?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n\n{F19E18}- РџРѕР»РѕР¶РёС‚СЊ РјРѕР¶РµС‚Рµ РѕС‚ 1 РґРѕ %d", string, ItemsInv[playerid][select][1]);
+	return SPD(playerid, dInvPayToBagaz, DSI, "РџРѕР»РѕР¶РёС‚СЊ", string, "РџРѕР»РѕР¶РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PayBagazToInv(playerid, select)
 {
 	new string[400];
-	f(string, "{FFFFFF}Сколько шт. вы хотите вытащить из багажника?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n\n{F19E18}- Вытащить можете от 1 до %d", string, BagazInfo[get_int(playerid, "VehicleInfo")][select][1]);
-	return SPD(playerid, dBagazPayToInv, DSI, "Вытащить", string, "Вытащить", "Назад");
+	f(string, "{FFFFFF}РЎРєРѕР»СЊРєРѕ С€С‚. РІС‹ С…РѕС‚РёС‚Рµ РІС‹С‚Р°С‰РёС‚СЊ РёР· Р±Р°РіР°Р¶РЅРёРєР°?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n\n{F19E18}- Р’С‹С‚Р°С‰РёС‚СЊ РјРѕР¶РµС‚Рµ РѕС‚ 1 РґРѕ %d", string, BagazInfo[get_int(playerid, "VehicleInfo")][select][1]);
+	return SPD(playerid, dBagazPayToInv, DSI, "Р’С‹С‚Р°С‰РёС‚СЊ", string, "Р’С‹С‚Р°С‰РёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PBomb(playerid)
 {
@@ -3773,22 +3773,22 @@ stock Dialog_PBomb(playerid)
 	{
 		if(SlotPlayerItem[playerid][4] == 1654)
 		{
-			f(string, "Поставить таймер\t[{30BE00}%s{FFFFFF}]", TimeBomb(get_int(playerid, "TimePlayerBomb")));
-			f(string, "%s\nЗапустить таймер\t", string);
-			f(string, "%s\nУстановить бомбу\t", string);
-			f(string, "%s\nИзъять бомбу\t", string);
-			f(string, "%s\nОстановить таймер\t", string);
+			f(string, "РџРѕСЃС‚Р°РІРёС‚СЊ С‚Р°Р№РјРµСЂ\t[{30BE00}%s{FFFFFF}]", TimeBomb(get_int(playerid, "TimePlayerBomb")));
+			f(string, "%s\nР—Р°РїСѓСЃС‚РёС‚СЊ С‚Р°Р№РјРµСЂ\t", string);
+			f(string, "%s\nРЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РѕРјР±Сѓ\t", string);
+			f(string, "%s\nРР·СЉСЏС‚СЊ Р±РѕРјР±Сѓ\t", string);
+			f(string, "%s\nРћСЃС‚Р°РЅРѕРІРёС‚СЊ С‚Р°Р№РјРµСЂ\t", string);
 		}
 		else
 		{
 			new Name[MAX_PLAYER_NAME];
 			get_string(playerid, "NameNaparBomb", Name, sizeof(Name));
-			f(string, "Выбрать напарника\t[{30BE00}%s{FFFFFF}]", (isnull(Name)) ? "Отсутствует" : Name);
-			f(string, "%s\nНажать на кнопку детонации\t", string);
-			f(string, "%s\nУстановить бомбу\t", string);
-			f(string, "%s\nИзъять бомбу\t", string);
+			f(string, "Р’С‹Р±СЂР°С‚СЊ РЅР°РїР°СЂРЅРёРєР°\t[{30BE00}%s{FFFFFF}]", (isnull(Name)) ? "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚" : Name);
+			f(string, "%s\nРќР°Р¶Р°С‚СЊ РЅР° РєРЅРѕРїРєСѓ РґРµС‚РѕРЅР°С†РёРё\t", string);
+			f(string, "%s\nРЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РѕРјР±Сѓ\t", string);
+			f(string, "%s\nРР·СЉСЏС‚СЊ Р±РѕРјР±Сѓ\t", string);
 		}
-		return SPD(playerid, dPBomb, DST, "Панель бомбы", string, "Далее", "Выход");
+		return SPD(playerid, dPBomb, DST, "РџР°РЅРµР»СЊ Р±РѕРјР±С‹", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 	}
 	for(new i; i != sizeof(TimerBomb); i++) 
 	{
@@ -3796,23 +3796,23 @@ stock Dialog_PBomb(playerid)
 		{
 			if(!TimerBomb[i][bVid])
 			{
-				if(TimerBomb[i][bTimerSt]) f(string, "Поставить таймер\t[{30BE00}%s{FFFFFF}]", TimeBomb(TimerBomb[i][bTimer]));
-				else f(string, "Поставить таймер\t[{30BE00}%s{FFFFFF}]", TimeBomb(TimerBomb[i][bTimer]));
-				f(string, "%s\nЗапустить таймер\t", string);
-				f(string, "%s\nУстановить бомбу\t", string);
-				f(string, "%s\nИзъять бомбу\t", string);
-				f(string, "%s\nОстановить таймер\t", string);
+				if(TimerBomb[i][bTimerSt]) f(string, "РџРѕСЃС‚Р°РІРёС‚СЊ С‚Р°Р№РјРµСЂ\t[{30BE00}%s{FFFFFF}]", TimeBomb(TimerBomb[i][bTimer]));
+				else f(string, "РџРѕСЃС‚Р°РІРёС‚СЊ С‚Р°Р№РјРµСЂ\t[{30BE00}%s{FFFFFF}]", TimeBomb(TimerBomb[i][bTimer]));
+				f(string, "%s\nР—Р°РїСѓСЃС‚РёС‚СЊ С‚Р°Р№РјРµСЂ\t", string);
+				f(string, "%s\nРЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РѕРјР±Сѓ\t", string);
+				f(string, "%s\nРР·СЉСЏС‚СЊ Р±РѕРјР±Сѓ\t", string);
+				f(string, "%s\nРћСЃС‚Р°РЅРѕРІРёС‚СЊ С‚Р°Р№РјРµСЂ\t", string);
 			}
 			else
 			{
 				new Name[MAX_PLAYER_NAME];
 				strmid(Name, TimerBomb[i][bNapar], 0, MAX_PLAYER_NAME, MAX_PLAYER_NAME);
-				f(string, "Выбрать напарника\t[{30BE00}%s{FFFFFF}]", (isnull(TimerBomb[i][bNapar])) ? "Отсутствует" : Name);
-				f(string, "%s\nНажать на кнопку детонации\t", string);
-				f(string, "%s\nУстановить бомбу\t", string);
-				f(string, "%s\nИзъять бомбу\t", string);
+				f(string, "Р’С‹Р±СЂР°С‚СЊ РЅР°РїР°СЂРЅРёРєР°\t[{30BE00}%s{FFFFFF}]", (isnull(TimerBomb[i][bNapar])) ? "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚" : Name);
+				f(string, "%s\nРќР°Р¶Р°С‚СЊ РЅР° РєРЅРѕРїРєСѓ РґРµС‚РѕРЅР°С†РёРё\t", string);
+				f(string, "%s\nРЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РѕРјР±Сѓ\t", string);
+				f(string, "%s\nРР·СЉСЏС‚СЊ Р±РѕРјР±Сѓ\t", string);
 			}
-			return SPD(playerid, dPBomb, DST, "Панель бомбы", string, "Далее", "Выход");
+			return SPD(playerid, dPBomb, DST, "РџР°РЅРµР»СЊ Р±РѕРјР±С‹", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 		}
 	}
 	return true;
@@ -3820,10 +3820,10 @@ stock Dialog_PBomb(playerid)
 stock Dialog_PBomb_ST(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите кол-во минут через которое бомба должна сдетонировать");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Количество минут можно выставлять от 1 до 30 минут", string);
-	return SPD(playerid, dPBomb_STim, DSI, "Таймер", string, "Поставить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ РјРёРЅСѓС‚ С‡РµСЂРµР· РєРѕС‚РѕСЂРѕРµ Р±РѕРјР±Р° РґРѕР»Р¶РЅР° СЃРґРµС‚РѕРЅРёСЂРѕРІР°С‚СЊ");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»РёС‡РµСЃС‚РІРѕ РјРёРЅСѓС‚ РјРѕР¶РЅРѕ РІС‹СЃС‚Р°РІР»СЏС‚СЊ РѕС‚ 1 РґРѕ 30 РјРёРЅСѓС‚", string);
+	return SPD(playerid, dPBomb_STim, DSI, "РўР°Р№РјРµСЂ", string, "РџРѕСЃС‚Р°РІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PBomb_SNap(playerid)
 {
@@ -3840,83 +3840,83 @@ stock Dialog_PBomb_SNap(playerid)
 			else f(string, "%s\n%s", string, GN(i));
 		}
 	}
-	if(l) SPD(playerid, dPBomb_SNap, DSL, "Напарник", string, "Выбрать", "Назад");
+	if(l) SPD(playerid, dPBomb_SNap, DSL, "РќР°РїР°СЂРЅРёРє", string, "Р’С‹Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 	else
 	{
-		MindSCM(playerid, "Рядом со мной никто не стоит");
+		MindSCM(playerid, "Р СЏРґРѕРј СЃРѕ РјРЅРѕР№ РЅРёРєС‚Рѕ РЅРµ СЃС‚РѕРёС‚");
 		Dialog_PBomb(playerid);
 	}
 }
 stock Dialog_PBomb_SB(playerid)
 {
-	return SPD(playerid, dPBomb_SB, DSL, "Установить бомбу", "На пол\nНа игрока\nНа машину", "Установить", "Назад");
+	return SPD(playerid, dPBomb_SB, DSL, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РѕРјР±Сѓ", "РќР° РїРѕР»\nРќР° РёРіСЂРѕРєР°\nРќР° РјР°С€РёРЅСѓ", "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP(playerid)
 {
 	new string[300];
-	f(string, "Запустить мероприятие");
-	f(string, "%s\nЗавершить мероприятие", string);
-	f(string, "%s\nПараметры участников", string);
-	f(string, "%s\nОтправить сообщение учасникам", string);
-	return SPD(playerid, dPMP, DSL, "Панель мероприятий", string, "Далее", "Выход");
+	f(string, "Р—Р°РїСѓСЃС‚РёС‚СЊ РјРµСЂРѕРїСЂРёСЏС‚РёРµ");
+	f(string, "%s\nР—Р°РІРµСЂС€РёС‚СЊ РјРµСЂРѕРїСЂРёСЏС‚РёРµ", string);
+	f(string, "%s\nРџР°СЂР°РјРµС‚СЂС‹ СѓС‡Р°СЃС‚РЅРёРєРѕРІ", string);
+	f(string, "%s\nРћС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ СѓС‡Р°СЃРЅРёРєР°Рј", string);
+	return SPD(playerid, dPMP, DSL, "РџР°РЅРµР»СЊ РјРµСЂРѕРїСЂРёСЏС‚РёР№", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PMP_St(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите название мероприятия:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Количество символов должно быть от 3-х до 64-х", string);
-	return SPD(playerid, dPMP_St, DSI, "Название мероприятия", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РјРµСЂРѕРїСЂРёСЏС‚РёСЏ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РѕС‚ 3-С… РґРѕ 64-С…", string);
+	return SPD(playerid, dPMP_St, DSI, "РќР°Р·РІР°РЅРёРµ РјРµСЂРѕРїСЂРёСЏС‚РёСЏ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_St1(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите максимальное количество участников на мероприятие:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Количество участников может быть от 10 до 100", string);
-	return SPD(playerid, dPMP_St1, DSI, "Кол-во участников", string, "Начать", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СѓС‡Р°СЃС‚РЅРёРєРѕРІ РЅР° РјРµСЂРѕРїСЂРёСЏС‚РёРµ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»РёС‡РµСЃС‚РІРѕ СѓС‡Р°СЃС‚РЅРёРєРѕРІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚ 10 РґРѕ 100", string);
+	return SPD(playerid, dPMP_St1, DSI, "РљРѕР»-РІРѕ СѓС‡Р°СЃС‚РЅРёРєРѕРІ", string, "РќР°С‡Р°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP(playerid)
 {
 	new string[300];
-	f(string, "Установить здоровье");
-	f(string, "%s\nУстановить броню", string);
-	f(string, "%s\nВыдать транспорт", string);
-	f(string, "%s\nЗабрать оружие", string);
-	f(string, "%s\nВыдать оружие", string);
-	return SPD(playerid, dPMP_SetP, DSL, "Редактирование участников", string, "Далее", "Выход");
+	f(string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р·РґРѕСЂРѕРІСЊРµ");
+	f(string, "%s\nРЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р±СЂРѕРЅСЋ", string);
+	f(string, "%s\nР’С‹РґР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚", string);
+	f(string, "%s\nР—Р°Р±СЂР°С‚СЊ РѕСЂСѓР¶РёРµ", string);
+	f(string, "%s\nР’С‹РґР°С‚СЊ РѕСЂСѓР¶РёРµ", string);
+	return SPD(playerid, dPMP_SetP, DSL, "Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СѓС‡Р°СЃС‚РЅРёРєРѕРІ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PMP_SetP_XP(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите количество HP, которое нужно установить всем участникам:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- HP можно вводить от 10 до 100", string);
-	return SPD(playerid, dPMP_SetP1, DSI, "Редактирование HP", string, "Установить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ HP, РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РІСЃРµРј СѓС‡Р°СЃС‚РЅРёРєР°Рј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- HP РјРѕР¶РЅРѕ РІРІРѕРґРёС‚СЊ РѕС‚ 10 РґРѕ 100", string);
+	return SPD(playerid, dPMP_SetP1, DSI, "Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ HP", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP_Arm(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите количество Брони, которое нужно установить всем участникам:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Броню можно вводить от 0 до 100", string);
-	return SPD(playerid, dPMP_SetP1, DSI, "Редактирование Брони", string, "Установить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р‘СЂРѕРЅРё, РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РІСЃРµРј СѓС‡Р°СЃС‚РЅРёРєР°Рј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р‘СЂРѕРЅСЋ РјРѕР¶РЅРѕ РІРІРѕРґРёС‚СЊ РѕС‚ 0 РґРѕ 100", string);
+	return SPD(playerid, dPMP_SetP1, DSI, "Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ Р‘СЂРѕРЅРё", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP_Car(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите ID машины, которое нужно заспавнить всем участникам:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- ID машины от 400 до 611", string);
-	return SPD(playerid, dPMP_SetP1, DSI, "Спавн транспорта", string, "Далее", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ ID РјР°С€РёРЅС‹, РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ Р·Р°СЃРїР°РІРЅРёС‚СЊ РІСЃРµРј СѓС‡Р°СЃС‚РЅРёРєР°Рј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- ID РјР°С€РёРЅС‹ РѕС‚ 400 РґРѕ 611", string);
+	return SPD(playerid, dPMP_SetP1, DSI, "РЎРїР°РІРЅ С‚СЂР°РЅСЃРїРѕСЂС‚Р°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP_Car1(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите ID цвета машины, которое нужно покрасить на транспорт:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- ID цвета от 0 до 255", string);
-	return SPD(playerid, dPMP_SetP2, DSI, "Спавн транспорта", string, "Спавн", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ ID С†РІРµС‚Р° РјР°С€РёРЅС‹, РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ РїРѕРєСЂР°СЃРёС‚СЊ РЅР° С‚СЂР°РЅСЃРїРѕСЂС‚:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- ID С†РІРµС‚Р° РѕС‚ 0 РґРѕ 255", string);
+	return SPD(playerid, dPMP_SetP2, DSI, "РЎРїР°РІРЅ С‚СЂР°РЅСЃРїРѕСЂС‚Р°", string, "РЎРїР°РІРЅ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP_GG(playerid)
 {
@@ -3926,97 +3926,97 @@ stock Dialog_PMP_SetP_GG(playerid)
 		if(!i) f(string, "%s", ItemsInvInfo[i][eName]);
 		else f(string, "%s\n%s", string, ItemsInvInfo[i][eName]);
 	}
-	return SPD(playerid, dPMP_SetP1, DSL, "Выдача оружия", string, "Далее", "Выход");
+	return SPD(playerid, dPMP_SetP1, DSL, "Р’С‹РґР°С‡Р° РѕСЂСѓР¶РёСЏ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_PMP_SetP_GG1(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите количество патронов, которое нужно выдать всем участникам:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Кол-во патронов от 1 до 100", string);
-	return SPD(playerid, dPMP_SetP2, DSI, "Выдача оружия", string, "Выдать", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°С‚СЂРѕРЅРѕРІ, РєРѕС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ РІС‹РґР°С‚СЊ РІСЃРµРј СѓС‡Р°СЃС‚РЅРёРєР°Рј:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ РїР°С‚СЂРѕРЅРѕРІ РѕС‚ 1 РґРѕ 100", string);
+	return SPD(playerid, dPMP_SetP2, DSI, "Р’С‹РґР°С‡Р° РѕСЂСѓР¶РёСЏ", string, "Р’С‹РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PMP_SetP_Mess(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите текст, который хотите отправить всем участникам мероприятия:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Кол-во символов от 3 до 64", string);
-	return SPD(playerid, dPMP_Mess, DSI, "Сообщение", string, "Отправить", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ РІСЃРµРј СѓС‡Р°СЃС‚РЅРёРєР°Рј РјРµСЂРѕРїСЂРёСЏС‚РёСЏ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РљРѕР»-РІРѕ СЃРёРјРІРѕР»РѕРІ РѕС‚ 3 РґРѕ 64", string);
+	return SPD(playerid, dPMP_Mess, DSI, "РЎРѕРѕР±С‰РµРЅРёРµ", string, "РћС‚РїСЂР°РІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ(playerid)
 {
 	new string[300];
-	f(string, "Помощь по владению бизнеса");
-	f(string, "%s\nСписок заказов", string);
-	f(string, "%s\nЗаказать ящики с деталями", string);
-	f(string, "%s\nИзменить цены на заказ транспорта", string);
-	f(string, "%s\nИзменить размер зарплат в цехах", string);
-	f(string, "%s\nПочта", string);
-	f(string, "%s\nУволить заместителя", string);
-	return SPD(playerid, dTZ, DSL, "Компьютер", string, "Далее", "Выход");
+	f(string, "РџРѕРјРѕС‰СЊ РїРѕ РІР»Р°РґРµРЅРёСЋ Р±РёР·РЅРµСЃР°");
+	f(string, "%s\nРЎРїРёСЃРѕРє Р·Р°РєР°Р·РѕРІ", string);
+	f(string, "%s\nР—Р°РєР°Р·Р°С‚СЊ СЏС‰РёРєРё СЃ РґРµС‚Р°Р»СЏРјРё", string);
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ С†РµРЅС‹ РЅР° Р·Р°РєР°Р· С‚СЂР°РЅСЃРїРѕСЂС‚Р°", string);
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ Р·Р°СЂРїР»Р°С‚ РІ С†РµС…Р°С…", string);
+	f(string, "%s\nРџРѕС‡С‚Р°", string);
+	f(string, "%s\nРЈРІРѕР»РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ", string);
+	return SPD(playerid, dTZ, DSL, "РљРѕРјРїСЊСЋС‚РµСЂ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_TZ_Help(playerid)
 {
 	new string[1700];
-	f(string, "{FFFFFF}Основные задачи Владельца Траспортного завода:");
-	f(string, "%s\n\t{FFFFFF}- Своевременно закупать ящики с деталями.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять размеры зарплат в цехах, в зависимости от заказов.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять цены на заказ транспорта, в зависимости от заказов.", string);
-	f(string, "%s\n\t{FFFFFF}- Проверять почту.", string);
-	f(string, "%s\n\n{FFFFFF}Возможности Владельца Траспортного завода:", string);
-	f(string, "%s\n\t{FFFFFF}- Назначать заместителя. Что бы назначить заместителя, введите команду: {FFFF00}/zam", string);
-	f(string, "%s\n\t{FFFFFF}- Снимать заместителя.", string);
-	f(string, "%s\n\n{FFFFFF}Прочее:", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете определенный процент от выручки работников, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% от определенного процента выручки от работников, а заместитель - 40%% от определенного процента.", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете 100%% выручки от заказов транспортов, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% выручки от работников, а заместитель - 40%%.", string);
-	f(string, "%s\n\t{FFFFFF}- Заместитель может все, что и Владелец, но не может продать Бизнес и назначать Заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Сотрудники ВФК Германии могут вас оштрафовать от 1.000 Euro до 1.000.000 Euro, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Также сотрудники ВФК Германии могут вас лишить право владения бизнеса, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Что бы не было проблем, смотрите почаще Почту.", string);
-	f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'transport-plant@pangora.com\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Своевременно оплачивайте комунальные услуги в банке.", string);
-	return SPD(playerid, dTZ_Help, DSM, "Помощь", string, "Выход", "Назад");
+	f(string, "{FFFFFF}РћСЃРЅРѕРІРЅС‹Рµ Р·Р°РґР°С‡Рё Р’Р»Р°РґРµР»СЊС†Р° РўСЂР°СЃРїРѕСЂС‚РЅРѕРіРѕ Р·Р°РІРѕРґР°:");
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ Р·Р°РєСѓРїР°С‚СЊ СЏС‰РёРєРё СЃ РґРµС‚Р°Р»СЏРјРё.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ СЂР°Р·РјРµСЂС‹ Р·Р°СЂРїР»Р°С‚ РІ С†РµС…Р°С…, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ Р·Р°РєР°Р·РѕРІ.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ С†РµРЅС‹ РЅР° Р·Р°РєР°Р· С‚СЂР°РЅСЃРїРѕСЂС‚Р°, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ Р·Р°РєР°Р·РѕРІ.", string);
+	f(string, "%s\n\t{FFFFFF}- РџСЂРѕРІРµСЂСЏС‚СЊ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\n{FFFFFF}Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё Р’Р»Р°РґРµР»СЊС†Р° РўСЂР°СЃРїРѕСЂС‚РЅРѕРіРѕ Р·Р°РІРѕРґР°:", string);
+	f(string, "%s\n\t{FFFFFF}- РќР°Р·РЅР°С‡Р°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ. Р§С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ, РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ: {FFFF00}/zam", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРЅРёРјР°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\n{FFFFFF}РџСЂРѕС‡РµРµ:", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ РїСЂРѕС†РµРЅС‚ РѕС‚ РІС‹СЂСѓС‡РєРё СЂР°Р±РѕС‚РЅРёРєРѕРІ, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р° РІС‹СЂСѓС‡РєРё РѕС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р°.", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ 100%% РІС‹СЂСѓС‡РєРё РѕС‚ Р·Р°РєР°Р·РѕРІ С‚СЂР°РЅСЃРїРѕСЂС‚РѕРІ, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РІС‹СЂСѓС‡РєРё РѕС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%%.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РјРµСЃС‚РёС‚РµР»СЊ РјРѕР¶РµС‚ РІСЃРµ, С‡С‚Рѕ Рё Р’Р»Р°РґРµР»РµС†, РЅРѕ РЅРµ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ Р‘РёР·РЅРµСЃ Рё РЅР°Р·РЅР°С‡Р°С‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё Р’Р¤Рљ Р“РµСЂРјР°РЅРёРё РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Euro РґРѕ 1.000.000 Euro, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- РўР°РєР¶Рµ СЃРѕС‚СЂСѓРґРЅРёРєРё Р’Р¤Рљ Р“РµСЂРјР°РЅРёРё РјРѕРіСѓС‚ РІР°СЃ Р»РёС€РёС‚СЊ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ Р±РёР·РЅРµСЃР°, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р§С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј, СЃРјРѕС‚СЂРёС‚Рµ РїРѕС‡Р°С‰Рµ РџРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'transport-plant@pangora.com\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ РѕРїР»Р°С‡РёРІР°Р№С‚Рµ РєРѕРјСѓРЅР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё РІ Р±Р°РЅРєРµ.", string);
+	return SPD(playerid, dTZ_Help, DSM, "РџРѕРјРѕС‰СЊ", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ_Price(playerid)
 {
 	new string[200];
-	f(string, "Мотоциклы");
-	f(string, "%s\nАвтомобили (Часть 1)", string);
-	f(string, "%s\nАвтомобили (Часть 2)", string);
-	f(string, "%s\nВертолеты", string);
-	f(string, "%s\nЛодки", string);
-	f(string, "%s\nСамолеты", string);
-	return SPD(playerid, dTZ_Price, DSL, "Транспорт", string, "Далее", "Назад");
+	f(string, "РњРѕС‚РѕС†РёРєР»С‹");
+	f(string, "%s\nРђРІС‚РѕРјРѕР±РёР»Рё (Р§Р°СЃС‚СЊ 1)", string);
+	f(string, "%s\nРђРІС‚РѕРјРѕР±РёР»Рё (Р§Р°СЃС‚СЊ 2)", string);
+	f(string, "%s\nР’РµСЂС‚РѕР»РµС‚С‹", string);
+	f(string, "%s\nР›РѕРґРєРё", string);
+	f(string, "%s\nРЎР°РјРѕР»РµС‚С‹", string);
+	return SPD(playerid, dTZ_Price, DSL, "РўСЂР°РЅСЃРїРѕСЂС‚", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ_Price1(playerid)
 {
 	new string[350], Name[51];
 	get_string(playerid, "TZOrder1", Name, sizeof(Name));
-	f(string, "{FFFFFF}Какую цену желаете установить транспорту - {FFFF00}%s{FFFFFF}?", Name);
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Цена должна быть от 500 Euro до 500.000 Euro.", string);
-	return SPD(playerid, dTZ_Price2, DSI, "Цена", string, "Установить", "Назад"); 
+	f(string, "{FFFFFF}РљР°РєСѓСЋ С†РµРЅСѓ Р¶РµР»Р°РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚Сѓ - {FFFF00}%s{FFFFFF}?", Name);
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р¦РµРЅР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕС‚ 500 Euro РґРѕ 500.000 Euro.", string);
+	return SPD(playerid, dTZ_Price2, DSI, "Р¦РµРЅР°", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ"); 
 }
 stock Dialog_TZ_Order(playerid)
 {
 	new string[200];
-	f(string, "Сделать заказ");
-	f(string, "%s\nСтатус заказов", string);
-	return SPD(playerid, dTZ_Order, DSL, "Панель заказчика", string, "Далее", "Выход");
+	f(string, "РЎРґРµР»Р°С‚СЊ Р·Р°РєР°Р·");
+	f(string, "%s\nРЎС‚Р°С‚СѓСЃ Р·Р°РєР°Р·РѕРІ", string);
+	return SPD(playerid, dTZ_Order, DSL, "РџР°РЅРµР»СЊ Р·Р°РєР°Р·С‡РёРєР°", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_TZ_Order1(playerid)
 {
 	new string[200];
-	f(string, "Мотоциклы");
-	f(string, "%s\nАвтомобили (Часть 1)", string);
-	f(string, "%s\nАвтомобили (Часть 2)", string);
-	f(string, "%s\nВертолеты", string);
-	f(string, "%s\nЛодки", string);
-	f(string, "%s\nСамолеты", string);
-	return SPD(playerid, dTZ_Order1, DSL, "Транспорт", string, "Далее", "Выход");
+	f(string, "РњРѕС‚РѕС†РёРєР»С‹");
+	f(string, "%s\nРђРІС‚РѕРјРѕР±РёР»Рё (Р§Р°СЃС‚СЊ 1)", string);
+	f(string, "%s\nРђРІС‚РѕРјРѕР±РёР»Рё (Р§Р°СЃС‚СЊ 2)", string);
+	f(string, "%s\nР’РµСЂС‚РѕР»РµС‚С‹", string);
+	f(string, "%s\nР›РѕРґРєРё", string);
+	f(string, "%s\nРЎР°РјРѕР»РµС‚С‹", string);
+	return SPD(playerid, dTZ_Order1, DSL, "РўСЂР°РЅСЃРїРѕСЂС‚", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_TZ_Order2(playerid)
 {
@@ -4030,18 +4030,18 @@ stock Dialog_TZ_Order2(playerid)
 			break;
 		}
 	}
-	f(string, "{FFFFFF}Сколько хотите заказать {FFFF00}%s{FFFFFF}?", Name);
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вы можете заказать транспорт от 1 шт до 10 шт.", string, price);
-	f(string, "%s\n{F19E18}- Цена транспорта за 1 шт - %d Euro.", string, price);
-	return SPD(playerid, dTZ_Order3, DSI, "Заказ", string, "Заказать", "Назад"); 
+	f(string, "{FFFFFF}РЎРєРѕР»СЊРєРѕ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ {FFFF00}%s{FFFFFF}?", Name);
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚ РѕС‚ 1 С€С‚ РґРѕ 10 С€С‚.", string, price);
+	f(string, "%s\n{F19E18}- Р¦РµРЅР° С‚СЂР°РЅСЃРїРѕСЂС‚Р° Р·Р° 1 С€С‚ - %d Euro.", string, price);
+	return SPD(playerid, dTZ_Order3, DSI, "Р—Р°РєР°Р·", string, "Р—Р°РєР°Р·Р°С‚СЊ", "РќР°Р·Р°Рґ"); 
 }
 stock Dialog_TZ_Zakaz(playerid)
 {
 	new string[4100], str[200], car[51], date_[11], time_[9], count, ready, key;
 	f(str, "SELECT * FROM "SQL_ORDERTZ" WHERE "SQL_ORDERTZ_ID" = %d", Player[playerid][pID]);
 	new Cache: res = Sql(str);
-	f(string, "Дата\tМодель\tКол-во\tСтатус");
+	f(string, "Р”Р°С‚Р°\tРњРѕРґРµР»СЊ\tРљРѕР»-РІРѕ\tРЎС‚Р°С‚СѓСЃ");
 	for(new i; i != cache_num_rows(); i++)
 	{
 		new local[17] = "ProcessTZZakaz";
@@ -4052,240 +4052,240 @@ stock Dialog_TZ_Zakaz(playerid)
 		sql_get_int(i, SQL_ORDERTZ_COUNT, count);
 		sql_get_int(i, SQL_ORDERTZ_READY, ready);
 		f(local, "%s%d", local, i), set_int(playerid, local, key);
-		f(string, "%s\n%s (%s)\t%s\t%d\t%s", string, date_, time_, car, count, (ready == count) ? "{AAEE95}Готов" : "{EEC56B}В процессе");
+		f(string, "%s\n%s (%s)\t%s\t%d\t%s", string, date_, time_, car, count, (ready == count) ? "{AAEE95}Р“РѕС‚РѕРІ" : "{EEC56B}Р’ РїСЂРѕС†РµСЃСЃРµ");
 	}
 	if(cache_is_valid(res)) cache_delete(res);
-	SPD(playerid, dTZ_Zakaz, DSTH, "Статус заказов", string, "Забрать", "Назад");
+	SPD(playerid, dTZ_Zakaz, DSTH, "РЎС‚Р°С‚СѓСЃ Р·Р°РєР°Р·РѕРІ", string, "Р—Р°Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ_Detals(playerid)
 {
 	new string[300], detals;
 	for(new i; i != sizeof(VagonTZ); i++) if(VagonTZ[i][1] != 200) detals += 200 - VagonTZ[i][1];
-	f(string, "{FFFFFF}Вы хотите заказать %d ящиков с деталями за %d Euro?", detals, detals * 200);
-	return SPD(playerid, dTZ_Detals, DSM, "Заказ", string, "Заказать", "Назад");
+	f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ %d СЏС‰РёРєРѕРІ СЃ РґРµС‚Р°Р»СЏРјРё Р·Р° %d Euro?", detals, detals * 200);
+	return SPD(playerid, dTZ_Detals, DSM, "Р—Р°РєР°Р·", string, "Р—Р°РєР°Р·Р°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ_ZP(playerid)
 {
 	new string[600];
-	f(string, "Мотоциклетный цех\t{06B200}%d%%", ZPTZ[0]);
-	f(string, "%s\nАвтомобильный цех\t{06B200}%d%%", string, ZPTZ[1]);
-	f(string, "%s\nВертолетный цех\t{06B200}%d%%", string, ZPTZ[2]);
-	f(string, "%s\nСудомеханический цех\t{06B200}%d%%", string, ZPTZ[3]);
-	f(string, "%s\nСамолетный цех\t{06B200}%d%%", string, ZPTZ[4]);
-	return SPD(playerid, dTZ_ZP, DST, "Зарплаты", string, "Далее", "Назад");
+	f(string, "РњРѕС‚РѕС†РёРєР»РµС‚РЅС‹Р№ С†РµС…\t{06B200}%d%%", ZPTZ[0]);
+	f(string, "%s\nРђРІС‚РѕРјРѕР±РёР»СЊРЅС‹Р№ С†РµС…\t{06B200}%d%%", string, ZPTZ[1]);
+	f(string, "%s\nР’РµСЂС‚РѕР»РµС‚РЅС‹Р№ С†РµС…\t{06B200}%d%%", string, ZPTZ[2]);
+	f(string, "%s\nРЎСѓРґРѕРјРµС…Р°РЅРёС‡РµСЃРєРёР№ С†РµС…\t{06B200}%d%%", string, ZPTZ[3]);
+	f(string, "%s\nРЎР°РјРѕР»РµС‚РЅС‹Р№ С†РµС…\t{06B200}%d%%", string, ZPTZ[4]);
+	return SPD(playerid, dTZ_ZP, DST, "Р—Р°СЂРїР»Р°С‚С‹", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_TZ_ZP1(playerid)
 {
 	new string[600];
-	f(string, "{FFFFFF}Какой процент из 100 Euro руководство бизнеса будет получать при выручке работника этого цеха?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вы можете установить процент от 0 до 80.", string);
+	f(string, "{FFFFFF}РљР°РєРѕР№ РїСЂРѕС†РµРЅС‚ РёР· 100 Euro СЂСѓРєРѕРІРѕРґСЃС‚РІРѕ Р±РёР·РЅРµСЃР° Р±СѓРґРµС‚ РїРѕР»СѓС‡Р°С‚СЊ РїСЂРё РІС‹СЂСѓС‡РєРµ СЂР°Р±РѕС‚РЅРёРєР° СЌС‚РѕРіРѕ С†РµС…Р°?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРѕС†РµРЅС‚ РѕС‚ 0 РґРѕ 80.", string);
 	switch(get_int(playerid, "ZPTZlistitem"))
 	{
-		case 0: SPD(playerid, dTZ_ZP1, DSI, "Мотоциклетный цех", string, "Установить", "Назад");
-		case 1: SPD(playerid, dTZ_ZP1, DSI, "Автомобильный цех", string, "Установить", "Назад");
-		case 2: SPD(playerid, dTZ_ZP1, DSI, "Вертолетный цех", string, "Установить", "Назад");
-		case 3: SPD(playerid, dTZ_ZP1, DSI, "Судомеханический цех", string, "Установить", "Назад");
-		case 4: SPD(playerid, dTZ_ZP1, DSI, "Самолетный цех", string, "Установить", "Назад");
+		case 0: SPD(playerid, dTZ_ZP1, DSI, "РњРѕС‚РѕС†РёРєР»РµС‚РЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 1: SPD(playerid, dTZ_ZP1, DSI, "РђРІС‚РѕРјРѕР±РёР»СЊРЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 2: SPD(playerid, dTZ_ZP1, DSI, "Р’РµСЂС‚РѕР»РµС‚РЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 3: SPD(playerid, dTZ_ZP1, DSI, "РЎСѓРґРѕРјРµС…Р°РЅРёС‡РµСЃРєРёР№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 4: SPD(playerid, dTZ_ZP1, DSI, "РЎР°РјРѕР»РµС‚РЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 	}
 	return true;
 }
 stock Dialog_Farm(playerid)
 {
 	new string[300];
-	f(string, "Помощь по владению бизнеса");
-	f(string, "%s\nЗаказать семена", string);
-	f(string, "%s\nИзменить размер зарплат в отраслях", string);
-	f(string, "%s\nПочта", string);
-	f(string, "%s\nУволить заместителя", string);
-	return SPD(playerid, dFarm, DSL, "Компьютер", string, "Далее", "Выход");
+	f(string, "РџРѕРјРѕС‰СЊ РїРѕ РІР»Р°РґРµРЅРёСЋ Р±РёР·РЅРµСЃР°");
+	f(string, "%s\nР—Р°РєР°Р·Р°С‚СЊ СЃРµРјРµРЅР°", string);
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ Р·Р°СЂРїР»Р°С‚ РІ РѕС‚СЂР°СЃР»СЏС…", string);
+	f(string, "%s\nРџРѕС‡С‚Р°", string);
+	f(string, "%s\nРЈРІРѕР»РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ", string);
+	return SPD(playerid, dFarm, DSL, "РљРѕРјРїСЊСЋС‚РµСЂ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Farm_Help(playerid)
 {
 	new string[1900];
-	f(string, "{FFFFFF}Основные задачи Владельца Фермы:");
-	f(string, "%s\n\t{FFFFFF}- Своевременно закупать семена.", string);
-	f(string, "%s\n\t{FFFFFF}- Следить за автопарком фермы.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять размеры зарплат в отраслях.", string);
-	f(string, "%s\n\t{FFFFFF}- Проверять почту.", string);
-	f(string, "%s\n\n{FFFFFF}Возможности Владельца Фермы:", string);
-	f(string, "%s\n\t{FFFFFF}- Назначать заместителя. Что бы назначить заместителя, введите команду: {FFFF00}/zam", string);
-	f(string, "%s\n\t{FFFFFF}- Закупать транспорт для фермы.", string);
-	f(string, "%s\n\t{FFFFFF}- Менять положение шлакбаумов на территории фермы.", string);
-	f(string, "%s\n\t{FFFFFF}- Снимать заместителя.", string);
-	f(string, "%s\n\n{FFFFFF}Прочее:", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете определенный процент от выручки работников, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% от определенного процента выручки от работников, а заместитель - 40%% от определенного процента.", string);
-	f(string, "%s\n\t{FFFFFF}- Заместитель может все, что и Владелец, но не может продать Бизнес и назначать Заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Сотрудники Администрации Президента РФ могут вас оштрафовать от 1.000 Рублей до 1.000.000 Рублей, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Также сотрудники Администрации Президента РФ могут вас лишить право владения бизнеса, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Что бы не было проблем, смотрите почаще Почту.", string);
-	f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'farm@pangora.com\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Своевременно оплачивайте комунальные услуги в банке.", string);
-	f(string, "%s\n\t{FFFFFF}- Всего на ферме может быть 4 транспорта. Для работы на ферме нужны транспорты под маркой \'Tractor\' и \'Combine Harvester\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Транспорт закупается в Автосалоне.", string);
-	return SPD(playerid, dFarm_Help, DSM, "Помощь", string, "Выход", "Назад");
+	f(string, "{FFFFFF}РћСЃРЅРѕРІРЅС‹Рµ Р·Р°РґР°С‡Рё Р’Р»Р°РґРµР»СЊС†Р° Р¤РµСЂРјС‹:");
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ Р·Р°РєСѓРїР°С‚СЊ СЃРµРјРµРЅР°.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎР»РµРґРёС‚СЊ Р·Р° Р°РІС‚РѕРїР°СЂРєРѕРј С„РµСЂРјС‹.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ СЂР°Р·РјРµСЂС‹ Р·Р°СЂРїР»Р°С‚ РІ РѕС‚СЂР°СЃР»СЏС….", string);
+	f(string, "%s\n\t{FFFFFF}- РџСЂРѕРІРµСЂСЏС‚СЊ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\n{FFFFFF}Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё Р’Р»Р°РґРµР»СЊС†Р° Р¤РµСЂРјС‹:", string);
+	f(string, "%s\n\t{FFFFFF}- РќР°Р·РЅР°С‡Р°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ. Р§С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ, РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ: {FFFF00}/zam", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РєСѓРїР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚ РґР»СЏ С„РµСЂРјС‹.", string);
+	f(string, "%s\n\t{FFFFFF}- РњРµРЅСЏС‚СЊ РїРѕР»РѕР¶РµРЅРёРµ С€Р»Р°РєР±Р°СѓРјРѕРІ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё С„РµСЂРјС‹.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРЅРёРјР°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\n{FFFFFF}РџСЂРѕС‡РµРµ:", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ РїСЂРѕС†РµРЅС‚ РѕС‚ РІС‹СЂСѓС‡РєРё СЂР°Р±РѕС‚РЅРёРєРѕРІ, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р° РІС‹СЂСѓС‡РєРё РѕС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р°.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РјРµСЃС‚РёС‚РµР»СЊ РјРѕР¶РµС‚ РІСЃРµ, С‡С‚Рѕ Рё Р’Р»Р°РґРµР»РµС†, РЅРѕ РЅРµ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ Р‘РёР·РЅРµСЃ Рё РЅР°Р·РЅР°С‡Р°С‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё РџСЂРµР·РёРґРµРЅС‚Р° Р Р¤ РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Р СѓР±Р»РµР№ РґРѕ 1.000.000 Р СѓР±Р»РµР№, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- РўР°РєР¶Рµ СЃРѕС‚СЂСѓРґРЅРёРєРё РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё РџСЂРµР·РёРґРµРЅС‚Р° Р Р¤ РјРѕРіСѓС‚ РІР°СЃ Р»РёС€РёС‚СЊ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ Р±РёР·РЅРµСЃР°, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р§С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј, СЃРјРѕС‚СЂРёС‚Рµ РїРѕС‡Р°С‰Рµ РџРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'farm@pangora.com\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ РѕРїР»Р°С‡РёРІР°Р№С‚Рµ РєРѕРјСѓРЅР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё РІ Р±Р°РЅРєРµ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р’СЃРµРіРѕ РЅР° С„РµСЂРјРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ 4 С‚СЂР°РЅСЃРїРѕСЂС‚Р°. Р”Р»СЏ СЂР°Р±РѕС‚С‹ РЅР° С„РµСЂРјРµ РЅСѓР¶РЅС‹ С‚СЂР°РЅСЃРїРѕСЂС‚С‹ РїРѕРґ РјР°СЂРєРѕР№ \'Tractor\' Рё \'Combine Harvester\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РўСЂР°РЅСЃРїРѕСЂС‚ Р·Р°РєСѓРїР°РµС‚СЃСЏ РІ РђРІС‚РѕСЃР°Р»РѕРЅРµ.", string);
+	return SPD(playerid, dFarm_Help, DSM, "РџРѕРјРѕС‰СЊ", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Farm_Seeds(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Вы хотите заказать %d семян за %d Рублей?", 5000 - Seeds, (5000 - Seeds) * 50);
-	return SPD(playerid, dFarm_Seeds, DSM, "Заказ", string, "Заказать", "Назад");
+	f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ %d СЃРµРјСЏРЅ Р·Р° %d Р СѓР±Р»РµР№?", 5000 - Seeds, (5000 - Seeds) * 50);
+	return SPD(playerid, dFarm_Seeds, DSM, "Р—Р°РєР°Р·", string, "Р—Р°РєР°Р·Р°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Farm_ZP(playerid)
 {
 	new string[600];
-	f(string, "Растеневодство\t{06B200}%d%%", ZPFarm[0]);
-	f(string, "%s\nЯгодоводство\t{06B200}%d%%", string, ZPFarm[1]);
-	f(string, "%s\nСадоводство\t{06B200}%d%%", string, ZPFarm[2]);
-	f(string, "%s\nЖивотноводство\t{06B200}%d%%", string, ZPFarm[3]);
-	return SPD(playerid, dFarm_ZP, DST, "Зарплаты", string, "Далее", "Назад");
+	f(string, "Р Р°СЃС‚РµРЅРµРІРѕРґСЃС‚РІРѕ\t{06B200}%d%%", ZPFarm[0]);
+	f(string, "%s\nРЇРіРѕРґРѕРІРѕРґСЃС‚РІРѕ\t{06B200}%d%%", string, ZPFarm[1]);
+	f(string, "%s\nРЎР°РґРѕРІРѕРґСЃС‚РІРѕ\t{06B200}%d%%", string, ZPFarm[2]);
+	f(string, "%s\nР–РёРІРѕС‚РЅРѕРІРѕРґСЃС‚РІРѕ\t{06B200}%d%%", string, ZPFarm[3]);
+	return SPD(playerid, dFarm_ZP, DST, "Р—Р°СЂРїР»Р°С‚С‹", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Farm_ZP1(playerid)
 {
 	new string[600];
-	f(string, "{FFFFFF}Какой процент из 100 Рублей руководство бизнеса будет получать при выручке работника этой отрасли?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вы можете установить процент от 0 до 80.", string);
+	f(string, "{FFFFFF}РљР°РєРѕР№ РїСЂРѕС†РµРЅС‚ РёР· 100 Р СѓР±Р»РµР№ СЂСѓРєРѕРІРѕРґСЃС‚РІРѕ Р±РёР·РЅРµСЃР° Р±СѓРґРµС‚ РїРѕР»СѓС‡Р°С‚СЊ РїСЂРё РІС‹СЂСѓС‡РєРµ СЂР°Р±РѕС‚РЅРёРєР° СЌС‚РѕР№ РѕС‚СЂР°СЃР»Рё?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРѕС†РµРЅС‚ РѕС‚ 0 РґРѕ 80.", string);
 	switch(get_int(playerid, "ZPFarmlistitem"))
 	{
-		case 0: SPD(playerid, dFarm_ZP1, DSI, "Растеневодство", string, "Установить", "Назад");
-		case 1: SPD(playerid, dFarm_ZP1, DSI, "Ягодоводство", string, "Установить", "Назад");
-		case 2: SPD(playerid, dFarm_ZP1, DSI, "Садоводство", string, "Установить", "Назад");
-		case 3: SPD(playerid, dFarm_ZP1, DSI, "Животноводство", string, "Установить", "Назад");
+		case 0: SPD(playerid, dFarm_ZP1, DSI, "Р Р°СЃС‚РµРЅРµРІРѕРґСЃС‚РІРѕ", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 1: SPD(playerid, dFarm_ZP1, DSI, "РЇРіРѕРґРѕРІРѕРґСЃС‚РІРѕ", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 2: SPD(playerid, dFarm_ZP1, DSI, "РЎР°РґРѕРІРѕРґСЃС‚РІРѕ", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 3: SPD(playerid, dFarm_ZP1, DSI, "Р–РёРІРѕС‚РЅРѕРІРѕРґСЃС‚РІРѕ", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 	}
 	return true;
 }
 stock Dialog_Farm_Stats(playerid)
 {
 	new text[20], string[400];
-	f(string, "Номер поля\tСостояние поля");
+	f(string, "РќРѕРјРµСЂ РїРѕР»СЏ\tРЎРѕСЃС‚РѕСЏРЅРёРµ РїРѕР»СЏ");
 	for(new l; l != 2; l++)
 	{
 		switch(FieldFarm[l][eSost])
 		{
-			case 0: text = "Фрезерование почвы";
-			case 1: text = "Посев";
-			case 2: text = "Удобрение";
-			case 3: text = "Ожидание";
-			case 4: text = "Сбор урожая";
+			case 0: text = "Р¤СЂРµР·РµСЂРѕРІР°РЅРёРµ РїРѕС‡РІС‹";
+			case 1: text = "РџРѕСЃРµРІ";
+			case 2: text = "РЈРґРѕР±СЂРµРЅРёРµ";
+			case 3: text = "РћР¶РёРґР°РЅРёРµ";
+			case 4: text = "РЎР±РѕСЂ СѓСЂРѕР¶Р°СЏ";
 		}
-		f(string, "%s\nПоле №%d\t%s %s", string, l + 1, text, (FieldFarm[l][eID] != -1) ? "[{FFFF00}Занят{FFFFFF}]" : "");
+		f(string, "%s\nРџРѕР»Рµ в„–%d\t%s %s", string, l + 1, text, (FieldFarm[l][eID] != -1) ? "[{FFFF00}Р—Р°РЅСЏС‚{FFFFFF}]" : "");
 	}
-	return SPD(playerid, dFarm_Car, DSTH, "Состояние полей", string, "Выбрать", "Выход");
+	return SPD(playerid, dFarm_Car, DSTH, "РЎРѕСЃС‚РѕСЏРЅРёРµ РїРѕР»РµР№", string, "Р’С‹Р±СЂР°С‚СЊ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_OZ(playerid)
 {
 	new string[300];
-	f(string, "Помощь по владению бизнеса");
-	f(string, "%s\nЗаказать ящики с деталями", string);
-	f(string, "%s\nИзменить размер зарплат в цехах", string);
-	f(string, "%s\nПочта", string);
-	f(string, "%s\nУволить заместителя", string);
-	return SPD(playerid, dOZ, DSL, "Компьютер", string, "Далее", "Выход");
+	f(string, "РџРѕРјРѕС‰СЊ РїРѕ РІР»Р°РґРµРЅРёСЋ Р±РёР·РЅРµСЃР°");
+	f(string, "%s\nР—Р°РєР°Р·Р°С‚СЊ СЏС‰РёРєРё СЃ РґРµС‚Р°Р»СЏРјРё", string);
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ Р·Р°СЂРїР»Р°С‚ РІ С†РµС…Р°С…", string);
+	f(string, "%s\nРџРѕС‡С‚Р°", string);
+	f(string, "%s\nРЈРІРѕР»РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ", string);
+	return SPD(playerid, dOZ, DSL, "РљРѕРјРїСЊСЋС‚РµСЂ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_OZ_Help(playerid)
 {
 	new string[1700];
-	f(string, "{FFFFFF}Основные задачи Владельца Оружейного завода:");
-	f(string, "%s\n\t{FFFFFF}- Своевременно закупать ящики с деталями.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять размеры зарплат в цехах.", string);
-	f(string, "%s\n\t{FFFFFF}- Проверять почту.", string);
-	f(string, "%s\n\n{FFFFFF}Возможности Владельца Оружейного завода:", string);
-	f(string, "%s\n\t{FFFFFF}- Назначать заместителя. Что бы назначить заместителя, введите команду: {FFFF00}/zam", string);
-	f(string, "%s\n\t{FFFFFF}- Менять положение шлакбаума на территории Оружейного завода.", string);
-	f(string, "%s\n\t{FFFFFF}- Снимать заместителя.", string);
-	f(string, "%s\n\n{FFFFFF}Прочее:", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете определенный процент от выручки работников, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% от определенного процента выручки от работников, а заместитель - 40%% от определенного процента.", string);
-	f(string, "%s\n\t{FFFFFF}- Заместитель может все, что и Владелец, но не может продать Бизнес и назначать Заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Сотрудники АП США могут вас оштрафовать от $1.000 до $1.000.000, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Также сотрудники АП США могут вас лишить право владения бизнеса, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Что бы не было проблем, смотрите почаще Почту.", string);
-	f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'armory@pangora.com\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Своевременно оплачивайте комунальные услуги в банке.", string);
-	return SPD(playerid, dOZ_Help, DSM, "Помощь", string, "Выход", "Назад");
+	f(string, "{FFFFFF}РћСЃРЅРѕРІРЅС‹Рµ Р·Р°РґР°С‡Рё Р’Р»Р°РґРµР»СЊС†Р° РћСЂСѓР¶РµР№РЅРѕРіРѕ Р·Р°РІРѕРґР°:");
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ Р·Р°РєСѓРїР°С‚СЊ СЏС‰РёРєРё СЃ РґРµС‚Р°Р»СЏРјРё.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ СЂР°Р·РјРµСЂС‹ Р·Р°СЂРїР»Р°С‚ РІ С†РµС…Р°С….", string);
+	f(string, "%s\n\t{FFFFFF}- РџСЂРѕРІРµСЂСЏС‚СЊ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\n{FFFFFF}Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё Р’Р»Р°РґРµР»СЊС†Р° РћСЂСѓР¶РµР№РЅРѕРіРѕ Р·Р°РІРѕРґР°:", string);
+	f(string, "%s\n\t{FFFFFF}- РќР°Р·РЅР°С‡Р°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ. Р§С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ, РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ: {FFFF00}/zam", string);
+	f(string, "%s\n\t{FFFFFF}- РњРµРЅСЏС‚СЊ РїРѕР»РѕР¶РµРЅРёРµ С€Р»Р°РєР±Р°СѓРјР° РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё РћСЂСѓР¶РµР№РЅРѕРіРѕ Р·Р°РІРѕРґР°.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРЅРёРјР°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\n{FFFFFF}РџСЂРѕС‡РµРµ:", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ РїСЂРѕС†РµРЅС‚ РѕС‚ РІС‹СЂСѓС‡РєРё СЂР°Р±РѕС‚РЅРёРєРѕРІ, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р° РІС‹СЂСѓС‡РєРё РѕС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%% РѕС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РїСЂРѕС†РµРЅС‚Р°.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РјРµСЃС‚РёС‚РµР»СЊ РјРѕР¶РµС‚ РІСЃРµ, С‡С‚Рѕ Рё Р’Р»Р°РґРµР»РµС†, РЅРѕ РЅРµ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ Р‘РёР·РЅРµСЃ Рё РЅР°Р·РЅР°С‡Р°С‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РђРџ РЎРЁРђ РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ $1.000 РґРѕ $1.000.000, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- РўР°РєР¶Рµ СЃРѕС‚СЂСѓРґРЅРёРєРё РђРџ РЎРЁРђ РјРѕРіСѓС‚ РІР°СЃ Р»РёС€РёС‚СЊ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ Р±РёР·РЅРµСЃР°, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р§С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј, СЃРјРѕС‚СЂРёС‚Рµ РїРѕС‡Р°С‰Рµ РџРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'armory@pangora.com\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ РѕРїР»Р°С‡РёРІР°Р№С‚Рµ РєРѕРјСѓРЅР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё РІ Р±Р°РЅРєРµ.", string);
+	return SPD(playerid, dOZ_Help, DSM, "РџРѕРјРѕС‰СЊ", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_OZ_Detals(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Вы хотите заказать %d ящиков с деталями за $%d?", 1000 - BoxOZ, (1000 - BoxOZ) * 200);
-	return SPD(playerid, dOZ_Detals, DSM, "Заказ", string, "Заказать", "Назад");
+	f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ %d СЏС‰РёРєРѕРІ СЃ РґРµС‚Р°Р»СЏРјРё Р·Р° $%d?", 1000 - BoxOZ, (1000 - BoxOZ) * 200);
+	return SPD(playerid, dOZ_Detals, DSM, "Р—Р°РєР°Р·", string, "Р—Р°РєР°Р·Р°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_OZ_ZP(playerid)
 {
 	new string[300];
-	f(string, "Изготовительный цех\t{06B200}%d%%", ZPOZ[0]);
-	f(string, "%s\nСборочный цех\t{06B200}%d%%", string, ZPOZ[1]);
-	return SPD(playerid, dOZ_ZP, DST, "Зарплаты", string, "Далее", "Назад");
+	f(string, "РР·РіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Р№ С†РµС…\t{06B200}%d%%", ZPOZ[0]);
+	f(string, "%s\nРЎР±РѕСЂРѕС‡РЅС‹Р№ С†РµС…\t{06B200}%d%%", string, ZPOZ[1]);
+	return SPD(playerid, dOZ_ZP, DST, "Р—Р°СЂРїР»Р°С‚С‹", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_OZ_ZP1(playerid)
 {
 	new string[600];
-	f(string, "{FFFFFF}Какой процент из $100 руководство бизнеса будет получать при выручке работника этого цеха?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Вы можете установить процент от 0 до 80.", string);
+	f(string, "{FFFFFF}РљР°РєРѕР№ РїСЂРѕС†РµРЅС‚ РёР· $100 СЂСѓРєРѕРІРѕРґСЃС‚РІРѕ Р±РёР·РЅРµСЃР° Р±СѓРґРµС‚ РїРѕР»СѓС‡Р°С‚СЊ РїСЂРё РІС‹СЂСѓС‡РєРµ СЂР°Р±РѕС‚РЅРёРєР° СЌС‚РѕРіРѕ С†РµС…Р°?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРѕС†РµРЅС‚ РѕС‚ 0 РґРѕ 80.", string);
 	switch(get_int(playerid, "ZPOZlistitem"))
 	{
-		case 0: SPD(playerid, dOZ_ZP1, DSI, "Изготовительный цех", string, "Установить", "Назад");
-		case 1: SPD(playerid, dOZ_ZP1, DSI, "Сборочный цех", string, "Установить", "Назад");
+		case 0: SPD(playerid, dOZ_ZP1, DSI, "РР·РіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
+		case 1: SPD(playerid, dOZ_ZP1, DSI, "РЎР±РѕСЂРѕС‡РЅС‹Р№ С†РµС…", string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 	}
 	return true;
 }
 stock Dialog_PRP(playerid)
 {
 	new string[2000], str[13], l;
-	f(string, "Ник игрока\tДлительность РП\tДата и время подачи\tНазвание");
+	f(string, "РќРёРє РёРіСЂРѕРєР°\tР”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ Р Рџ\tР”Р°С‚Р° Рё РІСЂРµРјСЏ РїРѕРґР°С‡Рё\tРќР°Р·РІР°РЅРёРµ");
 	for(new i; i != sizeof(SetRP); i++) 
 	{
 		if(SetRP[i][eIDAkk]) 
 		{
 			f(str, "NumListPRP%d", l++), set_int(playerid, str, i);
-			f(string, "%s\n%s [%d]\t%d минут\t%s (%s)\t%s", string, GN(IsOnlineID(SetRP[i][eIDAkk])), IsOnlineID(SetRP[i][eIDAkk]), SetRP[i][eMinute], SetRP[i][eDate], SetRP[i][eTime], SetRP[i][eName]);
+			f(string, "%s\n%s [%d]\t%d РјРёРЅСѓС‚\t%s (%s)\t%s", string, GN(IsOnlineID(SetRP[i][eIDAkk])), IsOnlineID(SetRP[i][eIDAkk]), SetRP[i][eMinute], SetRP[i][eDate], SetRP[i][eTime], SetRP[i][eName]);
 		}
 	}
 	if(l) 
 	{
 		if(!get_int(playerid, "isOpenListPRP")) set_int(playerid, "isOpenListPRP", 1);
-		SPD(playerid, dPRP, DSTH, "Панель РП ситуаций", string, "Далее", "Назад");
+		SPD(playerid, dPRP, DSTH, "РџР°РЅРµР»СЊ Р Рџ СЃРёС‚СѓР°С†РёР№", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 	}
-	else HelpSCM(playerid, "Список пустой");
+	else HelpSCM(playerid, "РЎРїРёСЃРѕРє РїСѓСЃС‚РѕР№");
 	return true;
 }
 stock Dialog_Clothes(playerid)
 {
 	new string[300];
-	f(string, "Помощь по владению бизнеса");
-	f(string, "%s\nЗаказать одежду", string);
-	f(string, "%s\nИзменить цену на одежду", string);
-	f(string, "%s\nПочта", string);
-	f(string, "%s\nУволить заместителя", string);
-	return SPD(playerid, dClothes, DSL, "Компьютер", string, "Далее", "Выход");
+	f(string, "РџРѕРјРѕС‰СЊ РїРѕ РІР»Р°РґРµРЅРёСЋ Р±РёР·РЅРµСЃР°");
+	f(string, "%s\nР—Р°РєР°Р·Р°С‚СЊ РѕРґРµР¶РґСѓ", string);
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ С†РµРЅСѓ РЅР° РѕРґРµР¶РґСѓ", string);
+	f(string, "%s\nРџРѕС‡С‚Р°", string);
+	f(string, "%s\nРЈРІРѕР»РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ", string);
+	return SPD(playerid, dClothes, DSL, "РљРѕРјРїСЊСЋС‚РµСЂ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Clothes_Help(playerid)
 {
 	new string[1700];
-	f(string, "{FFFFFF}Основные задачи Владельца Магазина одежды:");
-	f(string, "%s\n\t{FFFFFF}- Своевременно закупать одежду.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять цену на одежду.", string);
-	f(string, "%s\n\t{FFFFFF}- Проверять почту.", string);
-	f(string, "%s\n\n{FFFFFF}Возможности Владельца Магазина одежды:", string);
-	f(string, "%s\n\t{FFFFFF}- Назначать заместителя. Что бы назначить заместителя, введите команду: {FFFF00}/zam", string);
-	f(string, "%s\n\t{FFFFFF}- Снимать заместителя.", string);
-	f(string, "%s\n\n{FFFFFF}Прочее:", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете полную сумму от каждой покупки ваших посетителей, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% от суммы покупки, а заместитель - 40%% от суммы покупки.", string);
-	f(string, "%s\n\t{FFFFFF}- Заместитель может все, что и Владелец, но не может продать Бизнес и назначать Заместителя.", string);
-	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от 1.000 Rub до 1.000.000 Rub, если вы будете не правильно работать.", string);
-	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от $1.000 до $1.000.000, если вы будете не правильно работать.", string);
-	else f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от 1.000 Euro до 1.000.000 Euro, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Также сотрудники Правительства могут вас лишить право владения бизнеса, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Что бы не было проблем, смотрите почаще Почту.", string);
-	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'clothing-store-ru@pangora.com\'.", string);
-	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'clothing-store-us@pangora.com\'.", string);
-	else f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'clothing-store-de@pangora.com\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Своевременно оплачивайте комунальные услуги в банке.", string);
-	return SPD(playerid, dClothes_Help, DSM, "Помощь", string, "Выход", "Назад");
+	f(string, "{FFFFFF}РћСЃРЅРѕРІРЅС‹Рµ Р·Р°РґР°С‡Рё Р’Р»Р°РґРµР»СЊС†Р° РњР°РіР°Р·РёРЅР° РѕРґРµР¶РґС‹:");
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ Р·Р°РєСѓРїР°С‚СЊ РѕРґРµР¶РґСѓ.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ С†РµРЅСѓ РЅР° РѕРґРµР¶РґСѓ.", string);
+	f(string, "%s\n\t{FFFFFF}- РџСЂРѕРІРµСЂСЏС‚СЊ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\n{FFFFFF}Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё Р’Р»Р°РґРµР»СЊС†Р° РњР°РіР°Р·РёРЅР° РѕРґРµР¶РґС‹:", string);
+	f(string, "%s\n\t{FFFFFF}- РќР°Р·РЅР°С‡Р°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ. Р§С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ, РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ: {FFFF00}/zam", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРЅРёРјР°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\n{FFFFFF}РџСЂРѕС‡РµРµ:", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РїРѕР»РЅСѓСЋ СЃСѓРјРјСѓ РѕС‚ РєР°Р¶РґРѕР№ РїРѕРєСѓРїРєРё РІР°С€РёС… РїРѕСЃРµС‚РёС‚РµР»РµР№, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РѕС‚ СЃСѓРјРјС‹ РїРѕРєСѓРїРєРё, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%% РѕС‚ СЃСѓРјРјС‹ РїРѕРєСѓРїРєРё.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РјРµСЃС‚РёС‚РµР»СЊ РјРѕР¶РµС‚ РІСЃРµ, С‡С‚Рѕ Рё Р’Р»Р°РґРµР»РµС†, РЅРѕ РЅРµ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ Р‘РёР·РЅРµСЃ Рё РЅР°Р·РЅР°С‡Р°С‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Rub РґРѕ 1.000.000 Rub, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ $1.000 РґРѕ $1.000.000, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	else f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Euro РґРѕ 1.000.000 Euro, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- РўР°РєР¶Рµ СЃРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ Р»РёС€РёС‚СЊ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ Р±РёР·РЅРµСЃР°, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р§С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј, СЃРјРѕС‚СЂРёС‚Рµ РїРѕС‡Р°С‰Рµ РџРѕС‡С‚Сѓ.", string);
+	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'clothing-store-ru@pangora.com\'.", string);
+	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'clothing-store-us@pangora.com\'.", string);
+	else f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'clothing-store-de@pangora.com\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ РѕРїР»Р°С‡РёРІР°Р№С‚Рµ РєРѕРјСѓРЅР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё РІ Р±Р°РЅРєРµ.", string);
+	return SPD(playerid, dClothes_Help, DSM, "РџРѕРјРѕС‰СЊ", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Clothes_Order(playerid)
 {
@@ -4306,15 +4306,15 @@ stock Dialog_Clothes_Order(playerid)
 			if(SkinClothes[i][7]) l += SkinClothes[i][7];
 		}
 	}
-	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "{FFFFFF}Вы хотите заказать одежду %d шт за %d Rub?", l, l*1000);
-	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "{FFFFFF}Вы хотите заказать одежду %d шт за $%d?", l, l*1000);
-	else f(string, "{FFFFFF}Вы хотите заказать одежду %d шт за %d Euro?", l, l*1000);
-	return SPD(playerid, dClothes_Order, DSM, "Заказ", string, "Купить", "Назад");
+	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ РѕРґРµР¶РґСѓ %d С€С‚ Р·Р° %d Rub?", l, l*1000);
+	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ РѕРґРµР¶РґСѓ %d С€С‚ Р·Р° $%d?", l, l*1000);
+	else f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°РєР°Р·Р°С‚СЊ РѕРґРµР¶РґСѓ %d С€С‚ Р·Р° %d Euro?", l, l*1000);
+	return SPD(playerid, dClothes_Order, DSM, "Р—Р°РєР°Р·", string, "РљСѓРїРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Clothes_Price(playerid)
 {
 	new string[4500];
-	f(string, "Каталог (ID скинов)\tЦена");
+	f(string, "РљР°С‚Р°Р»РѕРі (ID СЃРєРёРЅРѕРІ)\tР¦РµРЅР°");
 	for(new i; i != sizeof(SkinClothes); i++)
 	{
 		if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID])
@@ -4330,84 +4330,84 @@ stock Dialog_Clothes_Price(playerid)
 			f(string, "%s\nID: %d\t{44AD00}%d Euro", string, SkinClothes[i][0], SkinClothes[i][4]);
 		}
 	}
-	return SPD(playerid, dClothes_Price, DSTH, "Изменение цен", string, "Далее", "Назад");
+	return SPD(playerid, dClothes_Price, DSTH, "РР·РјРµРЅРµРЅРёРµ С†РµРЅ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Clothes_Price1(playerid, skin)
 {
 	new string[300], str[64];
 	set_int(playerid, "PriceClothes", skin);
-	f(string, "{FFFFFF}Какую цену желаете установить на покупку этой одежды?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Вы можете установить цену от 1.000 Rub до 100.000 Rub.", string);
-	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Вы можете установить цену от $1.000 до $100.000.", string);
-	else f(string, "%s\n{F19E18}- Вы можете установить цену от 1.000 Euro до 100.000 Euro.", string);
+	f(string, "{FFFFFF}РљР°РєСѓСЋ С†РµРЅСѓ Р¶РµР»Р°РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР° РїРѕРєСѓРїРєСѓ СЌС‚РѕР№ РѕРґРµР¶РґС‹?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	if(Businesses[6][eOwner] == Player[playerid][pID] || Businesses[6][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ 1.000 Rub РґРѕ 100.000 Rub.", string);
+	else if(Businesses[7][eOwner] == Player[playerid][pID] || Businesses[7][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ $1.000 РґРѕ $100.000.", string);
+	else f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ 1.000 Euro РґРѕ 100.000 Euro.", string);
 	f(str, "ID: %d", SkinClothes[skin][0]);
-	return SPD(playerid, dClothes_Price1, DSI, str, string, "Установить", "Назад");
+	return SPD(playerid, dClothes_Price1, DSI, str, string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Clothes_ID(playerid)
 {
 	new string[300];
-	f(string, "{FFFFFF}Введите ID скина, который хотите просмотреть:");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- ID скина от 1 до 305.", string);
-	return SPD(playerid, dClothes_ID, DSI, "Поиск", string, "Найти", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ ID СЃРєРёРЅР°, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ:");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- ID СЃРєРёРЅР° РѕС‚ 1 РґРѕ 305.", string);
+	return SPD(playerid, dClothes_ID, DSI, "РџРѕРёСЃРє", string, "РќР°Р№С‚Рё", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PBus_Del(playerid, bus)
 {
 	new string[200];
-	f(string, "{FFFFFF}Вы хотите забрать бизнес у %s?", OffGetPlayerName(Businesses[bus][eOwner]));
-	return SPD(playerid, dPBus_Del, DSM, Businesses[bus][eName], string, "Забрать", "Назад");
+	f(string, "{FFFFFF}Р’С‹ С…РѕС‚РёС‚Рµ Р·Р°Р±СЂР°С‚СЊ Р±РёР·РЅРµСЃ Сѓ %s?", OffGetPlayerName(Businesses[bus][eOwner]));
+	return SPD(playerid, dPBus_Del, DSM, Businesses[bus][eName], string, "Р—Р°Р±СЂР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_PBus_Add(playerid, bus)
 {
 	new string[200];
-	f(string, "{FFFFFF}Введите ID или Никнейм игрока, которому хотите отдать бизнес:");
-	return SPD(playerid, dPBus_Add, DSI, Businesses[bus][eName], string, "Отдать", "Назад");
+	f(string, "{FFFFFF}Р’РІРµРґРёС‚Рµ ID РёР»Рё РќРёРєРЅРµР№Рј РёРіСЂРѕРєР°, РєРѕС‚РѕСЂРѕРјСѓ С…РѕС‚РёС‚Рµ РѕС‚РґР°С‚СЊ Р±РёР·РЅРµСЃ:");
+	return SPD(playerid, dPBus_Add, DSI, Businesses[bus][eName], string, "РћС‚РґР°С‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Cars(playerid)
 {
 	new string[300];
-	f(string, "Помощь по владению бизнеса");
-	f(string, "%s\nИзменить цену на транспорт", string);
-	f(string, "%s\nСклад транспорта", string);
-	f(string, "%s\nПочта", string);
-	f(string, "%s\nУволить заместителя", string);
-	return SPD(playerid, dCars, DSL, "Компьютер", string, "Далее", "Выход");
+	f(string, "РџРѕРјРѕС‰СЊ РїРѕ РІР»Р°РґРµРЅРёСЋ Р±РёР·РЅРµСЃР°");
+	f(string, "%s\nРР·РјРµРЅРёС‚СЊ С†РµРЅСѓ РЅР° С‚СЂР°РЅСЃРїРѕСЂС‚", string);
+	f(string, "%s\nРЎРєР»Р°Рґ С‚СЂР°РЅСЃРїРѕСЂС‚Р°", string);
+	f(string, "%s\nРџРѕС‡С‚Р°", string);
+	f(string, "%s\nРЈРІРѕР»РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ", string);
+	return SPD(playerid, dCars, DSL, "РљРѕРјРїСЊСЋС‚РµСЂ", string, "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Cars_Help(playerid)
 {
 	new string[1700];
-	f(string, "{FFFFFF}Основные задачи Владельца Автосалона:");
-	f(string, "%s\n\t{FFFFFF}- Своевременно закупать транспорт.", string);
-	f(string, "%s\n\t{FFFFFF}- Изменять цену на транспорт.", string);
-	f(string, "%s\n\t{FFFFFF}- Проверять почту.", string);
-	f(string, "%s\n\n{FFFFFF}Возможности Владельца Автосалона:", string);
-	f(string, "%s\n\t{FFFFFF}- Назначать заместителя. Что бы назначить заместителя, введите команду: {FFFF00}/zam", string);
-	f(string, "%s\n\t{FFFFFF}- Снимать заместителя.", string);
-	f(string, "%s\n\n{FFFFFF}Прочее:", string);
-	f(string, "%s\n\t{FFFFFF}- Вы получаете полную сумму от каждой покупки ваших посетителей, если у вас нет заместителя.", string);
-	f(string, "%s\n\t{FFFFFF}- Если у вас есть заместитель, то вы получаете 60%% от суммы покупки, а заместитель - 40%% от суммы покупки.", string);
-	f(string, "%s\n\t{FFFFFF}- Заместитель может все, что и Владелец, но не может продать Бизнес и назначать Заместителя.", string);
-	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от 1.000 Rub до 1.000.000 Rub, если вы будете не правильно работать.", string);
-	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от $1.000 до $1.000.000, если вы будете не правильно работать.", string);
-	else f(string, "%s\n\t{FFFFFF}- Сотрудники Правительства могут вас оштрафовать от 1.000 Euro до 1.000.000 Euro, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Также сотрудники Правительства могут вас лишить право владения бизнеса, если вы будете не правильно работать.", string);
-	f(string, "%s\n\t{FFFFFF}- Закупать транспорт нужно в Транспортном заводе, который находится в Германии.", string);
-	f(string, "%s\n\t{FFFFFF}- Что бы не было проблем, смотрите почаще Почту.", string);
-	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'auto-show-ru@pangora.com\'.", string);
-	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'auto-show-us@pangora.com\'.", string);
-	else f(string, "%s\n\t{FFFFFF}- Ваш адрес электронной почты: \'auto-show-de@pangora.com\'.", string);
-	f(string, "%s\n\t{FFFFFF}- Своевременно оплачивайте комунальные услуги в банке.", string);
-	return SPD(playerid, dCars_Help, DSM, "Помощь", string, "Выход", "Назад");
+	f(string, "{FFFFFF}РћСЃРЅРѕРІРЅС‹Рµ Р·Р°РґР°С‡Рё Р’Р»Р°РґРµР»СЊС†Р° РђРІС‚РѕСЃР°Р»РѕРЅР°:");
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ Р·Р°РєСѓРїР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚.", string);
+	f(string, "%s\n\t{FFFFFF}- РР·РјРµРЅСЏС‚СЊ С†РµРЅСѓ РЅР° С‚СЂР°РЅСЃРїРѕСЂС‚.", string);
+	f(string, "%s\n\t{FFFFFF}- РџСЂРѕРІРµСЂСЏС‚СЊ РїРѕС‡С‚Сѓ.", string);
+	f(string, "%s\n\n{FFFFFF}Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё Р’Р»Р°РґРµР»СЊС†Р° РђРІС‚РѕСЃР°Р»РѕРЅР°:", string);
+	f(string, "%s\n\t{FFFFFF}- РќР°Р·РЅР°С‡Р°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ. Р§С‚Рѕ Р±С‹ РЅР°Р·РЅР°С‡РёС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ, РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ: {FFFF00}/zam", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРЅРёРјР°С‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\n{FFFFFF}РџСЂРѕС‡РµРµ:", string);
+	f(string, "%s\n\t{FFFFFF}- Р’С‹ РїРѕР»СѓС‡Р°РµС‚Рµ РїРѕР»РЅСѓСЋ СЃСѓРјРјСѓ РѕС‚ РєР°Р¶РґРѕР№ РїРѕРєСѓРїРєРё РІР°С€РёС… РїРѕСЃРµС‚РёС‚РµР»РµР№, РµСЃР»Рё Сѓ РІР°СЃ РЅРµС‚ Р·Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ Р·Р°РјРµСЃС‚РёС‚РµР»СЊ, С‚Рѕ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 60%% РѕС‚ СЃСѓРјРјС‹ РїРѕРєСѓРїРєРё, Р° Р·Р°РјРµСЃС‚РёС‚РµР»СЊ - 40%% РѕС‚ СЃСѓРјРјС‹ РїРѕРєСѓРїРєРё.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РјРµСЃС‚РёС‚РµР»СЊ РјРѕР¶РµС‚ РІСЃРµ, С‡С‚Рѕ Рё Р’Р»Р°РґРµР»РµС†, РЅРѕ РЅРµ РјРѕР¶РµС‚ РїСЂРѕРґР°С‚СЊ Р‘РёР·РЅРµСЃ Рё РЅР°Р·РЅР°С‡Р°С‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ.", string);
+	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Rub РґРѕ 1.000.000 Rub, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ $1.000 РґРѕ $1.000.000, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	else f(string, "%s\n\t{FFFFFF}- РЎРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ РѕС€С‚СЂР°С„РѕРІР°С‚СЊ РѕС‚ 1.000 Euro РґРѕ 1.000.000 Euro, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- РўР°РєР¶Рµ СЃРѕС‚СЂСѓРґРЅРёРєРё РџСЂР°РІРёС‚РµР»СЊСЃС‚РІР° РјРѕРіСѓС‚ РІР°СЃ Р»РёС€РёС‚СЊ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ Р±РёР·РЅРµСЃР°, РµСЃР»Рё РІС‹ Р±СѓРґРµС‚Рµ РЅРµ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.", string);
+	f(string, "%s\n\t{FFFFFF}- Р—Р°РєСѓРїР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚ РЅСѓР¶РЅРѕ РІ РўСЂР°РЅСЃРїРѕСЂС‚РЅРѕРј Р·Р°РІРѕРґРµ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р“РµСЂРјР°РЅРёРё.", string);
+	f(string, "%s\n\t{FFFFFF}- Р§С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј, СЃРјРѕС‚СЂРёС‚Рµ РїРѕС‡Р°С‰Рµ РџРѕС‡С‚Сѓ.", string);
+	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'auto-show-ru@pangora.com\'.", string);
+	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'auto-show-us@pangora.com\'.", string);
+	else f(string, "%s\n\t{FFFFFF}- Р’Р°С€ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: \'auto-show-de@pangora.com\'.", string);
+	f(string, "%s\n\t{FFFFFF}- РЎРІРѕРµРІСЂРµРјРµРЅРЅРѕ РѕРїР»Р°С‡РёРІР°Р№С‚Рµ РєРѕРјСѓРЅР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё РІ Р±Р°РЅРєРµ.", string);
+	return SPD(playerid, dCars_Help, DSM, "РџРѕРјРѕС‰СЊ", string, "Р’С‹С…РѕРґ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Cars_Price(playerid)
 {
-	return SPD(playerid, dCars_Price, DSL, "Изменение цен", "1 страница\n2 страница", "Далее", "Назад");
+	return SPD(playerid, dCars_Price, DSL, "РР·РјРµРЅРµРЅРёРµ С†РµРЅ", "1 СЃС‚СЂР°РЅРёС†Р°\n2 СЃС‚СЂР°РЅРёС†Р°", "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Cars_Price1(playerid)
 {
 	new string[5500];
-	f(string, "Каталог\tЦена");
+	f(string, "РљР°С‚Р°Р»РѕРі\tР¦РµРЅР°");
 	for(new i; i != sizeof(BusCars) / 2; i++)
 	{
 		if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID])
@@ -4423,12 +4423,12 @@ stock Dialog_Cars_Price1(playerid)
 			f(string, "%s\n%s\t{44AD00}%d Euro", string, ParamsCar[BusCars[i][0]-400][vNamePar], BusCars[i][3]);
 		}
 	}
-	return SPD(playerid, dCars_Price1, DSTH, "Изменение цен", string, "Далее", "Назад");
+	return SPD(playerid, dCars_Price1, DSTH, "РР·РјРµРЅРµРЅРёРµ С†РµРЅ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Cars_Price2(playerid)
 {
 	new string[4100];
-	f(string, "Каталог\tЦена");
+	f(string, "РљР°С‚Р°Р»РѕРі\tР¦РµРЅР°");
 	for(new i = sizeof(BusCars) / 2 + 1; i != sizeof(BusCars); i++)
 	{
 		if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID])
@@ -4444,19 +4444,19 @@ stock Dialog_Cars_Price2(playerid)
 			f(string, "%s\n%s\t{44AD00}%d Euro", string, ParamsCar[BusCars[i][0]-400][vNamePar], BusCars[i][3]);
 		}
 	}
-	return SPD(playerid, dCars_Price2, DSTH, "Изменение цен", string, "Далее", "Назад");
+	return SPD(playerid, dCars_Price2, DSTH, "РР·РјРµРЅРµРЅРёРµ С†РµРЅ", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Cars_Price3(playerid, car)
 {
 	new string[300], str[33];
 	set_int(playerid, "PriceCars", car);
-	f(string, "{FFFFFF}Какую цену желаете установить на покупку этого транспорта?");
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Вы можете установить цену от 1.000 Rub до 1.000.000 Rub.", string);
-	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Вы можете установить цену от $1.000 до $1.000.000.", string);
-	else f(string, "%s\n{F19E18}- Вы можете установить цену от 1.000 Euro до 1.000.000 Euro.", string);
+	f(string, "{FFFFFF}РљР°РєСѓСЋ С†РµРЅСѓ Р¶РµР»Р°РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР° РїРѕРєСѓРїРєСѓ СЌС‚РѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°?");
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	if(Businesses[3][eOwner] == Player[playerid][pID] || Businesses[3][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ 1.000 Rub РґРѕ 1.000.000 Rub.", string);
+	else if(Businesses[4][eOwner] == Player[playerid][pID] || Businesses[4][eZOwner] == Player[playerid][pID]) f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ $1.000 РґРѕ $1.000.000.", string);
+	else f(string, "%s\n{F19E18}- Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С†РµРЅСѓ РѕС‚ 1.000 Euro РґРѕ 1.000.000 Euro.", string);
 	f(str, "%s", ParamsCar[car][vNamePar]);
-	return SPD(playerid, dCars_Price3, DSI, str, string, "Установить", "Назад");
+	return SPD(playerid, dCars_Price3, DSI, str, string, "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Bus_Unin(playerid)
 {
@@ -4465,8 +4465,8 @@ stock Dialog_Bus_Unin(playerid)
 	{
 		if(Businesses[i][eOwner] == Player[playerid][pID])
 		{
-			f(string, "{FFFFFF}Вы уверенны что хотите уволить Заместителя бизнеса - {FFFF00}%s{FFFFFF}?", OffGetPlayerName(Businesses[i][eZOwner]));
-			return SPD(playerid, dBus_Unin, DSM, "Снятие", string, "Да", "Нет");
+			f(string, "{FFFFFF}Р’С‹ СѓРІРµСЂРµРЅРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ СѓРІРѕР»РёС‚СЊ Р—Р°РјРµСЃС‚РёС‚РµР»СЏ Р±РёР·РЅРµСЃР° - {FFFF00}%s{FFFFFF}?", OffGetPlayerName(Businesses[i][eZOwner]));
+			return SPD(playerid, dBus_Unin, DSM, "РЎРЅСЏС‚РёРµ", string, "Р”Р°", "РќРµС‚");
 		}
 	}
 	return true;
@@ -4483,31 +4483,31 @@ stock Dialog_Mail(playerid)
 		}
 	}
 	new Cache: res = Sql(str);
-	if(!cache_num_rows()) f(string, "Входящие");
-	else f(string, "Входящие {FFFF00}(%d непрочитанных)", cache_num_rows());
+	if(!cache_num_rows()) f(string, "Р’С…РѕРґСЏС‰РёРµ");
+	else f(string, "Р’С…РѕРґСЏС‰РёРµ {FFFF00}(%d РЅРµРїСЂРѕС‡РёС‚Р°РЅРЅС‹С…)", cache_num_rows());
 	if(cache_is_valid(res)) cache_delete(res);
-	f(string, "%s\nИсходящие", string);
-	f(string, "%s\nНаписать письмо", string);
-	return SPD(playerid, dMail, DSL, "Почта", string, "Далее", "Назад");
+	f(string, "%s\nРСЃС…РѕРґСЏС‰РёРµ", string);
+	f(string, "%s\nРќР°РїРёСЃР°С‚СЊ РїРёСЃСЊРјРѕ", string);
+	return SPD(playerid, dMail, DSL, "РџРѕС‡С‚Р°", string, "Р”Р°Р»РµРµ", "РќР°Р·Р°Рґ");
 }
 stock Dialog_Mail_New(playerid)
 {
-	return SPD(playerid, dMail_New, DSI, "Письмо", "{FFFFFF}Напишите адрес электронной почты, кому хотите отослать письмо:", "Далее", "Выход");
+	return SPD(playerid, dMail_New, DSI, "РџРёСЃСЊРјРѕ", "{FFFFFF}РќР°РїРёС€РёС‚Рµ Р°РґСЂРµСЃ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹, РєРѕРјСѓ С…РѕС‚РёС‚Рµ РѕС‚РѕСЃР»Р°С‚СЊ РїРёСЃСЊРјРѕ:", "Р”Р°Р»РµРµ", "Р’С‹С…РѕРґ");
 }
 stock Dialog_Mail_New1(playerid)
 {
 	new string[700], email[51];
 	get_string(playerid, "Email", email, sizeof(email));
-	f(string, "\t{FFFFFF}Напишите текст, который хотите отправить {FFFF00}%s{FFFFFF}:", email);
-	f(string, "%s\n\n{F19E18}Примечание:", string);
-	f(string, "%s\n{F19E18}- Письмо не должно превышать 500 символов.", string);
-	f(string, "%s\n{F19E18}- Когда напишете письмо, скопируйте текст, это же для вашего экономия времени.", string);
-	f(string, "%s\n{F19E18}- \\n - Новая строка.", string);
-	f(string, "%s\n{F19E18}- \\t - Сделать горизонтальный отступ.", string);
-	f(string, "%s\n{F19E18}- \\v - Сделать вертикальный отступ.", string);
-	f(string, "%s\n{F19E18}- \\\" - Сделать кавычки.", string);
-	f(string, "%s\n{F19E18}- \\\' - Сделать апостроф.", string);
-	f(string, "%s\n{F19E18}- \\\\ - Сделать обратную дробную черту.", string);
-	f(string, "%s\n{F19E18}- {\rFFFFFF\r} - Код цвета.", string);
-	return SPD(playerid, dMail_New1, DSI, "Письмо", string, "Отправить", "Назад");
+	f(string, "\t{FFFFFF}РќР°РїРёС€РёС‚Рµ С‚РµРєСЃС‚, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ {FFFF00}%s{FFFFFF}:", email);
+	f(string, "%s\n\n{F19E18}РџСЂРёРјРµС‡Р°РЅРёРµ:", string);
+	f(string, "%s\n{F19E18}- РџРёСЃСЊРјРѕ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 500 СЃРёРјРІРѕР»РѕРІ.", string);
+	f(string, "%s\n{F19E18}- РљРѕРіРґР° РЅР°РїРёС€РµС‚Рµ РїРёСЃСЊРјРѕ, СЃРєРѕРїРёСЂСѓР№С‚Рµ С‚РµРєСЃС‚, СЌС‚Рѕ Р¶Рµ РґР»СЏ РІР°С€РµРіРѕ СЌРєРѕРЅРѕРјРёСЏ РІСЂРµРјРµРЅРё.", string);
+	f(string, "%s\n{F19E18}- \\n - РќРѕРІР°СЏ СЃС‚СЂРѕРєР°.", string);
+	f(string, "%s\n{F19E18}- \\t - РЎРґРµР»Р°С‚СЊ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ РѕС‚СЃС‚СѓРї.", string);
+	f(string, "%s\n{F19E18}- \\v - РЎРґРµР»Р°С‚СЊ РІРµСЂС‚РёРєР°Р»СЊРЅС‹Р№ РѕС‚СЃС‚СѓРї.", string);
+	f(string, "%s\n{F19E18}- \\\" - РЎРґРµР»Р°С‚СЊ РєР°РІС‹С‡РєРё.", string);
+	f(string, "%s\n{F19E18}- \\\' - РЎРґРµР»Р°С‚СЊ Р°РїРѕСЃС‚СЂРѕС„.", string);
+	f(string, "%s\n{F19E18}- \\\\ - РЎРґРµР»Р°С‚СЊ РѕР±СЂР°С‚РЅСѓСЋ РґСЂРѕР±РЅСѓСЋ С‡РµСЂС‚Сѓ.", string);
+	f(string, "%s\n{F19E18}- {\rFFFFFF\r} - РљРѕРґ С†РІРµС‚Р°.", string);
+	return SPD(playerid, dMail_New1, DSI, "РџРёСЃСЊРјРѕ", string, "РћС‚РїСЂР°РІРёС‚СЊ", "РќР°Р·Р°Рґ");
 }
